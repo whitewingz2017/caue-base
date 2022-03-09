@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FirstPersonAlternateData>
+    <alternates>
+		<!-- female -->
+		<Item>
+            <assetName>mp_f_freemode_01_grzybeek_clothes/decl_000_u</assetName>
+            <alternate value="1" />
+        </Item>
+    </alternates>
+</FirstPersonAlternateData>
