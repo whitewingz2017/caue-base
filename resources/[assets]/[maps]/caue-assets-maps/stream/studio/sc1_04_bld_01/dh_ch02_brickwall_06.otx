@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image dh_ch02_brickwall_06.dds
+	Type Regular
+	PixelFormat DXT1
+	Levels 8
+	Usage DIFFUSE
+	UsageFlags  NOT_HALF HD_SPLIT
+	ExtraFlags 0
+}

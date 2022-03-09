@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image env_stucco.dds
+	Type Regular
+	PixelFormat ATI2
+	Levels 6
+	Usage DETAIL
+	UsageFlags -
+	ExtraFlags 0
+}

@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image sc1_02_rsn_tpage3_normal.dds
+	Type Regular
+	PixelFormat DXT1
+	Levels 7
+	Usage NORMAL
+	UsageFlags  NOT_HALF HD_SPLIT
+	ExtraFlags 0
+}

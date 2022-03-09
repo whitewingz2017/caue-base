@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image cm_wall_plaster_detailcm_wall_plaster_det_a.dds
+	Type Regular
+	PixelFormat DXT5
+	Levels 7
+	Usage DIFFUSE
+	UsageFlags  NOT_HALF HD_SPLIT
+	ExtraFlags 0
+}

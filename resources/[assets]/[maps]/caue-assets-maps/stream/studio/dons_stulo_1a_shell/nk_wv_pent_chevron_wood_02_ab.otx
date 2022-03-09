@@ -1,0 +1,10 @@
+Version 13 30
+{
+	Image nk_wv_pent_chevron_wood_02_ab.dds
+	Type Regular
+	PixelFormat DXT5
+	Levels 9
+	Usage UNKNOWN
+	UsageFlags -
+	ExtraFlags 0
+}
