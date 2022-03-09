@@ -1,5 +1,5 @@
 # The following resources have been removed
-rcore_spray
-rcore_radiocar
-lukito_clothes
-lukito_emotes
+rcore_spray<br/>
+rcore_radiocar<br/>
+lukito_clothes<br/>
+lukito_emotes<br/>
