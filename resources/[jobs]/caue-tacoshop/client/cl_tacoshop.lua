@@ -178,7 +178,7 @@ Citizen.CreateThread(function()
         event = "caue-tacoshop:stationPrompt",
         id = "tacoshop_fridge",
         icon = "box-open",
-        label = "Abrir",
+        label = "Open",
         parameters = { stationId = 0 }
     }}, { distance = { radius = 3.5 } , isEnabled = isChargeActive })
 
@@ -192,7 +192,7 @@ Citizen.CreateThread(function()
         event = "caue-tacoshop:stationPrompt",
         id = "tacoshop_foods1",
         icon = "hamburger",
-        label = "Cozinhar",
+        label = "Cook",
         parameters = { stationId = 1 }
     }}, { distance = { radius = 3.5 } , isEnabled = isChargeActive })
 
@@ -206,7 +206,7 @@ Citizen.CreateThread(function()
         event = "caue-tacoshop:stationPrompt",
         id = "tacoshop_drinks1",
         icon = "mug-hot",
-        label = "Bebidas",
+        label = "Drinks",
         parameters = { stationId = 2 }
     }}, { distance = { radius = 3.5 } , isEnabled = isChargeActive })
 
@@ -244,7 +244,7 @@ Citizen.CreateThread(function()
         event = "caue-tacoshop:stationPrompt",
         id = "tacoshop_trays1",
         icon = "hand-holding",
-        label = "Abrir",
+        label = "Open",
         parameters = { stationId = 5, registerId = 1 }
     }}, { distance = { radius = 3.5 } })
 

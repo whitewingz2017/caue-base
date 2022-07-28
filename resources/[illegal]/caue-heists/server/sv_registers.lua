@@ -22,11 +22,11 @@ RPC.register("caue-heists:canRobRegister", function(src, pRegisterId)
     end
 
     if players[cid] and players[cid] > GetGameTimer() then
-        return "Você não pode cometer esse mesmo crime tão rápido, espere a poeira baixar."
+        return "You can't commit that same crime that fast, wait for the dust to settle."
     end
 
     if registers[pRegisterId] and registers[pRegisterId] > GetGameTimer() then
-        return "Não tem nada aqui, alguém já robou esse caixa."
+        return "There's nothing here, someone already stole this box."
     end
 
     registers[pRegisterId] = GetGameTimer() + registerCooldown

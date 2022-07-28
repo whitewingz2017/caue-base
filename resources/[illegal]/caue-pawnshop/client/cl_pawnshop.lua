@@ -26,12 +26,12 @@ end)
 
 AddEventHandler("caue-pawnshop:sell", function(pArgs, pEntity, pEntityFlags, pEntityCoords)
     local npcCoords = GetEntityCoords(pEntity)
-    local finished = exports["caue-taskbar"]:taskBar(3000, "Vendendo, não se mova.")
+    local finished = exports["caue-taskbar"]:taskBar(3000, "Selling, don't move.")
     if finished == 100 then
         if #(GetEntityCoords(PlayerPedId()) - npcCoords) < 2.0 then
             TriggerServerEvent("caue-pawnshop:sell")
         else
-            TriggerEvent("DoLongHudText", "Você se moveu para longe idiota.", 2)
+            TriggerEvent("DoLongHudText", "You moved away idiot.", 2)
         end
     end
 end)

@@ -82,7 +82,7 @@ AddEventHandler("trycpr", function()
         end
         TriggerServerEvent("serverCPR")
     else
-        TriggerEvent("DoLongHudText","Você não esta próximo a casa de descanso",2)
+        TriggerEvent("DoLongHudText","You're not near the rest house",2)
     end
 end)
 

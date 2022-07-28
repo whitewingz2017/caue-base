@@ -38,7 +38,7 @@ $(document).ready(function () {
                     element += `<div class="account-f-type">${accounts[i].account_type}</div>`
                     element += `<div class="account-f-name">${accounts[i].account_owner}</div>`
                     element += `<div class="account-f-balance">$${accounts[i].account_balance.toLocaleString()}.00</div>`
-                    element += `<div class="account-f-balance-text">Saldo Dísponivel</div>`
+                    element += `<div class="account-f-balance-text">Balance available</div>`
                     element += `<button id="button_withdraw_${accounts[i].account_id}" class="withdraw-button o">WITHDRAW</button>`
                 if (isATM == false) {
                     element += `<button id="button_deposit_${accounts[i].account_id}" class="deposit-button g">DEPOSIT</button>`

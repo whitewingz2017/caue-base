@@ -238,7 +238,7 @@ Citizen.CreateThread(function()
     exports["caue-eye"]:AddPeekEntryByFlag({ "isTelevision" }, {
         {
             id = "tvbox-start",
-            label = "Ligar TV Box",
+            label = "Turn on TV Box",
             icon = "tv",
             event = "caue-tvbox:start",
             parameters = {}
@@ -248,7 +248,7 @@ Citizen.CreateThread(function()
     exports["caue-eye"]:AddPeekEntryByFlag({ "isTelevision" }, {
         {
             id = "tvbox-change",
-            label = "Mudar",
+            label = "Change",
             icon = "edit",
             event = "caue-tvbox:change",
             parameters = {}
@@ -258,7 +258,7 @@ Citizen.CreateThread(function()
     exports["caue-eye"]:AddPeekEntryByFlag({ "isTelevision" }, {
         {
             id = "tvbox-sync",
-            label = "Sincronizar",
+            label = "Synchronize",
             icon = "sync",
             event = "caue-tvbox:sync",
             parameters = {}
@@ -278,7 +278,7 @@ Citizen.CreateThread(function()
     exports["caue-eye"]:AddPeekEntryByFlag({ "isTelevision" }, {
         {
             id = "tvbox-stop",
-            label = "Desligar",
+            label = "To switch off",
             icon = "power-off",
             event = "caue-tvbox:destroy",
             parameters = {}

@@ -91,7 +91,7 @@ Generic.NPCS[#Generic.NPCS + 1] = {
 
 Generic.NPCS[#Generic.NPCS + 1] = {
     id = "paycheck_banker",
-    name = "Gerente do Banco",
+    name = "Bank manager",
     pedType = 4,
     model = "cs_bankman",
     networked = false,

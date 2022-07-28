@@ -8,7 +8,7 @@ RegisterNetEvent("caue-evidence:analyze", function()
         local metadata = json.decode(item.information)
 
         if metadata.identifier == "FADED" or metadata.identifier == "Scratched off data" then
-            TriggerClientEvent("DoLongHudText", src, "Não foi possivel analisar esta evidência.", 2)
+            TriggerClientEvent("DoLongHudText", src, "It was not possible to analyze this evidence.", 2)
             return
         end
 
@@ -24,7 +24,7 @@ RegisterNetEvent("caue-evidence:analyze", function()
 
                 updated = true
             else
-                TriggerClientEvent("DoLongHudText", src, "Esta evidência já foi analisada.", 2)
+                TriggerClientEvent("DoLongHudText", src, "This evidence has already been analyzed.", 2)
             end
         elseif metadata["DNA"] then
             if metadata["DNA"] == "Não analisado" then
@@ -36,7 +36,7 @@ RegisterNetEvent("caue-evidence:analyze", function()
 
                 updated = true
             else
-                TriggerClientEvent("DoLongHudText", src, "Esta evidência já foi analisada.", 2)
+                TriggerClientEvent("DoLongHudText", src, "This evidence has already been analyzed.", 2)
             end
         end
 
@@ -49,7 +49,7 @@ RegisterNetEvent("caue-evidence:analyze", function()
             { json.encode(metadata), item.id })
         end
     else
-        TriggerClientEvent("DoLongHudText", src, "Nenhuma evidência para analisar.", 2)
+        TriggerClientEvent("DoLongHudText", src, "No evidence to analyze.", 2)
     end
 end)
 
@@ -68,10 +68,10 @@ RegisterNetEvent("caue-evidence:dnaSwab", function(pTarget)
 
     local data = {
         ["identifier"] = dna,
-        ["DNA"] = "Não analisado",
+        ["DNA"] = "Not analyzed",
         ["_hideKeys"] = { "identifier" },
     }
 
     TriggerClientEvent("player:receiveItem", src, "dnaswab", 1, true, data)
-    TriggerClientEvent("DoLongHudText", pTarget, "Uma amostra de DNA foi coletada!")
+    TriggerClientEvent("DoLongHudText", pTarget, "A DNA sample was collected!")
 end)

@@ -217,7 +217,7 @@ AddEventHandler("police:forceEnter", function()
 	local tPed, tPly, tServerId = getClosestPlayer(GetEntityCoords(plyPed), 3.0)
 
 	if tPed == nil or tPed < 0 then
-		TriggerEvent("DoLongHudText", "Não tem ninguem próximo (chegue mais perto)", 2)
+		TriggerEvent("DoLongHudText", "No nearby player!", 2)
 		return
 	end
 
@@ -230,17 +230,17 @@ AddEventHandler("police:forceEnter", function()
 		local veh = exports["caue-target"]:GetCurrentEntity()
 
 		if not IsEntityAVehicle(veh) then
-			TriggerEvent("DoLongHudText", "Por favor olhe para o veiculo!", 2)
+			TriggerEvent("DoLongHudText", "Please look at the vehicle!", 2)
 			return
 		end
 
 		if GetVehicleEngineHealth(veh) < 100.0 then
-			TriggerEvent("DoLongHudText", "Esse veiculo esta muito danificado!", 2)
+			TriggerEvent("DoLongHudText", "This vehicle is badly damaged!", 2)
 			return
 		end
 
 		if not AreAnyVehicleSeatsFree(veh) then
-			TriggerEvent("DoLongHudText", "Não há cadeiras disponiveis para você!", 2)
+			TriggerEvent("DoLongHudText", "There are no chairs available for you!", 2)
 			return
 		end
 
@@ -272,7 +272,7 @@ AddEventHandler("unseatPlayer", function()
 	local veh = exports["caue-target"]:GetCurrentEntity()
 
 	if not IsEntityAVehicle(veh) then
-		TriggerEvent("DoLongHudText", "Olhe para o veiculo!", 2)
+		TriggerEvent("DoLongHudText", "look at the vehicle!", 2)
 		return
 	end
 
@@ -283,7 +283,7 @@ AddEventHandler("unseatPlayer", function()
 		local tPly = NetworkGetPlayerIndexFromPed(tPed)
 
 		if tPly < 0 then
-			TriggerEvent("DoLongHudText", "Não foi encontrado ninguem", 1)
+			TriggerEvent("DoLongHudText", "no one was found", 1)
 			return
 		end
 
@@ -302,7 +302,7 @@ AddEventHandler("unseatPlayer", function()
 			TriggerServerEvent("caue-police:escort", tServerId, -1, false)
 		end
 	else
-		TriggerEvent("DoLongHudText", "Não tem ninguém nesse veiculo", 1)
+		TriggerEvent("DoLongHudText", "There is no one in this vehicle", 1)
 	end
 end)
 

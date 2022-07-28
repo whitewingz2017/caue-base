@@ -17,12 +17,12 @@ Queue.OnJoin(function(source, allow)
 	local ids = GetIds(source)
 
 	if not ids then
-		allow("\xE2\x9D\x97[Fila] Erro: Não foi possível encontrar nenhum dos seus IDs, tente reiniciar o FiveM.")
+		allow("\xE2\x9D\x97[Fila] Erro: Couldn't find any of your IDs, try restarting FiveM.")
 		return
 	end
 
 	if not ids["hex"] then
-		allow("\xE2\x9D\x97[Fila] Erro: Não foi possível encontrar seu HEX, tente reiniciar o FiveM.")
+		allow("\xE2\x9D\x97[Fila] Erro: Could not find your HEX, try restarting FiveM.")
 		return
 	end
 
@@ -42,10 +42,10 @@ Queue.OnJoin(function(source, allow)
 			local time = os.time()
 
 			if ban_time == 0 then
-				allow("Você está banido permanentemente | Motivo: "..user.banreason)
+				allow("You are permanently banned | Reason: "..user.banreason)
 				return
 			elseif ban_time > time then
-				allow("Você está banido | Motivo: " .. ban_reason .. " | Termina: " .. os.date("%d/%m/%Y - %X", ban_time))
+				allow("You are banned | Reason: " .. ban_reason .. " | Ends: " .. os.date("%d/%m/%Y - %X", ban_time))
 				return
 			elseif ban_time < time then
 				MySQL.update([[
@@ -65,15 +65,15 @@ Queue.OnJoin(function(source, allow)
 		allow()
 	else
 		if message == "devserver" then
-			allow("\xE2\x9D\x97[Fila] Esse servidor e so pra desenvolvimento seu 🐒, entra no servidor certo ae")
+			allow("\xE2\x9D\x97[Fila] This server is only for your development 🐒, enter the right server")
 		elseif message == "discord id not found" then
-			allow("\xE2\x9D\x97[Fila] Erro: Não foi possível encontrar seu Discord ID, tente reiniciar o FiveM.")
+			allow("\xE2\x9D\x97[Fila] Erro: Could not find your Discord ID, try restarting the FiveM.")
 		elseif message == "user data not found" then
-			allow("\xE2\x9D\x97[Fila] Erro: Não foi possível encontrar seu usuario no servidor do discord. Você esta no discord?")
+			allow("\xE2\x9D\x97[Fila] Erro: Your username could not be found on the discord server. You are on discord?")
 		elseif message == "user roles not found" then
-			allow("\xE2\x9D\x97[Fila] Erro: Não foi possível encontrar suas tags no servidor do discord. Você esta no discord?")
+			allow("\xE2\x9D\x97[Fila] Erro: Your tags could not be found on the discord server. You are on discord?")
 		else
-			allow("\xE2\x9D\x97[Fila] Você deve estar na whitelist para entrar neste servidor")
+			allow("\xE2\x9D\x97[Fila] You must be on the whitelist to join this server")
 		end
 	end
 end)

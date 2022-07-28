@@ -7,7 +7,7 @@
 Commands = {}
 
 Config = {
-    ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941294330851754025/uuM49bwkpXRDxVphz6VP0yfP4FXwCYmlDGimKkyHmr5Xn89Z7IrIu9isqlep7vPPNR09",
+    ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002085265499754556/QYXjY6StKAeyVLchU2gmrRYmCiYZf6Lm4JZ6p36t4I_y6fVjCER-EOIq1bEHIKchHQtg",
     ["DISCORD_NAME"] = "Obnoxious",
     ["DISCORD_IMAGE"] = "https://i.imgur.com/XFNLjar.png",
     ["BOT_TOKEN"] = "ODE5Nzg5OTQzNjcyNzk5Mjcz.YEru4Q.VHP7jxhg802oJ7OffZJfQ7OryZg",

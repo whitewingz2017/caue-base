@@ -6,7 +6,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "bar:grabDrink",
-            label = "Pegar bebida",
+            label = "Get Drink",
             icon = "cocktail",
             event = "caue-stripclub:peekAction",
             parameters = { action = "grabDrink" }
@@ -23,7 +23,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "bar:openFridge",
-            label = "Abrir geladeira",
+            label = "Open fridge",
             icon = "circle",
             event = "caue-stripclub:peekAction",
             parameters = { action = "openFridge" }
@@ -40,7 +40,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "job_sign_in",
-            label = "Entrar em serviço",
+            label = "Sign or Sign out",
             icon = "circle",
             event = "caue-signin:peekAction",
             parameters = {}

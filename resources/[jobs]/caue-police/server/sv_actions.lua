@@ -23,12 +23,12 @@ AddEventHandler("police:targetCheckInventory", function(pTarget, pFrisk)
         end
 
         if hasWeapons then
-            TriggerClientEvent("DoLongHudText", src, "Arma encontrada")
+            TriggerClientEvent("DoLongHudText", src, "Found weapon")
         else
-            TriggerClientEvent("DoLongHudText", src, "Arma não encontrada")
+            TriggerClientEvent("DoLongHudText", src, "Weapon not found")
         end
     else
-        TriggerClientEvent("DoLongHudText", pTarget, "Você esta sendo revistado")
+        TriggerClientEvent("DoLongHudText", pTarget, "You are being searched")
         TriggerClientEvent("server-inventory-open", src, "1", ("ply-" .. cid))
     end
 end)
@@ -53,9 +53,9 @@ AddEventHandler("police:gsr", function(pTarget)
     local shotRecently = RPC.execute(pTarget, "police:gsr")
 
     if shotRecently then
-        TriggerClientEvent("DoLongHudText", src, "Encontramos residuo de polvora")
+        TriggerClientEvent("DoLongHudText", src, "We found gunpowder residue")
     else
-        TriggerClientEvent("DoLongHudText", src, "Não encontramos nenhum residuo de polvora")
+        TriggerClientEvent("DoLongHudText", src, "We did not find any powder residue.")
     end
 end)
 
@@ -65,7 +65,7 @@ AddEventHandler("police:checkBank", function(pTarget)
     local cid = exports["caue-base"]:getChar(pTarget, "id")
     local accountId = exports["caue-base"]:getChar(pTarget, "bankid")
     local bank = exports["caue-financials"]:getBalance(accountId)
-    TriggerClientEvent("DoLongHudText", src, "Tem $ " .. bank .. " na conta " .. accountId)
+    TriggerClientEvent("DoLongHudText", src, "Has $ " .. bank .. " in bank id " .. accountId)
 end)
 
 RegisterNetEvent("caue-jail:giveTicket", function(pTarget, pAmount, pComment)
@@ -84,6 +84,6 @@ RegisterNetEvent("caue-jail:giveTicket", function(pTarget, pAmount, pComment)
         return false, TriggerClientEvent("DoLongHudText", src, message, 2)
     end
 
-    TriggerClientEvent("DoLongHudText", src, "Multa enviada com sucesso!")
-    TriggerClientEvent("caue-phone:notification", pTarget, "fas fa-university", "Bank", "Você recebeu uma multa de $" .. pAmount, 5000)
+    TriggerClientEvent("DoLongHudText", src, "Fine sent successfully!")
+    TriggerClientEvent("caue-phone:notification", pTarget, "fas fa-university", "Bank", "You received a fine of $" .. pAmount, 5000)
 end)

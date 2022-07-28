@@ -69,7 +69,7 @@ AddEventHandler("caue-drugs:offer", function(ped)
         TriggerClientEvent("caue-drugs:c_startoffers", src, ped, itemId, Price, Label, Amount)
     else
         TriggerClientEvent("caue-drugs:canceloffers", src, ped)
-		TriggerClientEvent("DoLongHudText", src, "Você não tem drogas para vender", 2)
+		TriggerClientEvent("DoLongHudText", src, "You don't have drugs to sell", 2)
     end
 end)
 

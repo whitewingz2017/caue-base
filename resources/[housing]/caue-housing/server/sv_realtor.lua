@@ -29,13 +29,13 @@ AddEventHandler("caue-housing:sell", function(pCid, pPropertyId)
 
     local seller = exports["caue-base"]:getChar(src, "id")
     if not seller or seller == 0 then
-        TriggerClientEvent("DoLongHudText", src, "vendedor não encontrado", 2)
+        TriggerClientEvent("DoLongHudText", src, "seller not found", 2)
         return
     end
 
     local buyer = exports["caue-base"]:getSidWithCid(pCid)
     if not buyer or buyer == 0 then
-        TriggerClientEvent("DoLongHudText", src, "comprador não encontrado", 2)
+        TriggerClientEvent("DoLongHudText", src, "buyer not found", 2)
         return
     end
 
@@ -47,7 +47,7 @@ AddEventHandler("CheckFurniture", function(pData, pPropertyId)
     local src = source
 
     if housingEditing[pPropertyId] ~= nil then
-        TriggerClientEvent("DoLongHudText", src, "Alguém já esta decorando esta propriedade", 2)
+        TriggerClientEvent("DoLongHudText", src, "Someone is already decorating this property", 2)
     else
         housingEditing[pPropertyId] = src
         TriggerClientEvent("caue-editor:loadEditor", src, pData)
@@ -80,12 +80,12 @@ end)
 RPC.register("caue-housing:buy", function(src, pPropertyId, pTotal, pTax, pSeller)
     local cid = exports["caue-base"]:getChar(src, "id")
     if not cid or cid == 0 then
-        return false, "ID não encontrado"
+        return false, "ID not found"
     end
 
     local seller = exports["caue-base"]:getSidWithCid(pSeller)
     if not seller or seller == 0 then
-        return false, "vendedor não encontrado"
+        return false, "seller not found"
     end
 
     local accountId = exports["caue-base"]:getChar(src, "bankid")
@@ -93,21 +93,21 @@ RPC.register("caue-housing:buy", function(src, pPropertyId, pTotal, pTax, pSelle
     local sellerAccount = exports["caue-base"]:getChar(seller, "bankid")
 
     if not accountId or not groupBank or not sellerAccount then
-        return false, "Erro ao buscar conta"
+        return false, "Error searching account"
     end
 
     local bank = exports["caue-financials"]:getBalance(accountId)
     if bank < pTotal then
-        return false, "Você não possui $" .. pTotal .. " em sua conta"
+        return false, "You don't own $" .. pTotal .. " in your account"
     end
 
-    local comment = "Pagamento de aluguel da propriedade " .. Housing.info[pPropertyId]["street"]
+    local comment = "Property rental payment " .. Housing.info[pPropertyId]["street"]
     local success, message = exports["caue-financials"]:transaction(accountId, groupBank, pTotal, comment, cid, 5)
     if not success then
         return false, message
     end
 
-    local comment2 = "Comissão da " .. Housing.info[pPropertyId]["street"]
+    local comment2 = "Commission of " .. Housing.info[pPropertyId]["street"]
     local success2, message2 = exports["caue-financials"]:transaction(groupBank, sellerAccount, math.floor(pTotal / 2), comment2, 0, 1)
     if not success2 then
         return false, message2
@@ -131,22 +131,22 @@ end)
 RPC.register("caue-housing:rent", function(src, pPropertyId, pTotal, pTax)
     local cid = exports["caue-base"]:getChar(src, "id")
     if not cid or cid == 0 then
-        return false, "ID não encontrado"
+        return false, "ID not found"
     end
 
     local accountId = exports["caue-base"]:getChar(src, "bankid")
     local groupBank = exports["caue-groups"]:groupBank("real_estate")
 
     if not accountId or not groupBank then
-        return false, "Erro ao buscar conta"
+        return false, "Error searching account"
     end
 
     local bank = exports["caue-financials"]:getBalance(accountId)
     if bank < pTotal then
-        return false, "Você não possui $" .. pTotal .. " em sua conta"
+        return false, "You don't own $" .. pTotal .. " in your account"
     end
 
-    local comment = "Pagamento de aluguel da propriedade " .. Housing.info[pPropertyId]["street"]
+    local comment = "Property rental payment " .. Housing.info[pPropertyId]["street"]
     local success, message = exports["caue-financials"]:transaction(accountId, groupBank, pTotal, comment, cid, 5)
     if not success then
         return false, message
@@ -164,7 +164,7 @@ RPC.register("caue-housing:rent", function(src, pPropertyId, pTotal, pTax)
         return false, "Database insert eror"
     end
 
-    TriggerClientEvent("DoLongHudText", src, "Você alugou " .. Housing.info[pPropertyId]["street"])
+    TriggerClientEvent("DoLongHudText", src, "You rented " .. Housing.info[pPropertyId]["street"])
 
     return true, getCurrentOwned(src)
 end)

@@ -7,22 +7,22 @@
 function kickAllPlayers()
     local players = GetPlayers()
     for i, v in ipairs(players) do
-        DropPlayer(v, "Servidor Reiniciando...")
+        DropPlayer(v, "Server Restarting...")
     end
 end
 
 function restartServer()
-    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "O servidor vai reiniciar em 10 minutos!")
+    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "The server will restart in 10 minutes!")
     Citizen.Wait(300000)
-    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "O servidor vai reiniciar em 5 minutos!")
+    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "The server will restart in 5 minutes!")
     Citizen.Wait(60000)
-    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "O servidor vai reiniciar em 4 minutos!")
+    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "The server will restart in 4 minutes!")
     Citizen.Wait(60000)
-    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "O servidor vai reiniciar em 3 minutos!")
+    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "The server will restart in 3 minutes!")
     Citizen.Wait(60000)
-    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "O servidor vai reiniciar em 2 minutos!")
+    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "The server will restart in 2 minutes!")
     Citizen.Wait(60000)
-    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "O servidor vai reiniciar em 1 minutos!")
+    TriggerClientEvent("chatMessage", -1, "SISTEMA: ", {255, 0, 0}, "O servidor vai reiniciar em 1 minutes!")
     Citizen.Wait(60000)
 
     kickAllPlayers()

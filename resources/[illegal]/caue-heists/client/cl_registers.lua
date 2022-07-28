@@ -38,7 +38,7 @@ local function breakInToRegister()
     TaskTurnPedToFaceEntity(PlayerPedId(), currentTarget, -1)
     TaskPlayAnim(PlayerPedId(), "oddjobs@shop_robbery@rob_till", "loop", 8.0, -8, -1, 1, 0, 0, 0, 0)
 
-    local finished = exports["caue-taskbar"]:taskBar(10000, "Roubando", true, false, nil, false, nil, 3)
+    local finished = exports["caue-taskbar"]:taskBar(10000, "Stealing", true, false, nil, false, nil, 3)
     if finished == 100 then
         TriggerServerEvent("caue-heists:complete", math.random(300, 400))
     end

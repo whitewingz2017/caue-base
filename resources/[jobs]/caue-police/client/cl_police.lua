@@ -18,37 +18,37 @@ local EVENTS = {
 
 local zoneData = {
     mrpd_clothing_lockers = {
-        promptText = "[E] Armário & Roupas",
+        promptText = "[E] Closet & Clothing",
         menuData = {
             {
-                title = "Armário",
-                description = "Acesse seu armário pessoal",
+                title = "Cabinet",
+                description = "Access your personal locker",
                 action = "caue-police:handler",
                 params = EVENTS.LOCKERS
             },
             {
-                title = "Roupas",
-                description = "Escolha sua roupa",
+                title = "Clothes",
+                description = "Choose your outfit",
                 action = "caue-police:handler",
                 params = EVENTS.CLOTHING
             }
         }
     },
     mrpd_armory = {
-        promptText = "[E] Arsenal"
+        promptText = "[E] Weapon"
     },
     mrpd_evidence = {
-        promptText = "[E] Evidencia"
+        promptText = "[E] Evidence"
     },
     mrpd_trash = {
-        promptText = "[E] Lixo"
+        promptText = "[E] Trash"
     },
     mrpd_character_switcher = {
-        promptText = "[E] Mudar de Personagem",
+        promptText = "[E] Change Character",
         menuData = {
             {
-                title = "Mudar de Personagem",
-                description = "Vai jogar boliche com seu tio",
+                title = "Change Character",
+                description = "Go bowling with your uncle",
                 action = "caue-police:handler",
                 params = EVENTS.SWITCHER
             }
@@ -56,46 +56,46 @@ local zoneData = {
     },
 
     vbpd_armory_evidence = {
-        promptText = "[E] Arsenal & Evidencias",
+        promptText = "[E] Weapon & Evidence",
         menuData = {
             {
-                title = "Arsenal",
-                description = "AED - Armas, Equipamentos, Diversão!",
+                title = "Weapon",
+                description = "AED - Weapons, Equipment, Fun!",
                 action = "caue-police:handler",
                 params = EVENTS.ARMORY
             },
             {
-                title = "Evidencias",
-                description = "Armario de evidências",
+                title = "Evidence",
+                description = "Evidence locker",
                 action = "caue-police:handler",
                 params = EVENTS.EVIDENCE
             },
             {
-                title = "Lixo",
-                description = 'Onde o "Spaghetti Code" remanesce',
+                title = "Trash",
+                description = 'Where the "Spaghetti Code" remains',
                 action = "caue-police:handler",
                 params = EVENTS.TRASH
             },
         }
     },
     vbpd_lockers_clothing = {
-        promptText = "[E] Armário & Roupas",
+        promptText = "[E] Closet & Clothing",
         menuData = {
             {
-                title = "Armário",
-                description = "Acessar armário pessoal",
+                title = "Closet",
+                description = "Access personal locker",
                 action = "caue-police:handler",
                 params = EVENTS.LOCKERS
             },
             {
-                title = "Roupas",
-                description = "Trocar de roupa",
+                title = "Clothes",
+                description = "Change clothes",
                 action = "caue-police:handler",
                 params = EVENTS.CLOTHING
             },
             {
-                title = "Mudar de Personagem",
-                description = "O bahianinho vai dar uma descasada na rede 😴",
+                title = "Change Character",
+                description = "The bahianinho will give a mismatch in the net 😴",
                 action = "caue-police:handler",
                 params = EVENTS.SWITCHER
             },
@@ -103,30 +103,30 @@ local zoneData = {
     },
 
     doc_lockers = {
-        promptText = "[E] Armário & Roupas",
+        promptText = "[E] Closet & Clothing",
         menuData = {
             {
-                title = "Armário",
-                description = "Acesse seu armário pessoal",
+                title = "Cabinet",
+                description = "Access your personal locker",
                 action = "caue-police:handler",
                 params = EVENTS.LOCKERS
             },
             {
-                title = "Roupas",
-                description = "Escolha sua roupa",
+                title = "Clothes",
+                description = "Choose your outfit",
                 action = "caue-police:handler",
                 params = EVENTS.CLOTHING
             },
             {
-                title = "Mudar de Personagem",
-                description = "Vai jogar boliche com seu tio",
+                title = "Change Character",
+                description = "Go bowling with your uncle",
                 action = "caue-police:handler",
                 params = EVENTS.SWITCHER
             },
         }
     },
     doc_armory = {
-        promptText = "[E] Arsenal"
+        promptText = "[E] Weapon"
     },
     doc_trash = {
         promptText = "[E] Lixo"
@@ -240,7 +240,7 @@ AddEventHandler("caue-police:handler", function(eventData)
             local input = exports["caue-input"]:showInput({
                 {
                     icon = "hashtag",
-                    label = "ID do Caso",
+                    label = "Case ID",
                     name = "id",
                 },
             })

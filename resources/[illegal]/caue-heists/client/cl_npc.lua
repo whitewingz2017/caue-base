@@ -59,7 +59,7 @@ AddEventHandler("robEntity", function(pEntity, pVehicle)
 
 		if math.random(1000) < 30 and #(pedCrds - entCrds) < 7.0 then
 			if pVehicle ~= 0 then
-				TriggerEvent("DoLongHudText", "Você pegou as chaves do veiculo!")
+				TriggerEvent("DoLongHudText", "Did you get the vehicle keys?!")
 				SetVehicleHasBeenOwnedByPlayer(pVehicle, true)
                 TriggerEvent("keys:addNew", pVehicle)
 			end
@@ -78,7 +78,7 @@ AddEventHandler("robEntity", function(pEntity, pVehicle)
 
 					Citizen.Wait(1200)
 				else
-					TriggerEvent("DoLongHudText", "Eu não tenho nada, cara!!", 2)
+					TriggerEvent("DoLongHudText", "I have nothing man!!", 2)
 				end
 			end
 

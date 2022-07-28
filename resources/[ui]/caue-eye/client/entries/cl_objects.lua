@@ -6,7 +6,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "brick",
-            label = "Pegar Tijolo",
+            label = "Get Brick",
             icon = "cube",
             event = "caue-inventory:getBrick",
             parameters = {}
@@ -43,7 +43,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "weights",
-            label = "Levantar Peso",
+            label = "Lift weight",
             icon = "dumbbell",
             event = "caue-healthcare:exercise",
             parameters = {}
@@ -60,7 +60,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "smoke_machine",
-            label = "Loja de cigarros",
+            label = "Cigarette shop",
             icon = "circle",
             event = "caue-stripclub:smokemachine",
             parameters = {}
@@ -77,7 +77,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "jerrycan_refill",
-            label = "Encher Galão",
+            label = "Fill gallon",
             icon = "gas-pump",
             event = "vehicle:refuel:showMenu",
             parameters = { isJerryCan = true }
@@ -97,7 +97,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "vending_machine",
-            label = "Navegar",
+            label = "To browse",
             icon = "shopping-basket",
             event = "shops:vendingMachine",
             parameters = {}
@@ -114,7 +114,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "sit_on_chair",
-            label = "Sentar",
+            label = "Sit",
             icon = "chair",
             event = "caue-emotes:sitOnChair",
             parameters = {}
@@ -131,7 +131,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "use_atm",
-            label = "Usar ATM",
+            label = "Use ATM",
             icon = "credit-card",
             event = "financial:openUI",
             parameters = {}
@@ -148,7 +148,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "weed",
-            label = "Checar",
+            label = "Check",
             icon = "cannabis",
             event = "caue-weed:checkPlant",
             parameters = {}
@@ -165,7 +165,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "weed2",
-            label = "Colher",
+            label = "To harvest",
             icon = "hand-paper",
             event = "caue-weed:pickPlant",
             parameters = {}

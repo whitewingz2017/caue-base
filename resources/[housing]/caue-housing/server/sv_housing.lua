@@ -215,10 +215,10 @@ end)
 
 RPC.register("caue-phone:giveKey", function(src, pHouseId, pPlayerId)
     local cid = exports["caue-base"]:getChar(src, "id")
-    if not cid then return false, "ID não encontrado" end
+    if not cid then return false, "ID not found" end
 
     local playerCid = exports["caue-base"]:getChar(pPlayerId, "id")
-    if not cid then return false, "ID não encontrado" end
+    if not cid then return false, "ID not found" end
 
     local hasKey = MySQL.scalar.await([[
         SELECT id
@@ -228,7 +228,7 @@ RPC.register("caue-phone:giveKey", function(src, pHouseId, pPlayerId)
     { pHouseId, playerCid })
 
     if hasKey then
-        return false, "O player já possui a chave desta casa."
+        return false, "The player already has the key to this house."
     end
 
     local insertId = MySQL.insert.await([[
@@ -241,7 +241,7 @@ RPC.register("caue-phone:giveKey", function(src, pHouseId, pPlayerId)
         return false, "Database insert eror"
     end
 
-    TriggerClientEvent("caue-phone:notification", pPlayerId, "fas fa-key", "Keys", "Você recebeu a chave da propriedade " .. Housing.info[pHouseId]["street"], 5000)
+    TriggerClientEvent("caue-phone:notification", pPlayerId, "fas fa-key", "Keys", "You received the property key " .. Housing.info[pHouseId]["street"], 5000)
     TriggerClientEvent("caue-housing:refresh", pPlayerId)
 
     return true, "Chave recebida"
@@ -282,12 +282,12 @@ RPC.register("caue-phone:payHouse", function(src, pHouseId)
     local accountId = exports["caue-base"]:getChar(src, "bankid")
     local bank = exports["caue-financials"]:getBalance(accountId)
     if bank < priceTotal then
-        return false, "Você não tem $" .. priceTotal .. " em sua conta"
+        return false, "You do not have $" .. priceTotal .. " in your account"
     end
 
     local groupBank = exports["caue-groups"]:groupBank("real_estate")
 
-    local comment = "Pagamento de aluguel da propriedade " .. Housing.info[pHouseId]["street"]
+    local comment = "Property rental payment " .. Housing.info[pHouseId]["street"]
     local success, message = exports["caue-financials"]:transaction(accountId, groupBank, price, comment, cid, 5)
     if not success then
         return false, message

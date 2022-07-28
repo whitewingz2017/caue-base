@@ -6,7 +6,7 @@
 
 local Config = {
     ["clothing"] = {
-        ["text"] = "Loja de Roupas",
+        ["text"] = "Clothing Shop",
         ["sprite"] = 73,
         ["scale"] = 0.6,
         ["colour"] = 2,
@@ -31,7 +31,7 @@ local Config = {
         },
     },
     ["barber"] = {
-        ["text"] = "Barbearia",
+        ["text"] = "Barber Shop",
         ["sprite"] = 71,
         ["scale"] = 0.6,
         ["colour"] = 48,
@@ -49,7 +49,7 @@ local Config = {
         },
     },
     ["tattoo"] = {
-        ["text"] = "Estúdio de Tatuagem",
+        ["text"] = "Tattoo Shop",
         ["sprite"] = 75,
         ["scale"] = 0.6,
         ["colour"] = 27,
@@ -64,7 +64,7 @@ local Config = {
         },
     },
     ["bank"] = {
-        ["text"] = "Banco",
+        ["text"] = "Bank",
         ["sprite"] = 108,
         ["scale"] = 0.7,
         ["colour"] = 0,
@@ -82,7 +82,7 @@ local Config = {
         },
     },
     ["gas"] = {
-        ["text"] = "Posto de Combustivel",
+        ["text"] = "Gas Stations",
         ["sprite"] = 361,
         ["scale"] = 0.7,
         ["colour"] = 0,
@@ -120,7 +120,7 @@ local Config = {
         },
     },
     ["pd"] = {
-        ["text"] = "Departamento de Policia",
+        ["text"] = "Police Department",
         ["sprite"] = 60,
         ["scale"] = 0.75,
         ["colour"] = 3,
@@ -146,7 +146,7 @@ local Config = {
         },
     },
     ["market"] = {
-        ["text"] = "Mercado",
+        ["text"] = "Market",
         ["sprite"] = 52,
         ["scale"] = 0.7,
         ["colour"] = 2,
@@ -213,7 +213,7 @@ local Config = {
             { ["text"] = "Bikes Store", ["sprite"] = 226, ["scale"] = 0.7, ["colour"] = 38, ["pos"] = vector3(156.17, -1724.81, 28.25) },
             { ["text"] = "Premium Deluxe Motorsport", ["sprite"] = 326, ["scale"] = 0.7, ["colour"] = 7, ["pos"] = vector3(-33.737, -1102.322, 26.422) },
             { ["text"] = "Benny's Original Motorworks", ["sprite"] = 446, ["scale"] = 0.7, ["colour"] = 5,  ["pos"] = vector3(-211.55, -1324.55, 30.90) },
-            { ["text"] = "Prisão", ["sprite"] = 60, ["scale"] = 0.8, ["colour"] = 3, ["pos"] = vector3(1679.049, 2513.711, 45.565) },
+            { ["text"] = "Prison", ["sprite"] = 60, ["scale"] = 0.8, ["colour"] = 3, ["pos"] = vector3(1679.049, 2513.711, 45.565) },
             { ["text"] = "Smoke On The Water", ["sprite"] = 469, ["scale"] = 0.7, ["colour"] = 25, ["pos"] = vector3(-1171.17, -1571.09, 3.67) },
             { ["text"] = "Taco Libre", ["sprite"] = 543, ["scale"] = 0.7, ["colour"] = 25, ["pos"] = vector3(409.89, -1915.49, 25.11) },
             { ["text"] = "Supplier", ["sprite"] = 628, ["scale"] = 0.7, ["colour"] = 5, ["pos"] = vector3(-72.07, -1821.95, 26.94) },

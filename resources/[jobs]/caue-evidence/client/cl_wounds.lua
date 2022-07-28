@@ -8,9 +8,9 @@ RegisterNetEvent("evidence:bleeding", function(corpse)
     local meta = {
         ["type"] = "blood",
         ["identifier"] = Ped.characterDNA or "FADED",
-        ["text"] = "Sangue",
-        ["Tipo de Evidencia"] = "Sangue",
-        ["DNA"] = "Não analisado",
+        ["text"] = "Blood",
+        ["Type of Evidence"] = "Blood",
+        ["DNA"] = "Not analyzed",
         ["_hideKeys"] = { "type", "identifier", "text" },
     }
 

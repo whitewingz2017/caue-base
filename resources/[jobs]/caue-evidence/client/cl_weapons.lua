@@ -215,8 +215,8 @@ local dropBulletCasing = function(pPed, pWeaponHash, pWeaponType, pIdentifier)
     local meta = {
         ["type"] = "casing",
         ["identifier"] = pIdentifier or "FADED",
-        ["text"] = "Capsula",
-        ["Tipo de Evidencia"] = "Capsula de disparo",
+        ["text"] = "Capsule",
+        ["Type of Evidence"] = "Firing capsule",
         ["Calibre"] = weaponsAmmo[tostring(pWeaponHash)] or "NOT DEFINED",
         ["_hideKeys"] = { "type", "identifier", "text" },
     }
@@ -236,10 +236,10 @@ local dropImpactFragment = function(pPed, pDist, pWeaponHash, pWeaponType, pIden
     local meta = {
         ["type"] = "projectile",
         ["identifier"] = pIdentifier or "FADED",
-        ["text"] = "Projétil",
-        ["Tipo de Evidencia"] = "Projétil disparado",
+        ["text"] = "Projectile",
+        ["Type of Evidence"] = "Projectile fired",
         ["Calibre"] = weaponsAmmo[tostring(pWeaponHash)] or "NOT DEFINED",
-        ["Estriamento"] = "Não analisado",
+        ["Striation"] = "Not analyzed",
         ["_hideKeys"] = { "type", "identifier", "text" },
     }
 
@@ -257,11 +257,11 @@ local dropImpactFragment = function(pPed, pDist, pWeaponHash, pWeaponType, pIden
         meta = {
             ["type"] = "vehiclefragment",
             ["identifier"] = result.entityHit,
-            ["text"] = "Fragmento de veículo",
+            ["text"] = "Vehicle fragment",
             ["rgb"] = { ["r"] = r, ["g"] = g, ["b"] = b },
-            ["Tipo de Evidencia"] = "Fragmento colorido de veículo",
-            ["Cor Primária"] = colors[color1],
-            ["Cor Secundária"] = colors[color2],
+            ["Type of Evidence"] = "Colored vehicle fragment",
+            ["Primary Color"] = colors[color1],
+            ["Secondary Color"] = colors[color2],
             ["_hideKeys"] = { "type", "identifier", "text", "rgb" },
         }
     end

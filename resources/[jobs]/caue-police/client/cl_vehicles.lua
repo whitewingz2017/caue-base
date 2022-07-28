@@ -32,7 +32,7 @@ end)
 
 AddEventHandler("caue-police:purchaseVehicle", function(params)
     if IsAnyVehicleNearPoint(params.spawn.x, params.spawn.y, params.spawn.z, 3.0) then
-        TriggerEvent("DoLongHudText", "Tem um veiculo atrapalhando o local de spawn!", 2)
+        TriggerEvent("DoLongHudText", "There is a vehicle interfering with the spawn location!", 2)
         return
     end
 

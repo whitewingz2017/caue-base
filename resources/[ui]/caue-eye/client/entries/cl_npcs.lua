@@ -6,7 +6,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "bank_paycheck_collect",
-            label = "Coletar salário",
+            label = "Collect Salary",
             icon = "money-check-alt",
             event = "caue-npcs:ped:paycheckCollect",
             parameters = {}
@@ -23,7 +23,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "jobs_employer_checkIn",
-            label = "Entrar em serviço",
+            label = "Check In",
             icon = "circle",
             event = "jobs:checkIn",
             parameters = {}
@@ -43,14 +43,14 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "jobs_employer_paycheck",
-            label = "coletar salário",
+            label = "Collect Salary",
             icon = "circle",
             event = "jobs:getPaycheck",
             parameters = {}
         },
         {
             id = "jobs_employer_checkOut",
-            label = "Sair de serviço",
+            label = "Check In",
             icon = "circle",
             event = "jobs:checkOut",
             parameters = {}
@@ -70,7 +70,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "shopkeeper",
-            label = "Comprar",
+            label = "Purchase",
             icon = "shopping-basket",
             event = "caue-npcs:ped:keeper",
             parameters = { "2" }
@@ -87,7 +87,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "weaponshop_keeper",
-            label = "Comprar",
+            label = "Purchase",
             icon = "circle",
             event = "caue-npcs:ped:keeper",
             parameters = { "5" }
@@ -104,7 +104,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "toolshop_keeper",
-            label = "Tenho Algo",
+            label = "I have something",
             icon = "toolbox",
             event = "caue-npcs:ped:keeper",
             parameters = { "4" }
@@ -121,7 +121,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "sportshop_keeper",
-            label = "Comprar equipamento",
+            label = "buy equipment",
             icon = "circle",
             event = "caue-npcs:ped:keeper",
             parameters = { "34" }
@@ -138,13 +138,13 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "illegal_medic_revive",
-            label = "Ser Reanimado ($200)",
+            label = "Be revived ($200)",
             icon = "cross",
             event = "caue-death:illegal_revive"
         },
         {
             id = "illegal_medic_heal",
-            label = "Curativos ($150)",
+            label = "Dressings ($150)",
             icon = "cross",
             event = "caue-death:illegal_heal"
         },
@@ -161,14 +161,14 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "pawn_give_items",
-            label = "Comprar",
+            label = "Purchase",
             icon = "circle",
             event = "caue-pawnshop:buy",
             parameters = {}
         },
         {
             id = "pawn_sell_items",
-            label = "Vender",
+            label = "Sell",
             icon = "circle",
             event = "caue-pawnshop:sell",
             parameters = {}
@@ -202,7 +202,7 @@ Entries[#Entries + 1] = {
     data = {
         {
             id = "supply",
-            label = "Entregas",
+            label = "Deliveries",
             icon = "circle",
             event = "caue-tacoshop:supplyStation",
             parameters = {}

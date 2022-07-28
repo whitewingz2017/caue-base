@@ -471,7 +471,7 @@ function AlertpersonRobbed()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Roubo a mão armada",
+        dispatchMessage = "Store Robbery",
         blipSprite = 458,
         blipColor = 0,
         job = {"police"}
@@ -500,7 +500,7 @@ function AlertpersonRobbed()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -524,7 +524,7 @@ function DrugSale()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Venda de Narcoticos",
+        dispatchMessage = "Drugs In Progress",
         blipSprite = 514,
         blipColor = 0,
         job = {"police"}
@@ -553,7 +553,7 @@ function DrugSale()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -577,7 +577,7 @@ function DrugUse()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Usuário de drogas",
+        dispatchMessage = "Drug User",
         blipSprite = 140,
         blipColor = 0,
         job = {"police"}
@@ -606,7 +606,7 @@ function DrugUse()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -640,7 +640,7 @@ function CarCrash()
         },
         blipSprite = 380,
         blipColor = 0,
-        dispatchMessage = "Acidente veicular",
+        dispatchMessage = "Car Crash",
         job = {"police", "ems"}
     })
 end
@@ -662,7 +662,7 @@ function AlertDeath()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Pessoa Ferida",
+        dispatchMessage = "Injured Person",
         blipSprite = 310,
         blipColor = 0,
         job = {"police", "ems"}
@@ -687,7 +687,7 @@ function AlertPdof()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Pessoa Armada",
+        dispatchMessage = "Armed Person",
         blipSprite = 110,
         blipColor = 0,
         job = {"police"}
@@ -716,7 +716,7 @@ function AlertPdof()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -740,7 +740,7 @@ function AlertSuspicious()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Suspeito",
+        dispatchMessage = "Suspect",
         blipSprite = 362,
         blipColor = 0,
         job = {"police"}
@@ -769,7 +769,7 @@ function AlertSuspicious()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -793,7 +793,7 @@ function AlertFight()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Pertubação",
+        dispatchMessage = "Disturbance",
         blipSprite = 311,
         blipColor = 0,
         job = {"police"}
@@ -822,7 +822,7 @@ function AlertFight()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -846,7 +846,7 @@ function AlertDeadlyWeapon()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Pertubação",
+        dispatchMessage = "Disturbance",
         blipSprite = 437,
         blipColor = 0,
         job = {"police"}
@@ -875,7 +875,7 @@ function AlertDeadlyWeapon()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -900,7 +900,7 @@ function AlertGunShot()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Tiros Disparados",
+        dispatchMessage = "Shots Fired",
         blipSprite = 432,
         blipColor = 0,
         job = {"police"}
@@ -939,7 +939,7 @@ function AlertGunShot()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -962,7 +962,7 @@ function AlertCheckLockpick(object)
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Arrombamento",
+        dispatchMessage = "Lockpicking",
         blipSprite = 255,
         blipColor = 1,
         job = {"police"}
@@ -1001,7 +1001,7 @@ function AlertCheckRobbery2()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Quebrando e Entrando",
+        dispatchMessage = "Breaking and entering",
         blipSprite = 458,
         blipColor = 0,
         job = {"police"}
@@ -1030,7 +1030,7 @@ function AlertCheckRobbery2()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -1043,11 +1043,11 @@ function AlertHousing(isAlarm)
     local isInVehicle = IsPedInAnyVehicle(PlayerPedId())
 
     local dispatchCode = "10-31A"
-    local dispatchMessage = "Quebrando e Entrando"
+    local dispatchMessage = "Breaking and entering"
 
     if isAlarm then
         dispatchCode = "10-57"
-        dispatchMessage = "Alarme de Casa"
+        dispatchMessage = "Home Alarm"
     end
 
     TriggerServerEvent("dispatch:svNotify", {
@@ -1089,7 +1089,7 @@ function AlertHousing(isAlarm)
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -1113,7 +1113,7 @@ function AlertStore()
             y = currentPos.y,
             z = currentPos.z
         },
-        dispatchMessage = "Roubo de Loja",
+        dispatchMessage = "Store Robbery",
         blipSprite = 458,
         blipColor = 0,
         job = {"police"}
@@ -1142,7 +1142,7 @@ function AlertStore()
                 y = currentPos.y,
                 z = currentPos.z
             },
-            dispatchMessage = "Fuga Veicular " .. dispatchCode,
+            dispatchMessage = "Car Fleeing " .. dispatchCode,
             job = {"police"}
         })
     end
@@ -1332,7 +1332,7 @@ AddEventHandler("dispatch:clNotify", function(sNotificationData, sNotificationId
                 dispatchCode = "911",
                 priority = 1,
                 dispatchMessage = "Sent 911 call",
-                information = "Obrigado por reportar um crime, sua denúncia foi enviada e esta sendo avaliada."
+                information = "Thank you for reporting a crime, your report has been submitted and is being evaluated."
             },
             timer = 5000,
             isPolice = true
@@ -1345,7 +1345,7 @@ AddEventHandler("dispatch:clNotify", function(sNotificationData, sNotificationId
                 dispatchCode = "311",
                 priority = 2,
                 dispatchMessage = "Sent 311 call",
-                information = "Obrigado por reportar um acidente, sua denúncia foi enviada e esta sendo avaliada."
+                information = "Thank you for reporting a crime, your report has been submitted and is being evaluated."
             },
             timer = 5000,
             isPolice = true

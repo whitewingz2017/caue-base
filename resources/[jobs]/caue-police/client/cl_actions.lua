@@ -41,7 +41,7 @@ AddEventHandler("police:remmask", function(t)
             ClearPedTasks(PlayerPedId())
 		end
 	else
-		TriggerEvent("DoLongHudText", "Não tem ninguem próximo (Tente chegar mais perto).",2)
+		TriggerEvent("DoLongHudText", "No nearby player.",2)
 	end
 end)
 
@@ -66,7 +66,7 @@ end)
 RegisterNetEvent("police:checkInventory")
 AddEventHandler("police:checkInventory", function(pArgs, pEntity)
 	TriggerEvent("animation:PlayAnimation", "push")
-    local finished = exports["caue-taskbar"]:taskBar(15000, pArgs and "Revista Leve" or "Revistar", false, true, nil, false, nil, 5)
+    local finished = exports["caue-taskbar"]:taskBar(15000, pArgs and "Light Magazine" or "Inspect", false, true, nil, false, nil, 5)
 	TriggerEvent("animation:PlayAnimation", "c")
 
     if finished == 100 then
@@ -107,7 +107,7 @@ end)
 RegisterNetEvent("police:gsr")
 AddEventHandler("police:gsr", function(pArgs, pEntity)
 
-	local finished = exports["caue-taskbar"]:taskBar(10000, "Teste de GSR")
+	local finished = exports["caue-taskbar"]:taskBar(10000, "Test GSR")
 	if finished == 100 then
 		TriggerServerEvent("police:gsr", GetPlayerServerId(NetworkGetPlayerIndexFromPed(pEntity)))
 	end
@@ -115,7 +115,7 @@ end)
 
 RegisterNetEvent("police:checkBank")
 AddEventHandler("police:checkBank", function(pArgs, pEntity)
-	local finished = exports["caue-taskbar"]:taskBar(10000, "Checando o Banco do Individuo")
+	local finished = exports["caue-taskbar"]:taskBar(10000, "Checking the Individual Bank")
 	if finished == 100 then
 		TriggerServerEvent("police:checkBank", GetPlayerServerId(NetworkGetPlayerIndexFromPed(pEntity)))
 	end
@@ -125,12 +125,12 @@ AddEventHandler("caue-police:giveTicket", function(pParams, pEntity, pContext)
 	local input = exports["caue-input"]:showInput({
 		{
             icon = "hand-holding-usd",
-            label = "Valor",
+            label = "Amount",
             name = "amount",
         },
 		{
             icon = "comment",
-            label = "Comentário",
+            label = "Comment",
             name = "comment",
         },
 	})
@@ -138,12 +138,12 @@ AddEventHandler("caue-police:giveTicket", function(pParams, pEntity, pContext)
 	if input["amount"] and input["comment"] then
 		local amount = tonumber(input["amount"])
 		if not amount or amount < 1 then
-			TriggerEvent("DoLongHudText", "Valor inválido", 2)
+			TriggerEvent("DoLongHudText", "Invalid value", 2)
 			return
 		end
 
         if not IsNearPlayer(pEntity) then
-            TriggerEvent("DoLongHudText", "Você não está próximo do player!", 2)
+            TriggerEvent("DoLongHudText", "No nearby player!", 2)
             return
         end
 
@@ -154,7 +154,7 @@ end)
 
 AddEventHandler("caue-police:impound", function(pParams, pVehicle)
 	TriggerEvent("animation:PlayAnimation", "phone")
-    local finished = exports["caue-taskbar"]:taskBar(math.random(5000, 10000), "Chamando o reboque")
+    local finished = exports["caue-taskbar"]:taskBar(math.random(5000, 10000), "Calling the trailer")
     TriggerEvent("animation:PlayAnimation", "cancel")
 
 	local vid = exports["caue-vehicles"]:GetVehicleIdentifier(pVehicle)
@@ -165,7 +165,7 @@ AddEventHandler("caue-police:impound", function(pParams, pVehicle)
 	Sync.DeleteVehicle(pVehicle)
 	Sync.DeleteEntity(pVehicle)
 
-	exports["caue-phone"]:phoneNotification("fas fa-truck-pickup", "Reboque", "O veiculo foi rebocado!", 10000)
+	exports["caue-phone"]:phoneNotification("fas fa-truck-pickup", "Reboque", "The vehicle was towed!", 10000)
 end)
 
 --[[
@@ -178,7 +178,7 @@ Citizen.CreateThread(function()
     exports["caue-eye"]:AddPeekEntryByEntityType({ 1 }, {
         {
             id = "ticket",
-            label = "Multar",
+            label = "Fine",
             icon = "clipboard-list",
             event = "caue-police:giveTicket",
             parameters = {},

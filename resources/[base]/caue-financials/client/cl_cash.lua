@@ -25,7 +25,7 @@ AddEventHandler("caue-financials:giveCash", function(pParams, pEntity, pContext)
     local input = exports["caue-input"]:showInput({
 		{
             icon = "hand-holding-usd",
-            label = "Quantidade",
+            label = "Amount",
             name = "amount",
         },
 	})
@@ -33,18 +33,18 @@ AddEventHandler("caue-financials:giveCash", function(pParams, pEntity, pContext)
 	if input["amount"] then
 		local amount = tonumber(input["amount"])
 		if not amount or amount < 1 then
-			TriggerEvent("DoLongHudText", "Número inválido", 2)
+			TriggerEvent("DoLongHudText", "Number Invalid", 2)
 			return
 		end
 
         if not IsNearPlayer(pEntity) then
-            TriggerEvent("DoLongHudText", "Você não está próximo do player!", 2)
+            TriggerEvent("DoLongHudText", "No nearby player!", 2)
             return
         end
 
         local _cash = RPC.execute("caue-financials:getCash")
         if not _cash or _cash < amount then
-            TriggerEvent("DoLongHudText", "Você não possui essa quantidade com você", 2)
+            TriggerEvent("DoLongHudText", "You dont have enough cash", 2)
             return
         end
 

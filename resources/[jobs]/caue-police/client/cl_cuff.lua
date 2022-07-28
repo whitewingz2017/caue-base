@@ -70,7 +70,7 @@ AddEventHandler("caue-police:cuffPlayer", function()
 
 		local t, distance = GetClosestPlayer()
 		if distance ~= -1 and distance < 2 and not IsPedRagdoll(PlayerPedId()) then
-			TriggerEvent("DoLongHudText", "Você algemou alguém!")
+			TriggerEvent("DoLongHudText", "You cuff a player!")
 			TriggerEvent("caue-police:cuff", GetPlayerServerId(t))
 		end
 
@@ -91,7 +91,7 @@ AddEventHandler("caue-police:cuff", function(t, softcuff)
 			TriggerServerEvent("caue-police:cuff", GetPlayerServerId(t))
 		else
 			ClearPedSecondaryTask(PlayerPedId())
-			TriggerEvent("DoLongHudText", "Não há ninguem próximo (Chegue mais perto)!", 2)
+			TriggerEvent("DoLongHudText", "No nearby player!", 2)
 		end
 
 		tryingcuff = false
@@ -138,7 +138,7 @@ AddEventHandler("caue-police:getArrested", function(cuffer)
         TriggerEvent("police:currentHandCuffedState", handCuffed or handCuffedWalking)
 
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 3.0, "handcuff", 0.4)
-        TriggerEvent("DoLongHudText", "Algemado!")
+        TriggerEvent("DoLongHudText", "Handcuffed!")
 	end
 end)
 
@@ -159,9 +159,9 @@ AddEventHandler("caue-police:uncuffPlayer", function()
 		TriggerEvent("animation:PlayAnimation", "uncuff")
 		Wait(3000)
 		TriggerServerEvent("caue-police:uncuff", GetPlayerServerId(t))
-		TriggerEvent("DoLongHudText", "Você desalgemou alguém!")
+		TriggerEvent("DoLongHudText", "You uncuffed player!")
 	else
-		TriggerEvent("DoLongHudText", "Não há ninguem próximo (Chegue mais perto)!", 2)
+		TriggerEvent("DoLongHudText", "No nearby player!", 2)
 	end
 end)
 
@@ -188,7 +188,7 @@ AddEventHandler("caue-police:softcuffPlayer", function()
 		Wait(3000)
 		TriggerServerEvent("caue-police:softcuff", GetPlayerServerId(t))
 	else
-		TriggerEvent("DoLongHudText", "Não há ninguem próximo (Chegue mais perto)!", 2)
+		TriggerEvent("DoLongHudText", "No nearby player!", 2)
 	end
 end)
 

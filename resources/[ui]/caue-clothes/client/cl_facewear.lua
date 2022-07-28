@@ -54,7 +54,7 @@ function toggleFaceWear(pType, pRemove, pInfo, pSteal)
 
     if not pRemove then
         if pInfo.gender == "male" and not IsMale then
-            TriggerEvent("DoLongHudText", "Esta roupa só serve no sexo oposto. ", 2)
+            TriggerEvent("DoLongHudText", "This outfit only fits the opposite sex. ", 2)
             return
         end
     end
@@ -381,12 +381,12 @@ AddEventHandler("caue-inventory:itemUsed", function(item, info)
     if has_value(items, item) == -1 then return end
 
     if removing then
-        TriggerEvent("DoLongHudText", "Mais devagar ok?", 2)
+        TriggerEvent("DoLongHudText", "Slower ok?", 2)
         return
     end
 
     if antispam >= GetCloudTimeAsInt() then
-        TriggerEvent("DoLongHudText", "Mais devagar ok?", 2)
+        TriggerEvent("DoLongHudText", "Slower ok?", 2)
         return
     end
 
@@ -419,7 +419,7 @@ end)
 
 AddEventHandler("caue-facewear:radial", function(pArgs)
     if antispam >= GetCloudTimeAsInt() then
-        TriggerEvent("DoLongHudText", "Mais devagar ok?", 2)
+        TriggerEvent("DoLongHudText", "Slower ok?", 2)
         return
     end
 
@@ -430,11 +430,11 @@ end)
 
 AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local context = {}
-    local text = "Retirar"
+    local text = "Withdraw"
     local event = "caue-facewear:radial"
 
     if pArgs == "steal" then
-        text = "Roubar"
+        text = "Steal"
         event = "caue-facewear:steal"
     else
         pEntity = PlayerPedId()
@@ -447,7 +447,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentProp == -1
 
     context[#context+1] = {
-        title = text .. " Chapéu",
+        title = text .. " Hat",
         action = event,
         params = {
             type = "hat",
@@ -461,7 +461,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentProp == -1
 
     context[#context+1] = {
-        title = text .. " Óculos",
+        title = text .. " Glasses",
         action = event,
         params = {
             type = "googles",
@@ -475,7 +475,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentDrawable == -1
 
     context[#context+1] = {
-        title = text .. " Máscara",
+        title = text .. " Mask",
         action = event,
         params = {
             type = "mask",
@@ -489,7 +489,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentDrawable == -1
 
     context[#context+1] = {
-        title = text .. " Colar",
+        title = text .. " Necklace",
         action = event,
         params = {
             type = "chain",
@@ -512,7 +512,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentDrawable == -1 or currentDrawable == bareTorsoIndex
 
     context[#context+1] = {
-        title = text .. " Jaqueta",
+        title = text .. " Jacket",
         action = event,
         params = {
             type = "jacket",
@@ -533,7 +533,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentDrawable == -1 or currentDrawable == bareTorsoIndex
 
     context[#context+1] = {
-        title = text .. " Camisa",
+        title = text .. " Shirt",
         action = event,
         params = {
             type = "shirt",
@@ -547,7 +547,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentDrawable == -1
 
     context[#context+1] = {
-        title = text .. " Colete",
+        title = text .. " Vest",
         action = event,
         params = {
             type = "vest",
@@ -561,7 +561,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentDrawable == -1
 
     context[#context+1] = {
-        title = text .. " Mochila",
+        title = text .. " Backpack",
         action = event,
         params = {
             type = "backpack",
@@ -582,7 +582,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentDrawable == -1 or currentDrawable == bareLegsIndex
 
     context[#context+1] = {
-        title = text .. " Calça",
+        title = text .. " Pants",
         action = event,
         params = {
             type = "pants",
@@ -603,7 +603,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentDrawable == -1 or currentDrawable == bareFootIndex
 
     context[#context+1] = {
-        title = text .. " Tênis",
+        title = text .. " Shoes",
         action = event,
         params = {
             type = "shoes",
@@ -617,7 +617,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentProp == -1
 
     context[#context+1] = {
-        title = text .. " Relógio",
+        title = text .. " Watch",
         action = event,
         params = {
             type = "watch",
@@ -631,7 +631,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentProp == -1
 
     context[#context+1] = {
-        title = text .. " Pulseira",
+        title = text .. " Bracelet",
         action = event,
         params = {
             type = "braclets",
@@ -645,7 +645,7 @@ AddEventHandler("caue-facewear:clothesMenu", function(pArgs, pEntity)
     local disabled = currentProp == -1
 
     context[#context+1] = {
-        title = text .. " Brincos",
+        title = text .. " Earrings",
         action = event,
         params = {
             type = "earrings",
@@ -669,7 +669,7 @@ Citizen.CreateThread(function()
     local data = {
         {
             id = "steal_shoes",
-            label = "Roubar Roupas",
+            label = "Steal Shoes",
             icon = "tshirt",
             event = "caue-facewear:clothesMenu",
             parameters = "steal"

@@ -189,9 +189,9 @@ function leavePrison()
         SetEntityCoords(PlayerPedId(), 1839.91, 2590.03, 46.02)
         SetEntityHeading(PlayerPedId(), 178.63)
     elseif jailTime == -1 then
-        TriggerEvent("DoLongHudText", "Você não está preso?", 2)
+        TriggerEvent("DoLongHudText", "you are not stuck?", 2)
     else
-        TriggerEvent("DoLongHudText", "Sua sentença ainda não acabou!", 2)
+        TriggerEvent("DoLongHudText", "Your sentence isn't over yet!", 2)
     end
 end
 
@@ -217,11 +217,11 @@ AddEventHandler("caue-polyzone:enter", function(pZoneName, pZoneData)
         exports["caue-density"]:ChangeDensity("prison", 0.0)
     elseif pZoneName == "prison_leave" then
         currentZone = pZoneName
-        exports["caue-interaction"]:showInteraction("[M] Sair da prisão")
+        exports["caue-interaction"]:showInteraction("[M] get out of prison")
         listenForKeypress()
     elseif pZoneName == "prison_possessions" then
         currentZone = pZoneName
-        exports["caue-interaction"]:showInteraction("[M] Recuperar suas posses")
+        exports["caue-interaction"]:showInteraction("[M] get your possessions back")
         listenForKeypress()
     end
 end)
@@ -257,7 +257,7 @@ AddEventHandler("caue-jail:sendToJail", function(pParams, pEntity, pContext)
     local input = exports["caue-input"]:showInput({
 		{
             icon = "timer",
-            label = "Tempo",
+            label = "Timer",
             name = "time",
         },
 	})
@@ -265,12 +265,12 @@ AddEventHandler("caue-jail:sendToJail", function(pParams, pEntity, pContext)
 	if input["time"] then
 		local time = tonumber(input["time"])
 		if not time or time < 1 then
-			TriggerEvent("DoLongHudText", "Número inválido", 2)
+			TriggerEvent("DoLongHudText", "invalid number", 2)
 			return
 		end
 
         if not IsNearPlayer(pEntity) then
-            TriggerEvent("DoLongHudText", "Você não está próximo do player!", 2)
+            TriggerEvent("DoLongHudText", "No nearby player!", 2)
             return
         end
 
@@ -302,7 +302,7 @@ AddEventHandler("caue-jail:begInJail", function(pSkip, pTime, pName, pCid, pDate
     jailed = true
     lastMessage = tonumber(GetCloudTimeAsInt()) + 300
 
-    TriggerEvent("chatMessage", "DOC: " , { 33, 118, 255 }, "Você tem " .. exports["caue-base"]:getChar("jail") .. " meses restantes")
+    TriggerEvent("chatMessage", "DOC: " , { 33, 118, 255 }, "You have " .. exports["caue-base"]:getChar("jail") .. " remaining months")
 end)
 
 AddEventHandler("drawScaleformJail", function(years,name,cid,date)
@@ -395,7 +395,7 @@ Citizen.CreateThread(function()
     exports["caue-eye"]:AddPeekEntryByEntityType({ 1 }, {
         {
             id = "jail",
-            label = "Prender",
+            label = "To secure",
             icon = "link",
             event = "caue-jail:sendToJail",
             parameters = {},
@@ -424,7 +424,7 @@ Citizen.CreateThread(function()
 
                 if currentTime > lastMessage then
                     lastMessage = currentTime + 300
-                    TriggerEvent("chatMessage", "DOC: " , { 33, 118, 255 }, "Você tem " .. newTime .. " meses restantes")
+                    TriggerEvent("chatMessage", "DOC: " , { 33, 118, 255 }, "You have " .. newTime .. " remaining months")
                 end
             end
         end

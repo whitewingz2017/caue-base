@@ -48,7 +48,7 @@ AddEventHandler("caue-tacoshop:completePurchase", function(pParams)
 
     local bank = exports["caue-financials"]:getBalance(accountId)
     if bank < pParams.cost then
-        TriggerClientEvent("DoLongHudText", src, "Você não tem $" .. pParams.cost .. " na sua conta.", 2)
+        TriggerClientEvent("DoLongHudText", src, "You do not have $" .. pParams.cost .. " in your account.", 2)
         return
     end
 

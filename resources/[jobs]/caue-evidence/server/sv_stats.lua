@@ -57,7 +57,7 @@ RPC.register("caue-evidence:canHeal", function(src)
     local bank = exports["caue-financials"]:getBalance(accountId)
 
     if bank < 200 then
-        TriggerClientEvent("DoLongHudText", src, "Você não tem $" .. 200 .. " na sua conta do banco", 2)
+        TriggerClientEvent("DoLongHudText", src, "You do not have $" .. 200 .. " in your bank account", 2)
         return false
     end
 
@@ -75,6 +75,6 @@ AddEventHandler("caue-evidence:hospitalHeal", function()
 
     local groupBank = exports["caue-groups"]:groupBank("ems")
 
-    local comment = "Despesas com assistência médica"
+    local comment = "Medical care expenses"
     exports["caue-financials"]:transaction(accountId, groupBank, 200, comment, cid, 1)
 end)

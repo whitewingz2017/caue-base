@@ -6,7 +6,7 @@ LOGS = {
     ]]
 
     ["connect"] = {
-        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941014929778016269/4_2tA8A-0ZlptOHpRDdP4hG9KNJOreasiE6fq4Vj3KGswvWfFvuvU6xjiAyOoB4w9dK2",
+        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002085265499754556/QYXjY6StKAeyVLchU2gmrRYmCiYZf6Lm4JZ6p36t4I_y6fVjCER-EOIq1bEHIKchHQtg",
         ["DISCORD_NAME"] = "Connect And Disconnect Logs",
         ["DISCORD_IMAGE"] = "https://i.pinimg.com/736x/76/b5/9f/76b59f362b7f2d57bc6539b37cb54985.jpg",
         ["DISCORD_TITLE"] = "Connect",
@@ -40,7 +40,7 @@ LOGS = {
         end,
     },
     ["disconnect"] = {
-        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941014929778016269/4_2tA8A-0ZlptOHpRDdP4hG9KNJOreasiE6fq4Vj3KGswvWfFvuvU6xjiAyOoB4w9dK2",
+        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002085265499754556/QYXjY6StKAeyVLchU2gmrRYmCiYZf6Lm4JZ6p36t4I_y6fVjCER-EOIq1bEHIKchHQtg",
         ["DISCORD_NAME"] = "Connect And Disconnect Logs",
         ["DISCORD_IMAGE"] = "https://i.pinimg.com/736x/76/b5/9f/76b59f362b7f2d57bc6539b37cb54985.jpg",
         ["DISCORD_TITLE"] = "Disconnect",
@@ -81,7 +81,7 @@ LOGS = {
     ]]
 
     ["character-create"] = {
-        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941015536224047104/iMP21mFmAaF64hv7laRBn2NDgpv3WsNzpPgcscW2tu4B8En3SSUnYHYZBtEji3Je0uv_",
+        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002094807553953834/4naet1XcuMw43P_uunsUfxpS26F_PLQhYn6BypoMlw0hJwLLn3NAfWQ54laelu2iFZCM",
         ["DISCORD_NAME"] = "Characters Logs",
         ["DISCORD_IMAGE"] = "https://i.pinimg.com/736x/76/b5/9f/76b59f362b7f2d57bc6539b37cb54985.jpg",
         ["DISCORD_TITLE"] = "Created",
@@ -127,7 +127,7 @@ LOGS = {
         end,
     },
     ["character-delete"] = {
-        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941015536224047104/iMP21mFmAaF64hv7laRBn2NDgpv3WsNzpPgcscW2tu4B8En3SSUnYHYZBtEji3Je0uv_",
+        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002094807553953834/4naet1XcuMw43P_uunsUfxpS26F_PLQhYn6BypoMlw0hJwLLn3NAfWQ54laelu2iFZCM",
         ["DISCORD_NAME"] = "Characters Logs",
         ["DISCORD_IMAGE"] = "https://i.pinimg.com/736x/76/b5/9f/76b59f362b7f2d57bc6539b37cb54985.jpg",
         ["DISCORD_TITLE"] = "Deleted",
@@ -175,7 +175,7 @@ LOGS = {
     ]]
 
     ["deposit"] = {
-        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941016081806540870/y5DHXWssDg34eWywBkcdpKuhFkJf2VI67hMV0PTLk_WYScydt0noIFoh0lhsYFp2oOfm",
+        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002095278578487376/tN6NOHKpL6_S4votpsVosJZaGLQ0yA-UWuoPiQJrXxM6DJ_Z86DfWe4D3qKpY6ohyBSS",
         ["DISCORD_NAME"] = "Bank Logs",
         ["DISCORD_IMAGE"] = "https://i.pinimg.com/736x/76/b5/9f/76b59f362b7f2d57bc6539b37cb54985.jpg",
         ["DISCORD_TITLE"] = "Deposit",
@@ -212,7 +212,7 @@ LOGS = {
         end,
     },
     ["withdraw"] = {
-        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941016187490402325/SqRRyWu6xma197-Pp4ChddLVsb9CxqtFflv9z82dibt9tBKk2KtqgPNmKs40kgJBOHxi",
+        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002095278578487376/tN6NOHKpL6_S4votpsVosJZaGLQ0yA-UWuoPiQJrXxM6DJ_Z86DfWe4D3qKpY6ohyBSS",
         ["DISCORD_NAME"] = "Bank Logs",
         ["DISCORD_IMAGE"] = "https://i.pinimg.com/736x/76/b5/9f/76b59f362b7f2d57bc6539b37cb54985.jpg",
         ["DISCORD_TITLE"] = "Withdraw",
@@ -249,7 +249,7 @@ LOGS = {
         end,
     },
     ["transfer"] = {
-        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941016280658497576/N-Gw7-o6HK61N_grYrx6j6aUW1MGXrZYRA9CpZtAQAd4yqCaoZpH1Il28LYQ3pMzTpPO",
+        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002095278578487376/tN6NOHKpL6_S4votpsVosJZaGLQ0yA-UWuoPiQJrXxM6DJ_Z86DfWe4D3qKpY6ohyBSS",
         ["DISCORD_NAME"] = "Bank Logs",
         ["DISCORD_IMAGE"] = "https://i.pinimg.com/736x/76/b5/9f/76b59f362b7f2d57bc6539b37cb54985.jpg",
         ["DISCORD_TITLE"] = "Transfer",
@@ -292,7 +292,7 @@ LOGS = {
 
     ]]
     ["groupRank"] = {
-        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941024642146131998/kZrKXJk_R-ZapOBhnGNiCijsUFXhjHXWW4o8duqWrBrPir_Eror-gb__Tk7ykIqTzmpq",
+        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002095475509428274/LI0hxf-Iy7_WnLmyMlvgI_SzMtSzxDfdgtyJ7SABNdct6rAVzF4CcyGz_bant6yqEBQ1",
         ["DISCORD_NAME"] = "Groups Logs",
         ["DISCORD_IMAGE"] = "https://i.pinimg.com/736x/76/b5/9f/76b59f362b7f2d57bc6539b37cb54985.jpg",
         ["DISCORD_TITLE"] = "Changed Rank",
@@ -344,7 +344,7 @@ LOGS = {
 
     ]]
     ["vehicleShop"] = {
-        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/941024940101091378/PrZNVZzjN2t3mHZ7l2e6rpJdVcVUDXuB-QGGQhgLK8zjom4b4Yi78m7o5znxb61oXF_e",
+        ["DISCORD_WEBHOOK"] = "https://discord.com/api/webhooks/1002095641637429258/884uzqmZK1yFfmFqe7C7D1R4ccs4VxhBWNKDqZbLF8-WnKQnb2n10nIFGMClyeGllhoB",
         ["DISCORD_NAME"] = "Vehicle Shop Logs",
         ["DISCORD_IMAGE"] = "https://i.pinimg.com/736x/76/b5/9f/76b59f362b7f2d57bc6539b37cb54985.jpg",
         ["DISCORD_TITLE"] = "Vehicle Shop",

@@ -55,7 +55,7 @@ RPC.register("caue-char:fetchCharacters", function(src)
 
     if not ids.hex then
         return {
-            err = "Seu hex não foi encontrado"
+            err = "Your hex not found"
         }
     end
 
@@ -74,7 +74,7 @@ RPC.register("caue-char:createCharacter", function(src, params)
 
     if not ids.hex then
         return {
-            err = "Seu hex não foi encontrado"
+            err = "Your hex not found"
         }
     end
 

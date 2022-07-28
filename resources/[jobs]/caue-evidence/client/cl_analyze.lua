@@ -3,7 +3,7 @@ AddEventHandler("caue-evidence:analyze", function(pParameters, pEntity, pContext
         TriggerEvent("inventory-open-container", "analyze_evidence", 1, 1)
     elseif pParameters.actionId == 2 then
         TriggerEvent("dpemotes:e", {"parkingmeter"})
-        local finished = exports["caue-taskbar"]:taskBar(15000, "Analisando")
+        local finished = exports["caue-taskbar"]:taskBar(15000, "Analyzing")
         TriggerEvent("dpemotes:e", {"c"})
         if finished == 100 then
             TriggerServerEvent("caue-evidence:analyze")
@@ -13,7 +13,7 @@ end)
 
 AddEventHandler("caue-evidence:dnaSwab", function(pArgs, pEntity)
 	TriggerEvent("dpemotes:e", {"parkingmeter"})
-    local finished = exports["caue-taskbar"]:taskBar(15000, "Coletando DNA")
+    local finished = exports["caue-taskbar"]:taskBar(15000, "Collecting DNA")
 	TriggerEvent("dpemotes:e", {"c"})
     if finished == 100 then
 		TriggerServerEvent("caue-evidence:dnaSwab", GetPlayerServerId(NetworkGetPlayerIndexFromPed(pEntity)))

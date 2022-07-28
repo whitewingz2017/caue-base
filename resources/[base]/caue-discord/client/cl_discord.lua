@@ -1,6 +1,6 @@
 Citizen.CreateThread(function()
 	while true do
-		SetDiscordAppId(940695263415271484)
+		SetDiscordAppId(1002084359500738690)
 
         local first_name = exports["caue-base"]:getChar("first_name")
         local last_name = exports["caue-base"]:getChar("last_name")

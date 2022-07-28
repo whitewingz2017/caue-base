@@ -84,34 +84,34 @@ Config = {
 
 Strings = {
     ["blip"] = "Basketball",
-    ["home"] = "da casa",
-    ["guest"] = "visitante",
-    ["join_team"] = "Aperte ~INPUT_CONTEXT~ para %s no time \"~b~%s~s~\" (%s no time)\nPress ~INPUT_DETONATE~ para %s no time \"~r~%s~s~\" (%s no time)",
-    ["join"] = "entrar",
-    ["leave"] = "sair",
+    ["home"] = "from home",
+    ["guest"] = "Visitor",
+    ["join_team"] = "Open ~INPUT_CONTEXT~ to %s on the team \"~b~%s~s~\" (%s no time)\nPress ~INPUT_DETONATE~ para %s no time \"~r~%s~s~\" (%s no time)",
+    ["join"] = "join",
+    ["leave"] = "leave",
 
-    ["game_progress"] = "Há um jogo em andamento.\nEle acaba em: %s %s e %s %s",
+    ["game_progress"] = "There is a game in progress.\nIt ends in: %s %s e %s %s",
 
-    ["waiting"] = "Esperando",
-    ["cancelled"] = "O jogo foi cancelado devido a não haver jogadores em uma equipe.",
+    ["waiting"] = "Waiting",
+    ["cancelled"] = "The game was canceled due to no players on a team.",
 
-    ["starting"] = "\nO jogo começa em %s %s e %s %s",
-    ["minute"] = "minuto",
-    ["minutes"] = "minutos",
-    ["second"] = "segundo",
-    ["seconds"] = "segundos",
+    ["starting"] = "\nThe game starts in %s %s e %s %s",
+    ["minute"] = "minute",
+    ["minutes"] = "minute",
+    ["second"] = "second",
+    ["seconds"] = "seconds",
 
-    ["left_queue"] = "Você saiu da fila, após ir para longe.",
+    ["left_queue"] = "You got out of line, after going away.",
 
-    ["steal_ball"] = "Pressione [~b~E~s~] para roubar a bola",
-    ["pickup_ball"] = "Pressione [~b~E~s~] para pegar a bola",
-    ["ball_info"] = "Pressione ~INPUT_VEH_DUCK~ para largar a bola\nPressione ~INPUT_ATTACK~ para arremessar a bola\nPressione ~INPUT_DETONATE~ para encestar",
+    ["steal_ball"] = "Presse [~b~E~s~] to steal the ball",
+    ["pickup_ball"] = "Press [~b~E~s~] to catch the ball",
+    ["ball_info"] = "Pressu ~INPUT_VEH_DUCK~ to drop the ball\nPress ~INPUT_ATTACK~ to throw the ball\nPress ~INPUT_DETONATE~ to score",
 
-    ["goal"] = "Bom arremesso! Você marcou um ponto para o seu time.",
-    ["better_luck"] = "Você não pegou a bola",
-    ["better_luck_dunk"] = "Você não encestou - Mais sorte da próxima vez",
+    ["goal"] = "Good pitch! You scored a point for your team.",
+    ["better_luck"] = "You didn't catch the ball",
+    ["better_luck_dunk"] = "You didn't basket - Better luck next time",
 
-    ["you_lost"] = "Seu time ~r~perdeu~s~. Mais sorte da próxima vez!",
-    ["you_won"] = "Seu time ~g~venceu~s~!",
-    ["tie"] = "Seu time ~y~empatou~s~ com a outra equipe.",
+    ["you_lost"] = "Your team ~r~lost~s~. Better luck next time!",
+    ["you_won"] = "Your team ~g~ won~s~!",
+    ["tie"] = "Your team ~y~ drew~s~ with the other team.",
 }

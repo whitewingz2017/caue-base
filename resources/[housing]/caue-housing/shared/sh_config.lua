@@ -76,7 +76,7 @@ Housing.interactionlist = {
         ["name"] = "inventory_offset",
         ["event"] = {
             ["generalUse"] = {"",""},
-            ["housingMain"] = {"para abrir armário.","housing:inventory"},
+            ["housingMain"] = {"to open closet.","housing:inventory"},
             ["housingSecondary"] = {"",""},
         }
     },
@@ -85,15 +85,15 @@ Housing.interactionlist = {
         ["event"] = {
             ["generalUse"] = {"",""},
             ["housingMain"] = {"",""},
-            ["housingMain"] = {"para vêr roupas","raid_clothes:outfits"},
-			["housingSecondary"] = {"para trocar de personagem","housing:charLogout"},
+            ["housingMain"] = {"to see clothes","raid_clothes:outfits"},
+			["housingSecondary"] = {"to change character","housing:charLogout"},
         }
     },
     [3] = {
         ["name"] = "backdoor_offset_internal",
         ["event"] = {
             ["generalUse"] = {"",""},
-            ["housingMain"] = {"para sair","housing:internalBackdoor"},
+            ["housingMain"] = {"to leave","housing:internalBackdoor"},
             ["housingSecondary"] = {"",""},
         }
     },
@@ -101,7 +101,7 @@ Housing.interactionlist = {
         ["name"] = "internal_exit",
         ["event"] = {
             ["generalUse"] = {"",""},
-            ["housingMain"] = {"para sair","housing:exitFrontDoor"},
+            ["housingMain"] = {"to leave","housing:exitFrontDoor"},
             ["housingSecondary"] = {"",""},
         }
     },
@@ -109,7 +109,7 @@ Housing.interactionlist = {
         ["name"] = "crafting_offset",
         ["event"] = {
             ["generalUse"] = {"",""},
-            ["housingMain"] = {"para craftar.","housing:crafting"},
+            ["housingMain"] = {"to craft.","housing:crafting"},
             ["housingSecondary"] = {"",""},
         }
     }

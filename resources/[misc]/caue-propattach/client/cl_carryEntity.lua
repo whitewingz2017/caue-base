@@ -1,6 +1,6 @@
 RegisterNetEvent("carryEntity")
 AddEventHandler("carryEntity", function(Context,pEntity)
-    TriggerEvent("DoShortHudText", "Pressione E para jogar no chão.")
+    TriggerEvent("DoShortHudText", "Press E to play on the floor.")
 
     -- we can add offsets here later to specific models, right now this is for bikes.
     AttachEntityToEntity(pEntity, PlayerPedId(), 28422, 0.0, 0.3, 0.2, 0.0, 0.0, 90.0, 1, 1, 0, 1, 0, 1)
@@ -23,7 +23,7 @@ AddEventHandler("carryEntity", function(Context,pEntity)
             CleanEntityAttach(pEntity)
         end
         if CarryTime > (1000*60) then
-            TriggerEvent("DoShortHudText","Você se cansou de carregar o objeto :(")
+            TriggerEvent("DoShortHudText","You got tired of carrying the object :(")
             CleanEntityAttach(pEntity)
         end
     end

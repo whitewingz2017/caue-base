@@ -170,7 +170,7 @@ RPC.register("caue-clothes:purchase", function(src, price, tax, paymentType)
             return false
         end
 
-        TriggerClientEvent("caue-phone:notification", src, "fas fa-university", "Banco", "Você transferiu $" .. price .. " para a conta de ID: " .. 13, 3000)
+        TriggerClientEvent("caue-phone:notification", src, "fas fa-university", "Banco", "you transferred $" .. price .. " to the account ID: " .. 13, 3000)
 
         exports["caue-financials"]:addTax("Services", tax)
     end

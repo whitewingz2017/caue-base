@@ -51,7 +51,7 @@ function Housing.func.findClosestProperty()
     local zoneName = GetNameOfZone(playerCoords)
 
     if Housing.zone[zoneName] == nil then
-        return false, "Zona não encontrada", nil
+        return false, "zone not found", nil
     end
 
     local closest = nil
@@ -200,28 +200,28 @@ end
 
 function unlock(propertyID)
     if not isPropertyActive(propertyID) then
-        TriggerEvent("DoLongHudText", "propriedade inativa", 2)
+        TriggerEvent("DoLongHudText", "inactive property", 2)
         return
     end
 
     if not playerInRangeOfProperty(propertyID) then
-        TriggerEvent("DoLongHudText", "Distante da sua propriedade", 2)
+        TriggerEvent("DoLongHudText", "Property not in range", 2)
         return
     end
 
     if Housing.currentKeys == nil and Housing.currentOwned == nil then
-        TriggerEvent("DoLongHudText", "Você não possui as chaves da propriedade" , 2)
+        TriggerEvent("DoLongHudText", "You do not have the property keys" , 2)
         return
     end
 
     if Housing.currentKeys[propertyID] == nil and Housing.currentOwned[propertyID] == nil then
-        TriggerEvent("DoLongHudText", "Você não possui as chaves da propriedade" , 2)
+        TriggerEvent("DoLongHudText", "You do not have the property keys" , 2)
         return
     end
 
     if Housing.currentHousingLocks[propertyID] == nil then
         if not lockdownCheck(propertyID) then
-            TriggerEvent("DoLongHudText","A propriedade está bloqueada, você não pode mudar as fechaduras.",2)
+            TriggerEvent("DoLongHudText","The property is locked, you cannot change the locks.",2)
             return
         end
 
@@ -240,36 +240,36 @@ function unlock(propertyID)
             Housing.currentHousingLocks = currentHousingLocks
         end
 
-        TriggerEvent("DoLongHudText","Propriedade destrancada.")
+        TriggerEvent("DoLongHudText","Unlocked property.")
     else
-        TriggerEvent("DoLongHudText", "A propriedade já está destrancada.", 2)
+        TriggerEvent("DoLongHudText", "The property is already unlocked.", 2)
     end
 end
 
 function lock(propertyID)
     if not isPropertyActive(propertyID) then
-        TriggerEvent("DoLongHudText", "propriedade inativa", 2)
+        TriggerEvent("DoLongHudText", "Property inactive", 2)
         return
     end
 
     if not playerInRangeOfProperty(propertyID) then
-        TriggerEvent("DoLongHudText", "Distante da sua propriedade", 2)
+        TriggerEvent("DoLongHudText", "Property not in range", 2)
         return
     end
 
     if Housing.currentKeys == nil and Housing.currentOwned == nil then
-        TriggerEvent("DoLongHudText", "Você não possui as chaves da propriedade" , 2)
+        TriggerEvent("DoLongHudText", "You do not have the property keys" , 2)
         return
     end
 
     if Housing.currentKeys[propertyID] == nil and Housing.currentOwned[propertyID] == nil then
-        TriggerEvent("DoLongHudText", "Você não possui as chaves da propriedade" , 2)
+        TriggerEvent("DoLongHudText", "You do not have the property keys" , 2)
         return
     end
 
     if Housing.currentHousingLocks[propertyID] == false then
         if not lockdownCheck(propertyID) then
-            TriggerEvent("DoLongHudText", "A propriedade está bloqueada, você não pode mudar as fechaduras.", 2)
+            TriggerEvent("DoLongHudText", "The property is locked, you cannot change the locks.", 2)
             return
         end
 
@@ -279,9 +279,9 @@ function lock(propertyID)
             Housing.currentHousingLocks = currentHousingLocks
         end
 
-        TriggerEvent("DoLongHudText", "Propriedade trancada.")
+        TriggerEvent("DoLongHudText", "Property locked.")
     else
-        TriggerEvent("DoLongHudText", "A propriedade já está trancada.", 2)
+        TriggerEvent("DoLongHudText", "The property is already locked.", 2)
     end
 end
 
@@ -370,7 +370,7 @@ AddEventHandler('housing:toggleClosestLock', function()
         local isComplete, _propertyId, dist, zone = Housing.func.findClosestProperty()
 
         if not isComplete then
-            TriggerEvent("DoLongHudText", "Muito distante da propriedade.", 2)
+            TriggerEvent("DoLongHudText", "Too far from the property.", 2)
             return
         end
 
@@ -378,7 +378,7 @@ AddEventHandler('housing:toggleClosestLock', function()
     end
 
     if Housing.currentOwned[propertyId] == nil and Housing.currentKeys[propertyId] == nil then
-        TriggerEvent("DoLongHudText", "Você não possui essa propriedade.", 2)
+        TriggerEvent("DoLongHudText", "You do not own this property.", 2)
         return
     end
 

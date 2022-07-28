@@ -30,17 +30,17 @@ local currentTax = 0
 
 local MenuData = {
     clothing_shop = {
-        text = "Comprar Roupas",
+        text = "Buy Cothes",
         displayName = "Clothing Store",
         basePrice = 5
     },
     barber_shop = {
-        text = "Cortar o Cabelo",
+        text = "Have a haircut",
         displayName = "Barber Shop",
         basePrice = 5
     },
     tattoo_shop = {
-        text = "Rabiscar Você Mesmo",
+        text = "Tatto urself",
         displayName = "Tattoo Parlor",
         basePrice = 5
     }
@@ -560,7 +560,7 @@ function OpenMenu(name, pPriceText, pPrice)
         EnableGUI(true, name, pPriceText, pPrice)
         TriggerEvent("inmenu", true)
     else
-        TriggerEvent("DoLongHudText", "Você não é bem vindo aqui!");
+        TriggerEvent("DoLongHudText", "you are not welcome here!");
     end
 end
 

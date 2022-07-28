@@ -1,8 +1,8 @@
 MenuData = {
     property_check = {
         {
-            title = "Propriedade",
-            description = "Propriedade perdida",
+            title = "Property",
+            description = "Lost Property",
             children = {
                 { title = "Yes", action = "caue-housing:handler", params = { forfeit = true, type = "forfeit"} },
                 { title = "No", action = "caue-housing:handler", params = { forfeit = false, type = "forfeit" } },
@@ -12,7 +12,7 @@ MenuData = {
     crafting_check = {
         {
             title = "Crafting",
-            description = "Remover Inventário",
+            description = "Remove Inventory",
             children = {
                 { title = "Yes", action = "caue-housing:handler", params = { remove = true, type = "removeInv"} },
                 { title = "No", action = "caue-housing:handler", params = { remove = false, type = "removeInv" } },
@@ -21,8 +21,8 @@ MenuData = {
     },
     inventory_check = {
         {
-            title = "Inventário",
-            description = "Remover Craft",
+            title = "Inventory",
+            description = "Remove Craft",
             children = {
                 { title = "Yes", action = "caue-housing:handler", params = { remove = true, type = "removeCraft"} },
                 { title = "No", action = "caue-housing:handler", params = { remove = false, type = "removeCraft" } },

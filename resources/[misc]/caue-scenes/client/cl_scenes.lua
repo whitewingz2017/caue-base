@@ -35,7 +35,7 @@ function ToggleCreationLaser(data)
     if creationLaser then
         CreateThread(function()
             while creationLaser do
-                local hit, coords = DrawLaser("APERTE ~g~E~w~ PARA COLOCAR\nAPERTE ~g~G~w~ PARA EDITAR", {r = 2, g = 241, b = 181, a = 200})
+                local hit, coords = DrawLaser("OPEN ~g~E~w~ TO PUT\nOPEN ~g~G~w~ TO EDIT", {r = 2, g = 241, b = 181, a = 200})
 
                 data.coords = coords
                 DrawScene(data)
@@ -45,7 +45,7 @@ function ToggleCreationLaser(data)
                     if hit then
                         TriggerServerEvent("caue-scenes:server:CreateScene", data)
                     else
-                        TriggerEvent("DoLongHudText", "Laser não atingiu nada.", 2)
+                        TriggerEvent("DoLongHudText", "Laser didn't hit anything.", 2)
                     end
                 elseif IsControlJustReleased(0, 47) then
                     creationLaser = false
@@ -65,14 +65,14 @@ function ToggleDeletionLaser()
     if deletionLaser then
         CreateThread(function()
             while deletionLaser do
-                local hit, coords = DrawLaser("APERTE ~r~E~w~ PARA EXCLUIR\nAPERTE ~r~G~w~ PARA CANCELAR", {r = 255, g = 0, b = 0, a = 200})
+                local hit, coords = DrawLaser("OPEN ~g~E~w~ TO PUT\nOPEN ~g~G~w~ TO EDIT", {r = 255, g = 0, b = 0, a = 200})
 
                 if IsControlJustReleased(0, 38) then
                     deletionLaser = false
                     if hit then
                         DeleteScene(coords)
                     else
-                        TriggerEvent("DoLongHudText", "Laser não atingiu nada.", 2)
+                        TriggerEvent("DoLongHudText", "Laser didn't hit anything.", 2)
                     end
                 elseif IsControlJustReleased(0, 47) then
                     deletionLaser = false
@@ -97,10 +97,10 @@ function DeleteScene(coords)
     end
 
     if closestScene then
-        TriggerEvent("DoLongHudText", "Cena deletada!")
+        TriggerEvent("DoLongHudText", "Deleted scene!")
         TriggerServerEvent("caue-scenes:server:DeleteScene", closestScene)
     else
-        TriggerEvent("DoLongHudText", "Nenhuma cena estava perto o suficiente.", 2)
+        TriggerEvent("DoLongHudText", "No scene was close enough.", 2)
     end
 end
 

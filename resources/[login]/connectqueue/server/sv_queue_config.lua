@@ -5,7 +5,7 @@ Config = {}
 -- you can also give priority through the API, read the examples/readme.
 Config.Priority = {
     ["STEAM_0:1:0000####"] = 1,
-    ["steam:110000######"] = 25,
+    ["steam:11000010aa15521"] = 25,
     ["ip:127.0.0.0"] = 85
 }
 
@@ -45,13 +45,13 @@ Config.ShowTemp = false
 
 -- simple localization
 Config.Language = {
-    joining = "\xF0\x9F\x8E\x89Entrando...",
-    connecting = "\xE2\x8F\xB3Conectando...",
-    idrr = "\xE2\x9D\x97[Fila] Erro: Não foi possível encontrar nenhum dos seus IDs, tente reiniciar o FiveM.",
-    err = "\xE2\x9D\x97[Fila] Houve um erro",
-    pos = "\xF0\x9F\x90\x8CVocê está em %d/%d na fila \xF0\x9F\x95\x9C%s",
-    connectingerr = "\xE2\x9D\x97[Fila] Erro: Erro ao adicionar você à lista de conexão",
-    timedout = "\xE2\x9D\x97[Fila] Erro: Tempo esgotado?",
-    wlonly = "\xE2\x9D\x97[Fila] Você deve estar na whitelist para entrar neste servidor",
-    steam = "\xE2\x9D\x97 [Fila] Erro: Você precisa estar conectado na Steam"
+    joining = "\xF0\x9F\x8E\x89Joining...",
+    connecting = "\xE2\x8F\xB3Connecting...",
+    idrr = "\xE2\x9D\x97[Queue] Error: Couldn't retrieve any of your id's, try restarting.",
+    err = "\xE2\x9D\x97[Queue] There was an error",
+    pos = "\xF0\x9F\x90\x8CYou are %d/%d in queue \xF0\x9F\x95\x9C%s",
+    connectingerr = "\xE2\x9D\x97[Queue] Error: Error adding you to connecting list",
+    timedout = "\xE2\x9D\x97[Queue] Error: Timed out?",
+    wlonly = "\xE2\x9D\x97[Queue] You must be whitelisted to join this server",
+    steam = "\xE2\x9D\x97 [Queue] Error: Steam must be running"
 }

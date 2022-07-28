@@ -785,7 +785,7 @@ AddEventHandler("caue-tacoshop:deliveryStart", function()
 
     CreateBlip(location)
 
-    TriggerEvent("DoLongHudText", "Nova entrega em " .. location.street .. ", foi marcada no seu GPS!")
+    TriggerEvent("DoLongHudText", "New delivery in " .. location.street .. ", was marked on your GPS!")
 
     while true do
 		Citizen.Wait(1)
@@ -794,7 +794,7 @@ AddEventHandler("caue-tacoshop:deliveryStart", function()
 		local distance = #(plyCoords - location["pos"]["xyz"])
 
 		if distance < 25.0 then
-			ShowFloatingHelpNotification("~INPUT_FRONTEND_RB~ Ponto de entrega", location["pos"]["xyz"])
+			ShowFloatingHelpNotification("~INPUT_FRONTEND_RB~ Delivery point", location["pos"]["xyz"])
 
 			if IsControlJustReleased(0, 38) and distance < 2.0 then
 				break
@@ -842,7 +842,7 @@ AddEventHandler("caue-tacoshop:deliveryEnd", function()
 
     DeleteBlip()
 
-    TriggerEvent("DoLongHudText", "Entregas encerradas")
+    TriggerEvent("DoLongHudText", "Deliveries closed")
 end)
 
 --[[
@@ -862,7 +862,7 @@ Citizen.CreateThread(function()
         event = "caue-tacoshop:deliveryStation",
         id = "tacoshop_deliveryStart",
         icon = "motorcycle",
-        label = "Iniciar Entregas",
+        label = "Start Deliveries",
         parameters = { stationId = 1 }
     }}, { distance = { radius = 3.5 }, isEnabled = function() return rusticosotemideiasmerdasesseserverezap == 0 end })
 
@@ -870,7 +870,7 @@ Citizen.CreateThread(function()
         event = "caue-tacoshop:deliveryStation",
         id = "tacoshop_deliveryStop",
         icon = "motorcycle",
-        label = "Cancelar Entregas",
+        label = "Cancel Deliveries",
         parameters = { stationId = 2 }
     }}, { distance = { radius = 3.5 }, isEnabled = function() return rusticosotemideiasmerdasesseserverezap > 0 end })
 end)

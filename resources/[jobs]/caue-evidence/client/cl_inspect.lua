@@ -157,7 +157,7 @@ RegisterCommand("-collectEvidence", function ()
         timer = 60000
     end
 
-    local finished = exports["caue-taskbar"]:taskBar(timer, "Pegando Evidencia", "What?", true)
+    local finished = exports["caue-taskbar"]:taskBar(timer, "Pasting Evidence", "What?", true)
 
     if finished ~= 100 then return end
 
@@ -165,7 +165,7 @@ RegisterCommand("-collectEvidence", function ()
 end)
 
 Citizen.CreateThread(function ()
-    exports["caue-keybinds"]:registerKeyMapping("", "Evidence", "Pegar Evidencia", "+collectEvidence", "-collectEvidence", "E")
+    exports["caue-keybinds"]:registerKeyMapping("", "Evidence", "Paste Evidence", "+collectEvidence", "-collectEvidence", "E")
 
     while true do
         local idle = 1000

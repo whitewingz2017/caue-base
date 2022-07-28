@@ -46,7 +46,7 @@ AddEventHandler("caue-npcs:ped:keeper", function(pArgs, pEntity, pEntityFlags, p
     if pArgs[1] == "5" then
         local hasLicense = RPC.execute("caue-licenses:hasLicense", "weapon")
         if not hasLicense then
-            TriggerEvent("DoLongHudText", "Você não tem permissão para falar comigo.", 2)
+            TriggerEvent("DoLongHudText", "You are not allowed to talk to me..", 2)
             return
         end
     end

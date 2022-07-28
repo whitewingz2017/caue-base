@@ -271,10 +271,10 @@ function OfferStart(ped, item, price, labels, amount)
             if ped ~= 0 and not IsPedDeadOrDying(ped) and not IsPedInAnyVehicle(ped) then
 			    if not ShowingNotification then
                     ShowingNotification = true
-                    exports["caue-interaction"]:showInteraction("[N] Aceitar [L] Negociar [G] Recusar")
+                    exports["caue-interaction"]:showInteraction("[N] To accept [L] Negotiate [G] Refuse")
                 end
 			    local playerX, playerY, playerZ = table.unpack(GetEntityCoords(ped))
-			    ShowFloatingHelpNotification(("Vou te dar " .. price .. "$ por " .. amount .. " "  .. labels), vector3(playerX, playerY, playerZ))
+			    ShowFloatingHelpNotification(("I'll give you " .. price .. "$ by " .. amount .. " "  .. labels), vector3(playerX, playerY, playerZ))
 		    end
 
             if bargain == true and IsControlJustPressed(1, 182) and GetGameTimer() > SellCooldown then
@@ -456,11 +456,11 @@ AddEventHandler("caue-drugs:startSell", function()
     if commandsell == false then
     	commandsell = true
     	selldrugs = true
-    	TriggerEvent("DoLongHudText", "Você começou a vender.")
+    	TriggerEvent("DoLongHudText", "You started selling.")
     else
 		if thief == false and selling == false then
 			oldped = ped
-			TriggerEvent("DoLongHudText", "Você parou de vender, aguarde 1 minuto para começar novamente")
+			TriggerEvent("DoLongHudText", "You stopped selling, wait 1 minute to start again")
 			selldrugs = false
 			selling = false
 			sell = false
@@ -475,7 +475,7 @@ AddEventHandler("caue-drugs:startSell", function()
 			commandsell = false
 		    return
 		else
-			TriggerEvent("DoLongHudText", "Você não pode parar de vender durante esse evento.")
+			TriggerEvent("DoLongHudText", "You cannot stop selling during this event.")
 		end
 	end
 end)

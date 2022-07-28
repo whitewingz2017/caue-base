@@ -44,6 +44,6 @@ AddEventHandler("caue-signin:duty", function(job)
     if permission then
         TriggerEvent("caue-jobs:changeJob", job, src)
     else
-        TriggerClientEvent("DoLongHudText", src, "Você não pode fazer isso", 2)
+        TriggerClientEvent("DoLongHudText", src, "You can not do that", 2)
     end
 end)

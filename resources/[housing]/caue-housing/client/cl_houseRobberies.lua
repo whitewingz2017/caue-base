@@ -62,7 +62,7 @@ function attemptToLockPickHouse(skipPicking)
     end
 
     if not canRobProperty() then
-        TriggerEvent("DoLongHudText", "Não acho que é uma boa escolha mexer por aqui tão cedo assim, pode dar merda", 2)
+        TriggerEvent("DoLongHudText", "I don't think it's a good choice to mess around here this early, it can go to shit", 2)
         return
     end
 
@@ -78,7 +78,7 @@ function attemptToLockPickHouse(skipPicking)
             lockpickDoor()
             TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 3.0, "lockpick", 0.4)
 
-            local finished = exports["caue-taskbar"]:taskBar(math.random(5000, 10000), "Arrombando")
+            local finished = exports["caue-taskbar"]:taskBar(math.random(5000, 10000), "Breaking in")
 
             local failed = false
             if math.random(100) < 30 then
@@ -108,7 +108,7 @@ function attemptToLockPickHouse(skipPicking)
             Housing.alarm = alarm
             pickedToOpen = true
         else
-            TriggerEvent("DoLongHudText","Você pode mexer na porta.",2)
+            TriggerEvent("DoLongHudText","You can move the door.",2)
             return
         end
     end
@@ -224,7 +224,7 @@ function displayPickup(force,itemName)
         if type(itemName) == "string" then
             exports["caue-interaction"]:showInteraction("[E] Take Object")
         else
-            exports["caue-interaction"]:showInteraction("[E] Procurar algum pertence.")
+            exports["caue-interaction"]:showInteraction("[E] look for some belonging.")
         end
     end
 end
@@ -243,7 +243,7 @@ function interactRob()
     if type(item) == "string" then
         local weight = exports["caue-inventory"]:getCurrentWeight()
         if weight + 200 >= 250 then
-            TriggerEvent("DoLongHudText","Você está carregando muito peso.",2)
+            TriggerEvent("DoLongHudText","You are carrying too much weight.",2)
             return
         end
     end
@@ -279,7 +279,7 @@ function interactRob()
         ClearPedTasks(PlayerPedId())
     else
         TriggerEvent("animation:PlayAnimation","search")
-        local finished = exports["caue-taskbar"]:taskBar(15000,"Procurando")
+        local finished = exports["caue-taskbar"]:taskBar(15000,"Searching")
         ClearPedTasks(PlayerPedId())
         if finished ~= 100 then
             return

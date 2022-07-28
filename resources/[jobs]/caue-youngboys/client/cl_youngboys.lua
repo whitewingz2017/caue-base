@@ -35,12 +35,12 @@ AddEventHandler("caue-youngboys:stationPrompt", function(pParameters, pEntity, p
         local input = exports["caue-input"]:showInput({
             {
                 icon = "dollar-sign",
-                label = "Valor",
+                label = "Cost",
                 name = "cost",
             },
             {
                 icon = "pencil-alt",
-                label = "Comentario",
+                label = "Comment",
                 name = "comment",
             },
         })
@@ -65,7 +65,7 @@ AddEventHandler("caue-youngboys:stationPrompt", function(pParameters, pEntity, p
         local priceWithTax = RPC.execute("caue-financials:priceWithTax", activeRegister.cost, "Goods")
         local acceptContext = {{
             title = "Aceitar Comprar",
-            description = "$" .. priceWithTax.total .. " Incl. " .. priceWithTax.porcentage .. "% taxa | " .. activeRegister.comment,
+            description = "$" .. priceWithTax.total .. " Incl. " .. priceWithTax.porcentage .. "% tax | " .. activeRegister.comment,
             action = "caue-youngboys:finishPurchasePrompt",
             params = {cost = activeRegister.cost, comment = activeRegister.comment, registerId = pParameters.registerId, charger = activeRegister.charger, tax = priceWithTax.tax}
         }}
@@ -164,7 +164,7 @@ Citizen.CreateThread(function()
         event = "caue-youngboys:stationPrompt",
         id = "youngboys_sign",
         icon = "pager",
-        label = "Entrar/Sair de serviço",
+        label = "Sign in or sign out",
         parameters = { stationId = 1 }
     }}, { distance = { radius = 3.5 }, isEnabled = isInGroup })
 
@@ -172,7 +172,7 @@ Citizen.CreateThread(function()
         event = "caue-youngboys:stationPrompt",
         id = "youngboys_storage",
         icon = "box-open",
-        label = "Estoque",
+        label = "Inventory",
         parameters = { stationId = 2 }
     }}, { distance = { radius = 3.5 }, isEnabled = isChargeActive })
 
@@ -186,7 +186,7 @@ Citizen.CreateThread(function()
         event = "caue-youngboys:stationPrompt",
         id = "youngboys_register1_worker",
         icon = "credit-card",
-        label = "Cobrar",
+        label = "Demand",
         parameters = { stationId = 3, registerId = 1 }
     }}, { distance = { radius = 3.5 } , isEnabled = isChargeActive })
 
@@ -194,7 +194,7 @@ Citizen.CreateThread(function()
         event = "caue-youngboys:stationPrompt",
         id = "youngboys_register1_customer",
         icon = "credit-card",
-        label = "Pagar",
+        label = "Pay",
         parameters = { stationId = 4, registerId = 1 }
     }}, { distance = { radius = 3.5 } , isEnabled = function() return not isChargeActive() end })
 
@@ -208,7 +208,7 @@ Citizen.CreateThread(function()
         event = "caue-youngboys:stationPrompt",
         id = "youngboys_trays1",
         icon = "hand-holding",
-        label = "Abrir",
+        label = "Open",
         parameters = { stationId = 5, registerId = 1 }
     }}, { distance = { radius = 6.0 } })
 end)

@@ -26,7 +26,7 @@ const app = Vue.createApp({
 						color: "red-5",
 						textColor: "white",
 						icon: "warning",
-						message: "Você precisa preencher tudo."
+						message: "you need to fill it all."
 					})
 				}
 				else {
@@ -56,7 +56,7 @@ const app = Vue.createApp({
 			onReset() {
 				text.value = null
 				color.value = "#ffffff"
-				expiration.value = "1 hora"
+				expiration.value = "1 hour"
 				viewdistance.value = 5
 				fontsize.value = 0.3
 				fontstyle.value = 1

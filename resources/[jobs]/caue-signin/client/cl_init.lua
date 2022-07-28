@@ -26,10 +26,10 @@ MenuData = {
     lspd_sign_in = {
         {
             title = "Police Officer",
-            description = "Entrar ou Sair de serviço",
+            description = "Sign in or sign out",
             children = {
-                { title = "Entrar", action = "caue-signin:handler", params = { sign_in = true, job = "police" } },
-                { title = "Sair", action = "caue-signin:handler", params = { sign_off = true } }
+                { title = "Sign In", action = "caue-signin:handler", params = { sign_in = true, job = "police" } },
+                { title = "Sign Out", action = "caue-signin:handler", params = { sign_off = true } }
             }
         },
     },
@@ -110,70 +110,70 @@ MenuData = {
     taco_shop_sign_in = {
         {
             title = "Taco Shop",
-            description = "Entrar ou Sair de serviço",
+            description = "Sign in or sign out",
             children = {
-                { title = "Entrar", action = "caue-signin:handler", params = { sign_in = true, job = "taco_shop" } },
-                { title = "Sair", action = "caue-signin:handler", params = { sign_off = true } },
+                { title = "Sign In", action = "caue-signin:handler", params = { sign_in = true, job = "taco_shop" } },
+                { title = "Sign Out", action = "caue-signin:handler", params = { sign_off = true } },
             }
         },
     },
     vanilla_unicorn_sign_in = {
         {
             title = "Vanilla Unicorn",
-            description = "Entrar ou Sair de serviço",
+            description = "Sign in or sign out",
             children = {
-                { title = "Entrar", action = "caue-signin:handler", params = { sign_in = true, job = "vanilla_unicorn" } },
-                { title = "Sair", action = "caue-signin:handler", params = { sign_off = true } },
+                { title = "Sign In", action = "caue-signin:handler", params = { sign_in = true, job = "vanilla_unicorn" } },
+                { title = "Sign Out", action = "caue-signin:handler", params = { sign_off = true } },
             }
         },
     },
     yb14_sign_in = {
         {
             title = "Young Boys Drip",
-            description = "Entrar ou Sair de serviço",
+            description = "Sign in or sign out",
             children = {
-                { title = "Entrar", action = "caue-signin:handler", params = { sign_in = true, job = "yb14" } },
-                { title = "Sair", action = "caue-signin:handler", params = { sign_off = true } },
+                { title = "Sign In", action = "caue-signin:handler", params = { sign_in = true, job = "yb14" } },
+                { title = "Sign Out", action = "caue-signin:handler", params = { sign_off = true } },
             }
         },
     },
     cid_sign_in = {
         {
             title = "Investigador Criminal",
-            description = "Entrar ou Sair de serviço",
+            description = "Sign in or sign out",
             children = {
-                { title = "Entrar", action = "caue-signin:handler", params = { sign_in = true, job = "cid" } },
-                { title = "Sair", action = "caue-signin:handler", params = { sign_off = true } }
+                { title = "Sign In", action = "caue-signin:handler", params = { sign_in = true, job = "cid" } },
+                { title = "Sign Out", action = "caue-signin:handler", params = { sign_off = true } }
             }
         },
     },
     bennys_sign_in = {
         {
             title = "Benny's Original Motor Works",
-            description = "Entrar ou Sair de serviço",
+            description = "Sign in or sign out",
             children = {
-                { title = "Entrar", action = "caue-signin:handler", params = { sign_in = true, job = "bennys" } },
-                { title = "Sair", action = "caue-signin:handler", params = { sign_off = true } },
+                { title = "Sign In", action = "caue-signin:handler", params = { sign_in = true, job = "bennys" } },
+                { title = "Sign Out", action = "caue-signin:handler", params = { sign_off = true } },
             }
         },
     },
     fire_department_sign_in = {
         {
             title = "Los Santos Fire Department",
-            description = "Entrar ou Sair de serviço",
+            description = "Sign in or sign out",
             children = {
-                { title = "Entrar", action = "caue-signin:handler", params = { sign_in = true, job = "fire_department" } },
-                { title = "Sair", action = "caue-signin:handler", params = { sign_off = true } },
+                { title = "Sign In", action = "caue-signin:handler", params = { sign_in = true, job = "fire_department" } },
+                { title = "Sign Out", action = "caue-signin:handler", params = { sign_off = true } },
             }
         },
     },
     drusillas_sign_in = {
         {
             title = "Drusilla's Restaurant",
-            description = "Entrar ou Sair de serviço",
+            description = "Sign in or sign out",
             children = {
-                { title = "Entrar", action = "caue-signin:handler", params = { sign_in = true, job = "drusillas" } },
-                { title = "Sair", action = "caue-signin:handler", params = { sign_off = true } },
+                { title = "Sign In", action = "caue-signin:handler", params = { sign_in = true, job = "drusillas" } },
+                { title = "Sign Out", action = "caue-signin:handler", params = { sign_off = true } },
             }
         },
     },

@@ -23,10 +23,10 @@ local disablingloop = false
 local lastDamageTaken = {}
 
 local InjuryList = {
-    [-1569615261] = { "WEAPON_UNARMED", "Marcas de soco", minor = true },
-    [-100946242] = { "WEAPON_ANIMAL", "Mordida de animal", blunt = true },
-    [148160082] = { "WEAPON_COUGAR", "Mordida de animal", blunt = true },
-    [-1716189206] = { "WEAPON_KNIFE", "Ferida de facada", violent = true },
+    [-1569615261] = { "WEAPON_UNARMED", "Fist Marks", minor = true },
+    [-100946242] = { "WEAPON_ANIMAL", "Animal Bites and Claws", blunt = true },
+    [148160082] = { "WEAPON_COUGAR", "Animal Bites and Claws", blunt = true },
+    [-1716189206] = { "WEAPON_KNIFE", "Knife Wounds", violent = true },
     [1737195953] = { "WEAPON_NIGHTSTICK", "Blunt Object (Metal)", blunt = true },
     [1317494643] = { "WEAPON_HAMMER", "Small Blunt Object (Metal)", blunt = true },
     [-1024456158] = { "WEAPON_BAT", "Large Blunt Object", blunt = true },
@@ -355,8 +355,8 @@ AddEventHandler("DamageEvents:EntityDamaged", function(victim, attacker, pWeapon
             TriggerEvent("evidence:bleeding",true)
             TriggerServerEvent("caue-death:characterKill")
             thecount = 300
-            deathText = ("~w~VOCÊ MORREU (~r~CK~w~)! Aguarde ~r~%d ~w~segundos")
-            respawnText = ("~w~Segure ~r~E ~w~(%d) ~w~para voltar à tela de personagens")
+            deathText = ("~w~You Died (~r~CK~w~)! wait ~r~%d ~w~seconds")
+            respawnText = ("~w~Hold ~r~E ~w~(%d) ~w~to respawn")
             ClearPedTasksImmediately(playerPed)
             loadAnimDict("dead")
             TaskPlayAnim(playerPed, "dead", "dead_d", 8.0, -8, -1, 1, 0, 0, 0, 0)
@@ -371,14 +371,14 @@ AddEventHandler("doTimer", function()
     TriggerEvent("caue-death:dead", true)
 
     if isMinor or isBlunt then
-        deathText = ("Inconsciente: ~r~%d~w~ segundos restantes")
-        respawnText = ("~W~Segure ~r~E ~w~ (%d) ~w~ para ~r~levantar~w~")
+        deathText = ("Unconscious: ~r~%d~w~ seconds left")
+        respawnText = ("~W~Hold ~r~E ~w~ (%d) ~w~ to  ~r~getup~w~")
     elseif characterKill then
-        deathText = ("~w~VOCÊ MORREU (~r~CK~w~)! Aguarde ~r~%d ~w~segundos")
-        respawnText = ("~w~Segure ~r~E ~w~(%d) ~w~para voltar à tela de personagens")
+        deathText = ("~w~You died (~r~CK~w~)! Hold ~r~%d ~w~seconds")
+        respawnText = ("~w~Hold ~r~E ~w~(%d) ~w~to respawn")
     else
-        deathText = ("~w~Você está ferido! Aguarde ~r~%d ~w~segundos para chamar a assistência médica (~g~$500~w~)")
-        respawnText = ("~w~Segure ~r~E ~w~(%d) ~w~para chamar a assistência médica")
+        deathText = ("~w~You're hurt! Hold ~r~%d ~w~seconds to call for medical assistance (~g~$500~w~)")
+        respawnText = ("~w~Hold ~r~E ~w~(%d) ~w~to call for medical assistance")
     end
 
     local canPay = nil
@@ -388,7 +388,7 @@ AddEventHandler("doTimer", function()
 
         if thecount > 0 then
             if npcComing then
-                drawTxt(0.89, 1.42, 1.0,1.0,0.6, "Assistência médica a caminho", 255, 255, 255, 255)
+                drawTxt(0.89, 1.42, 1.0,1.0,0.6, "Medical assistance on the way", 255, 255, 255, 255)
             else
                 drawTxt(0.89, 1.42, 1.0,1.0,0.6, deathText:format(thecount), 255, 255, 255, 255)
             end
@@ -399,7 +399,7 @@ AddEventHandler("doTimer", function()
                     characterKill = true
                     TriggerEvent("evidence:bleeding",true)
                     TriggerServerEvent("caue-death:characterKill")
-                    respawnText = ("~w~Segure ~r~E ~w~(%d) ~w~para voltar à tela de personagens")
+                    respawnText = ("~w~Hold ~r~E ~w~(%d) ~w~to respawn")
                     ClearPedTasksImmediately(PlayerPedId())
                     loadAnimDict("dead")
                     TaskPlayAnim(PlayerPedId(), "dead", "dead_d", 8.0, -8, -1, 1, 0, 0, 0, 0)

@@ -8,13 +8,13 @@ local rusticosotemideiasmerdasesseserverezap = 0
 local deliveryBlip = 0
 
 local deliveryLocations = {
-	{ ["pos"] = vector4(26.21, -1338.9, 29.5, 159.69), ["name"] = "Innocence Boulevard Loja de Convêniencia" },
-    { ["pos"] = vector4(-40.96, -1751.23, 29.43, 356.24), ["name"] = "Grove Street Loja de Convêniencia" },
-    { ["pos"] = vector4(289.44, -1266.91, 29.45, 267.94), ["name"] = "Crusade Road Loja de Convêniencia" },
-    { ["pos"] = vector4(1211.3, -1389.02, 35.38, 359.86), ["name"] = "El Burro Loja de Convêniencia" },
-    { ["pos"] = vector4(1163.31, -314.24, 69.21, 14.01), ["name"] = "Mirror Park Loja de Convêniencia" },
-    { ["pos"] = vector4(-531.54, -1221.2, 18.46, 163.39), ["name"] = "Little Seoul Loja de Convêniencia" },
-    { ["pos"] = vector4(-820.59, -698.45, 28.07, 273.33), ["name"] = "Out Dat Ghetto Studios (Little Seoul)" },
+	{ ["pos"] = vector4(26.21, -1338.9, 29.5, 159.69), ["name"] = "Innocence Boulevard Convenience Store" },
+    { ["pos"] = vector4(-40.96, -1751.23, 29.43, 356.24), ["name"] = "Grove Street Convenience Store" },
+    { ["pos"] = vector4(289.44, -1266.91, 29.45, 267.94), ["name"] = "Crusade Road Convenience Store" },
+    { ["pos"] = vector4(1211.3, -1389.02, 35.38, 359.86), ["name"] = "El Burro Convenience Store" },
+    { ["pos"] = vector4(1163.31, -314.24, 69.21, 14.01), ["name"] = "Mirror Park Convenience Store" },
+    { ["pos"] = vector4(-531.54, -1221.2, 18.46, 163.39), ["name"] = "Little Seoul Convenience Store" },
+    { ["pos"] = vector4(-820.59, -698.45, 28.07, 273.33), ["name"] = "Out That Ghetto Studios (Little Seoul)" },
 }
 
 --[[
@@ -40,7 +40,7 @@ AddEventHandler("caue-tacoshop:supplyStart", function()
 
     CreateBlip(location)
 
-    TriggerEvent("DoLongHudText", "Entregue essa caixa de suprimentos em " .. location.name .. ", não se atrase!!")
+    TriggerEvent("DoLongHudText", "Deliver this supply box at " .. location.name .. ", do not be late!!")
 
     while true do
 		Citizen.Wait(1)
@@ -49,7 +49,7 @@ AddEventHandler("caue-tacoshop:supplyStart", function()
 		local distance = #(plyCoords - location["pos"]["xyz"])
 
 		if distance < 25.0 then
-			ShowFloatingHelpNotification("~INPUT_FRONTEND_RB~ Ponto de entrega", location["pos"]["xyz"])
+			ShowFloatingHelpNotification("~INPUT_FRONTEND_RB~ Delivery point", location["pos"]["xyz"])
 
 			if IsControlJustReleased(0, 38) and distance < 2.0 then
 				break
@@ -97,7 +97,7 @@ AddEventHandler("caue-tacoshop:supplyEnd", function()
 
     DeleteBlip()
 
-    TriggerEvent("DoLongHudText", "Volte e pegue mais suprimentos para a loja")
+    TriggerEvent("DoLongHudText", "Go back and get more supplies for the store")
 end)
 
 --[[
@@ -109,7 +109,7 @@ end)
 Citizen.CreateThread(function()
     exports["caue-eye"]:AddPeekEntryByFlag({ "isNPC" }, {{
         id = "tacoshop_supplyStart",
-        label = "Iniciar Reabastecimento",
+        label = "Start Replenishment",
         icon = "box",
         event = "caue-tacoshop:supplyStation",
         parameters = { stationId = 1 }
@@ -117,7 +117,7 @@ Citizen.CreateThread(function()
 
     exports["caue-eye"]:AddPeekEntryByFlag({ "isNPC" }, {{
         id = "tacoshop_supplyStop",
-        label = "Cancelar Reabastecimento",
+        label = "Cancel Replenishment",
         icon = "box",
         event = "caue-tacoshop:supplyStation",
         parameters = { stationId = 2 }

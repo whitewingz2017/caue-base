@@ -51,17 +51,17 @@ function timeAgo(dateParam) {
     const isThisYear = today.getFullYear() === date.getFullYear();
 
     if (seconds < 5) {
-        return 'Agora';
+        return 'Now';
     } else if (seconds < 60) {
-        return `${seconds} Segundos atrás`;
+        return `${seconds} seconds ago`;
     } else if (seconds < 90) {
-        return 'Alguns minutos atrás';
+        return 'a few minutes ago';
     } else if (minutes < 60) {
-        return `${minutes} Minutos atrás`;
+        return `${minutes} Minutes ago`;
     } else if (isToday) {
-        return getFormattedDate(date, 'Hoje');
+        return getFormattedDate(date, 'Today');
     } else if (isYesterday) {
-        return getFormattedDate(date, 'Ontem');
+        return getFormattedDate(date, 'Yesterday');
     } else if (isThisYear) {
         return getFormattedDate(date, false, true);
     }
@@ -89,8 +89,8 @@ function addNewCall(callID, timer, info, isPolice) {
     }
 
     if (info['gender']) {
-        let gender = "Homem"
-        if (info['gender'] == 0 || info['gender'] == 2) { gender = "Mulher" }
+        let gender = "Man"
+        if (info['gender'] == 0 || info['gender'] == 2) { gender = "Women" }
         DispatchItem += `<div class="call-bottom-info"><span class="fas fa-genderless"></span>${gender}</div>`
     }
 

@@ -20,7 +20,7 @@ RegisterNetEvent("caue-jail:sendToJail", function(pTarget, pTime)
 	local name = exports["caue-base"]:getChar(pTarget, "first_name") .. " " .. exports["caue-base"]:getChar(pTarget, "last_name")
 
     TriggerClientEvent("caue-jail:begInJail", pTarget, false, pTime, name, cid, date)
-    TriggerClientEvent("chatMessage", src, "DOC: " , { 33, 118, 255 }, name .. " foi preso por " .. pTime .. " meses")
+    TriggerClientEvent("chatMessage", src, "DOC: " , { 33, 118, 255 }, name .. " was arrested by " .. pTime .. " months")
 end)
 
 RegisterNetEvent("caue-jail:updateJailTime", function(pTime)

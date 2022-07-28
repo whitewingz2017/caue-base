@@ -132,14 +132,14 @@ end
 function isLocked(propertyID,hideText)
     if Housing.currentHousingLocks == nil or Housing.currentHousingLocks[propertyID] == nil then
         if not hideText then
-            TriggerEvent("DoLongHudText","Propriedade trancada",2)
+            TriggerEvent("DoLongHudText","Property locked",2)
         end
         return true
     end
 
     if Housing.currentHousingLocks[propertyID] == true then
         if not hideText then
-            TriggerEvent("DoLongHudText","Propriedade trancada",2)
+            TriggerEvent("DoLongHudText","Property locked",2)
         end
         return true
     else
@@ -288,7 +288,7 @@ function hasKey(propertyID)
     end
 
     if Housing.currentHousingLockdown[propertyID] ~= nil then
-        TriggerEvent("DoLongHudText", "Propriedade bloqueada, você não pode entrar", 2)
+        TriggerEvent("DoLongHudText", "Property locked, you cannot enter", 2)
         return false
     end
 
