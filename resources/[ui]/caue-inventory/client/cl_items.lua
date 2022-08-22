@@ -95,7 +95,7 @@ function hasEnoughOfItem(itemid, amount, shouldReturnText, checkQuality, metaInf
     if shouldReturnText == nil then shouldReturnText = true end
     if itemid == nil or itemid == 0 or amount == nil or amount == 0 then
         if shouldReturnText then
-            TriggerEvent("DoLongHudText","Parece que não tenho " .. itemid .. " comigo.",2)
+            TriggerEvent("DoLongHudText","I don't seem to have " .. itemid .. " with me.",2)
         end
         return false
     end
@@ -107,7 +107,7 @@ function hasEnoughOfItem(itemid, amount, shouldReturnText, checkQuality, metaInf
         return true
     end
     if (shouldReturnText) then
-        TriggerEvent("DoLongHudText","Eu não tenho mais isso...",2)
+        TriggerEvent("DoLongHudText","I don't have it anymore...",2)
     end
     return false
 end
@@ -122,7 +122,7 @@ function isValidUseCase(itemID, isWeapon)
             if IsEntityInAir(playerVeh) then
                 Wait(1000)
                 if IsEntityInAir(playerVeh) then
-                    TriggerEvent("DoLongHudText", "Parece que você está voando.", 2)
+                    TriggerEvent("DoLongHudText", "It looks like you're flying.", 2)
                     return false
                 end
             end
@@ -135,13 +135,13 @@ function isValidUseCase(itemID, isWeapon)
             Wait(700)
             local plyCoords = GetEntityCoords(player, 0)
             if #(targetCoords - plyCoords) > 1.3 then
-                TriggerEvent("DoLongHudText", "Não pode usar isso enquanto está nadando.", 2)
+                TriggerEvent("DoLongHudText", "Can't wear this while swimming.", 2)
                 return false
             end
         end
 
         if IsPedSwimmingUnderWater(player) then
-            TriggerEvent("DoLongHudText", "Não pode usar isso enquanto submerso.", 2)
+            TriggerEvent("DoLongHudText", "Can't use this while submerged.", 2)
             return false
         end
     end
@@ -311,7 +311,7 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
         retardCounter = retardCounter + 1
         if retardCounter > 10 and retardCounter > lastCounter + 5 then
             lastCounter = retardCounter
-            TriggerServerEvent("exploiter", "Tentou usar " .. retardCounter .. " itens em < 500ms ")
+            TriggerServerEvent("exploiter", "tried to use " .. retardCounter .. " items in < 500ms ")
         end
         return
     end
@@ -319,7 +319,7 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
     justUsed = true
 
     if (not hasEnoughOfItem(itemid,1,false)) then
-        TriggerEvent("DoLongHudText","Parece que você não tem esse item...?",2)
+        TriggerEvent("DoLongHudText","Looks like you don't have this item...?",2)
         justUsed = false
         retardCounter = 0
         lastCounter = 0
@@ -402,7 +402,7 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
     end
 
     if (itemid == "weedq") then
-        local finished = exports["caue-taskbar"]:taskBar(1000,"Enrolando baseados",false,false,playerVeh)
+        local finished = exports["caue-taskbar"]:taskBar(1000,"rolling joints",false,false,playerVeh)
         if (finished == 100) then
             CreateCraftOption("joint", 999, true)
         end
@@ -418,11 +418,11 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
 
     if (itemid == "lighter") then
         TriggerEvent("animation:PlayAnimation","lighter")
-        local finished = exports["caue-taskbar"]:taskBar(2000,"Tacando fogo",false,false,playerVeh)
+        local finished = exports["caue-taskbar"]:taskBar(2000,"setting fire",false,false,playerVeh)
     end
 
     if (itemid == "joint") then
-        local finished = exports["caue-taskbar"]:taskBar(2000,"Fumando maconha",false,false,playerVeh)
+        local finished = exports["caue-taskbar"]:taskBar(2000,"Smoking pot",false,false,playerVeh)
         if (finished == 100) then
             Wait(200)
 
@@ -444,7 +444,7 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
 
     if (itemid == "lean") then
         TriggerEvent("animation:PlayAnimation","drink")
-        local finished = exports["caue-taskbar"]:taskBar(3000,"Bebendo Lean 🥤",false,false,playerVeh)
+        local finished = exports["caue-taskbar"]:taskBar(3000,"Drinking lean 🥤",false,false,playerVeh)
         if (finished == 100) then
             TriggerEvent("Evidence:StateSet",2,1200)
             TriggerEvent("Evidence:StateSet",24,1200)
@@ -454,7 +454,7 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
     end
 
     if (itemid == "armor" or itemid == "pdarmor") then
-        local finished = exports["caue-taskbar"]:taskBar(5000,"Colete",true,false,playerVeh)
+        local finished = exports["caue-taskbar"]:taskBar(5000,"Vest",true,false,playerVeh)
         if (finished == 100) then
             SetPlayerMaxArmour(PlayerId(), 60)
 
@@ -465,7 +465,7 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
                 TriggerEvent("UseBodyArmor")
                 remove = true
             else
-                TriggerEvent("DoLongHudText","Você não pode usar colete, porque está incapacitado.")
+                TriggerEvent("DoLongHudText","You can't wear a vest, because you're incapacitated..")
             end
         end
     end
@@ -487,7 +487,7 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
     end
 
     if (itemid == "ciggy") then
-        local finished = exports["caue-taskbar"]:taskBar(1000,"Acendendo",false,false,playerVeh)
+        local finished = exports["caue-taskbar"]:taskBar(1000,"Lighting",false,false,playerVeh)
         if (finished == 100) then
             Wait(300)
             TriggerEvent("animation:PlayAnimation","smoke")
@@ -495,7 +495,7 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
     end
 
     if (itemid == "cigar") then
-        local finished = exports["caue-taskbar"]:taskBar(1000,"Acendendo",false,false,playerVeh)
+        local finished = exports["caue-taskbar"]:taskBar(1000,"Lighting",false,false,playerVeh)
         if (finished == 100) then
             Wait(300)
             TriggerEvent("animation:PlayAnimation","cigar")
@@ -503,7 +503,7 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
     end
 
     if (itemid == "phonebox") then
-        local finished = exports["caue-taskbar"]:taskBar(5000,"Abrindo caixa",false,false,playerVeh)
+        local finished = exports["caue-taskbar"]:taskBar(5000,"Opening Box",false,false,playerVeh)
         if (finished == 100) then
             Wait(300)
             TriggerEvent("player:receiveItem", "mobilephone", 1)
@@ -517,18 +517,18 @@ AddEventHandler("RunUseItem", function(itemid, slot, inventoryName, isWeapon, pa
         TriggerEvent("attachItemObjectnoanim","drugpackage01")
         TriggerEvent("Evidence:StateSet",2,1200)
         TriggerEvent("Evidence:StateSet",6,1200)
-        TaskItem("anim@amb@nightclub@peds@", "missfbi3_party_snort_coke_b_male3", 49, 5000, "Cheirando Cocaína", "hadcocaine", true,itemid,playerVeh)
+        TaskItem("anim@amb@nightclub@peds@", "missfbi3_party_snort_coke_b_male3", 49, 5000, "Sniffing Cocaine", "hadcocaine", true,itemid,playerVeh)
     end
 
     if (itemid == "1gmeta") then
         TriggerEvent("attachItemObjectnoanim","crackpipe01")
         TriggerEvent("Evidence:StateSet",2,1200)
         TriggerEvent("Evidence:StateSet",6,1200)
-        TaskItem("switch@trevor@trev_smoking_meth", "trev_smoking_meth_loop", 49, 5000, "Usando Metafetamina", "hadcrack", true,itemid,playerVeh)
+        TaskItem("switch@trevor@trev_smoking_meth", "trev_smoking_meth_loop", 49, 5000, "Using methamphetamine", "hadcrack", true,itemid,playerVeh)
     end
 
     if (itemid == "IFAK") then
-        TaskItem("amb@world_human_clipboard@male@idle_a", "idle_c", 49,2000,"Usando IFAK","healed:useOxy",true,itemid,playerVeh)
+        TaskItem("amb@world_human_clipboard@male@idle_a", "idle_c", 49,2000,"Using IFAK","healed:useOxy",true,itemid,playerVeh)
     end
 
     TriggerEvent("caue-inventory:itemUsed", itemid, passedItemInfo, inventoryName, slot, ItemInfo.id)

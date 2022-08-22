@@ -161,7 +161,7 @@ AddEventHandler("caue-inventory:lockpick", function(isForced, inventoryName, slo
 
             if not result.success then
                 if result.stage >= 2 then
-                    TriggerEvent("DoLongHudText", "A lockpick está um pouco torta.", 2)
+                    TriggerEvent("DoLongHudText", "The lockpick is a little crooked.", 2)
                     TriggerEvent("inventory:removeItem", "lockpick", 1)
                     lockpicking = false
                     return

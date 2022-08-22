@@ -410,7 +410,7 @@ function actionBarAmmo(hash, amount, addition)
 	local weapons = GetSelectedPedWeapon(ped)
 
 	if weapons == UNARMED_HASH then
-		TriggerEvent("DoLongHudText", "Cade tua arma, cara?", 2)
+		TriggerEvent("DoLongHudText", "Where's your weapon, man??", 2)
 		return
 	end
 
@@ -418,7 +418,7 @@ function actionBarAmmo(hash, amount, addition)
 	if not curAmmo then curAmmo = 0 end
 
 	if curAmmo >= ammoTypes[tostring(hash)] then
-		TriggerEvent("DoLongHudText", "Essa arma já está carregada.", 2)
+		TriggerEvent("DoLongHudText", "That weapon is already loaded.", 2)
 		return
 	end
 

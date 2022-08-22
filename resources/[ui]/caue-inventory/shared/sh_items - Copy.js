@@ -1273,7 +1273,7 @@ itemList['-1312131151'] = {
 itemList['subammo'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: 'Sub Ammo x50 PD',
+  displayname: 'Munição Sub',
   craft: [[
     { itemid: 'aluminium', amount: 20 },
     { itemid: 'plastic', amount: 1 },
@@ -1289,7 +1289,7 @@ itemList['subammo'] = {
 itemList['heavyammo'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: 'Heavy Ammo x50',
+  displayname: 'Munição Pesada',
   craft: [[
     { itemid: 'aluminium', amount: 1 },
     { itemid: 'plastic', amount: 1 },
@@ -1305,7 +1305,7 @@ itemList['heavyammo'] = {
 itemList['sniperammo'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: 'Sniper Ammo x25',
+  displayname: 'Munição Sniper',
   craft: [[
     { itemid: 'aluminium', amount: 1 },
     { itemid: 'plastic', amount: 1 },
@@ -1321,7 +1321,7 @@ itemList['sniperammo'] = {
 itemList['shotgunammo'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: 'Shotgun Ammo x50',
+  displayname: 'Munição Espingarda',
   craft: [[
     { itemid: 'refinedsteel', amount: 1 },
     { itemid: 'plastic', amount: 1 },
@@ -1336,7 +1336,7 @@ itemList['shotgunammo'] = {
 itemList['pistolammo'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: 'Pistol Ammo x50 PD',
+  displayname: 'Munição Pistola',
   craft: [
     [
       { itemid: 'aluminium', amount: 1 },
@@ -1358,7 +1358,7 @@ itemList['pistolammo'] = {
 itemList['rifleammo'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: 'Rifle Ammo x50',
+  displayname: 'Munição Rifle',
   craft: [[
     { itemid: 'aluminium', amount: 10 },
     { itemid: 'plastic', amount: 10 },
@@ -1375,7 +1375,7 @@ itemList['rifleammo'] = {
 itemList['pistolammoPD'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'PD Pistol Ammo',
+  displayname: 'Munição PD Pistol',
   craft: [[
     { itemid: 'aluminium', amount: 1 },
     { itemid: 'plastic', amount: 1 },
@@ -1385,14 +1385,14 @@ itemList['pistolammoPD'] = {
   weight: 2,
   nonStack: false,
   model: '',
-  information: 'Government (PD/EMS/DOC) Issued Equipment',
+  information: 'Equipamento emitido pelo governo (PD/EMS/DOC)',
   image: 'np_pistol-ammo.png',
 };
 
 itemList['subammoPD'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Sub Ammo',
+  displayname: 'Munição PD Sub',
   craft: [[
     { itemid: 'aluminium', amount: 20 },
     { itemid: 'plastic', amount: 1 },
@@ -1402,14 +1402,14 @@ itemList['subammoPD'] = {
   weight: 2,
   nonStack: false,
   model: '',
-  information: 'Government (PD/EMS/DOC) Issued Equipment',
+  information: 'Equipamento emitido pelo governo (PD/EMS/DOC)',
   image: 'np_sub-ammo.png',
 };
 
 itemList['rifleammoPD'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Rifle ammo',
+  displayname: 'Munição PD Rifle',
   craft: [[
     { itemid: 'aluminium', amount: 1 },
     { itemid: 'plastic', amount: 1 },
@@ -1420,14 +1420,14 @@ itemList['rifleammoPD'] = {
   nonStack: false,
   model: '',
   image: 'np_rifle-ammo.png',
-  information: 'Government (PD/EMS/DOC) Issued Equipment',
+  information: 'Equipamento emitido pelo governo (PD/EMS/DOC)',
   contraband: true,
 };
 
 itemList['shotgunammoPD'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Shotgun Ammo',
+  displayname: 'Munição Espingarda',
   craft: [[
     { itemid: 'aluminium', amount: 1 },
     { itemid: 'plastic', amount: 1 },
@@ -1437,14 +1437,14 @@ itemList['shotgunammoPD'] = {
   weight: 2,
   nonStack: false,
   model: '',
-  information: 'Government (PD/EMS/DOC) Issued Equipment',
+  information: 'Equipamento emitido pelo governo (PD/EMS/DOC)',
   image: 'np_shotgun-ammo.png',
 };
 
 itemList['taserammo'] = {
   fullyDegrades: true,
   decayrate: 0.1,
-  displayname: 'Taser Cartridges',
+  displayname: 'Munição Taser',
   craft: [[
     { itemid: 'aluminium', amount: 1 },
     { itemid: 'plastic', amount: 1 },
@@ -1454,14 +1454,14 @@ itemList['taserammo'] = {
   weight: 1,
   nonStack: false,
   model: '',
-  information: 'Government (PD/EMS/DOC) Issued Equipment',
+  information: 'Equipamento emitido pelo governo (PD/EMS/DOC)',
   image: 'np_taserammo.png',
 };
 
 itemList['empammo'] = {
   fullyDegrades: true,
   decayrate: 0.08,
-  displayname: 'EMP Cartridge',
+  displayname: 'Munição EMP',
   price: 150,
   weight: 20,
   nonStack: false,
@@ -1472,7 +1472,7 @@ itemList['empammo'] = {
 itemList['nails'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: 'Nails',
+  displayname: 'Unhas',
   craft: [[
     { itemid: 'aluminium', amount: 1 },
     { itemid: 'plastic', amount: 1 },
@@ -1502,7 +1502,7 @@ itemList['paintballs'] = {
 itemList['rubberslugs'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: '12-Gauge Rubber Slugs',
+  displayname: 'Balas de borracha de calibre 12',
   craft: [[
     { itemid: 'rubber', amount: 1 },
   ]],
@@ -1510,7 +1510,7 @@ itemList['rubberslugs'] = {
   weight: 3,
   nonStack: false,
   model: '',
-  information: 'Government (PD/EMS/DOC) Issued Equipment',
+  information: 'Equipamento emitido pelo governo (PD/EMS/DOC)',
   image: 'np_rubberslugs.png',
 };
 
@@ -1545,7 +1545,7 @@ itemList['rpgammo'] = {
 itemList['weapon_silencer_pistol'] = {
   fullyDegrades: false,
   decayrate: 0.5,
-  displayname: 'Pistol Suppressor',
+  displayname: 'Silenciador de pistola',
   price: 1500,
   weight: 15,
   craft: [[
@@ -1555,13 +1555,13 @@ itemList['weapon_silencer_pistol'] = {
   nonStack: false,
   model: '',
   image: 'np_ssilencer.png',
-  information: 'A silencer designed for use on some pistols.',
+  information: 'Um silenciador designado para utilização em algumas pistolas.',
 };
 
 itemList['weapon_oil_silencer'] = {
   fullyDegrades: false,
   decayrate: 0.1,
-  displayname: 'Oil Filter',
+  displayname: 'Filtro de óleo',
   price: 500,
   weight: 15,
   craft: [
@@ -1577,13 +1577,13 @@ itemList['weapon_oil_silencer'] = {
   nonStack: false,
   model: '',
   image: 'np_oil_can_supp.png',
-  information: 'Old, used oil filter. Do not seem to last long.',
+  information: 'Filtro de óleo velho e usado. Não parece durar muito.',
 };
 
 itemList['weapon_silencer_assault'] = {
   fullyDegrades: false,
   decayrate: 0.5,
-  displayname: 'Rifle Suppressor',
+  displayname: 'Silenciador de rifle',
   price: 1500,
   weight: 15,
   craft: [[
@@ -1593,13 +1593,13 @@ itemList['weapon_silencer_assault'] = {
   nonStack: false,
   model: '',
   image: 'np_silencerbig.png',
-  information: 'Silencer designed for use on some rifles.',
+  information: 'Silenciador designado para utilização em alguns rifles.',
 };
 
 itemList['weapon_scope'] = {
   fullyDegrades: false,
   decayrate: 1.0,
-  displayname: 'Weapon Optics',
+  displayname: 'Mira de Armamento',
   price: 1500,
   weight: 15,
   craft: [[
@@ -1609,13 +1609,13 @@ itemList['weapon_scope'] = {
   nonStack: false,
   model: '',
   image: 'np_lscope.png',
-  information: 'Scope designed for use on some weapons.',
+  information: 'Mira projetada para uso em algumas armas.',
 };
 
 itemList['weapon_uzi_extended'] = {
   fullyDegrades: false,
   decayrate: 0.5,
-  displayname: 'UZI extended mag',
+  displayname: 'Pente estendido de UZI',
   price: 1500,
   weight: 15,
   craft: [
@@ -1631,13 +1631,13 @@ itemList['weapon_uzi_extended'] = {
   nonStack: false,
   model: '',
   image: 'np_uzi_extended.png',
-  information: 'Will only fit on the UZI.',
+  information: 'Só cabe em uma UZI.',
 };
 
 itemList['weapon_uzi_foldstock'] = {
   fullyDegrades: false,
   decayrate: 1.0,
-  displayname: 'UZI Stock',
+  displayname: 'Estabilizador de UZI',
   price: 1500,
   weight: 5,
   craft: [
@@ -1653,13 +1653,13 @@ itemList['weapon_uzi_foldstock'] = {
   nonStack: false,
   model: '',
   image: 'np_uzi_fold_stock.png',
-  information: 'Will only fit on the UZI.',
+  information: 'Só cabe em uma UZI.',
 };
 
 itemList['weapon_uzi_woodstock'] = {
   fullyDegrades: false,
   decayrate: 1.0,
-  displayname: 'UZI Wooden Stock',
+  displayname: 'Estabilizador de madeira de UZI',
   price: 1500,
   weight: 5,
   craft: [
@@ -1675,7 +1675,7 @@ itemList['weapon_uzi_woodstock'] = {
   nonStack: false,
   model: '',
   image: 'np_uzi_wooden_stock.png',
-  information: 'Will only fit on the UZI.',
+  information: 'Só cabe em uma UZI.',
 };
 
 /*
@@ -1699,20 +1699,20 @@ itemList['hamburger'] = {
   nonStack: false,
   model: '',
   image: 'np_hamburger.png',
-  information: 'Sates Hunger',
+  information: 'Hmmmm',
 };
 
 itemList['sandwich'] = {
   fullyDegrades: true,
   decayrate: 0.01,
   craft: [[{ itemid: 'foodingredient', amount: 1 }]],
-  displayname: 'Sandwich',
+  displayname: 'Sanduíche',
   price: 8,
   weight: 5,
   nonStack: false,
   model: '',
   image: 'np_sandwich.png',
-  information: 'Sates Hunger',
+  information: 'Hmmmm',
 };
 
 itemList['donut'] = {
@@ -1725,20 +1725,20 @@ itemList['donut'] = {
   nonStack: false,
   model: '',
   image: 'np_donut.png',
-  information: 'Speed is the name of the game',
+  information: 'Para adoçar',
 };
 
 itemList['eggsbacon'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Eggs and Bacon',
+  displayname: 'Bacon com ovos',
   craft: [[{ itemid: 'foodingredient', amount: 1 }]],
   price: 50,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_eggs-and-bacon.png',
-  information: 'Great start to your morning',
+  information: 'O café da manhã perfeito',
 };
 
 itemList['cookie'] = {
@@ -1751,20 +1751,20 @@ itemList['cookie'] = {
   nonStack: false,
   model: '',
   image: 'np_cookie.png',
-  information: 'Have a Blissful day!',
+  information: 'Assado com amor',
 };
 
 itemList['muffin'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Muffin',
+  displayname: 'Bolinho',
   craft: [[{ itemid: 'foodingredient', amount: 1 }]],
   price: 10,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_muffin.png',
-  information: 'Is your muffin buttered?',
+  information: 'Hmmm amanteigado',
 };
 
 itemList['taco'] = {
@@ -1777,7 +1777,7 @@ itemList['taco'] = {
   nonStack: false,
   model: '',
   image: 'np_taco.png',
-  information: 'This aint free taco.',
+  information: 'Original dos chicanos.',
 };
 
 itemList['burrito'] = {
@@ -1790,68 +1790,68 @@ itemList['burrito'] = {
   nonStack: false,
   model: '',
   image: 'np_burrito.png',
-  information: 'Burrito',
+  information: 'Orale',
 };
 
 itemList['fishtaco'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Fish Taco',
+  displayname: 'Taco de peixe',
   craft: [[{ itemid: 'foodingredient', amount: 1 }]],
   price: 50,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_fishtaco.png',
-  information: 'Make like the fishes.',
+  information: 'Peculiar.',
 };
 
 itemList['fries'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Fries',
+  displayname: 'Batatas fritas',
   price: 10,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_fries.png',
-  information: 'Sates Hunger and thickens blood',
+  information: 'Sacia a fome e engrossa o sangue',
 };
 
 itemList['jailfood'] = {
   fullyDegrades: true,
   decayrate: 0.001,
-  displayname: 'Jail Food',
+  displayname: 'Comida de cadeia',
   price: 0,
   weight: 25,
   nonStack: false,
   model: '',
   image: 'np_jailfood.png',
-  information: "Looks as bad as the Sheriff's aim.",
+  information: "Parece tão ruim quanto a mira do xerife.",
 };
 
 itemList['bleederburger'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'The Bleeder',
+  displayname: 'O Sangrento',
   price: 20,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_the-bleeder.png',
-  information: 'Sates Hunger and reduces stress.',
+  information: 'Parece cru, mas acho que está bom.',
 };
 
 itemList['heartstopper'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'The Heart Stopper',
+  displayname: 'O Monstro',
   price: 20,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_the-heart-stopper.png',
-  information: 'Sates Hunger and reduces stress.',
+  information: 'Quantas pessoas isso alimenta?',
 };
 
 itemList['torpedo'] = {
@@ -1863,7 +1863,7 @@ itemList['torpedo'] = {
   nonStack: false,
   model: '',
   image: 'np_torpedo.png',
-  information: 'Sates Hunger and reduces stress.',
+  information: 'Hmmm.',
 };
 
 itemList['meatfree'] = {
@@ -1875,7 +1875,7 @@ itemList['meatfree'] = {
   nonStack: false,
   model: '',
   image: 'np_meat-free.png',
-  information: 'Sates Hunger and reduces stress.',
+  information: 'Isso aí é carne de soja?',
 };
 
 itemList['moneyshot'] = {
@@ -1887,7 +1887,7 @@ itemList['moneyshot'] = {
   nonStack: false,
   model: '',
   image: 'np_money-shot.png',
-  information: 'Sates Hunger and reduces stress.',
+  information: 'Lanche dos real Gs.',
 };
 
 itemList['churro'] = {
@@ -1900,7 +1900,7 @@ itemList['churro'] = {
   nonStack: false,
   model: '',
   image: 'np_churro.png',
-  information: 'Basically a long donut. Gives a sugar rush when eaten.',
+  information: 'Basicamente um donut comprido. Levanta a glicose.',
 };
 
 itemList['hotdog'] = {
@@ -1913,13 +1913,13 @@ itemList['hotdog'] = {
   nonStack: false,
   model: '',
   image: 'np_hotdog.png',
-  information: 'Dont ask what is in it',
+  information: 'O que tem dentro?',
 };
 
 itemList['chocobar'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Chocolate Bar',
+  displayname: 'Barra de chocolate',
   craft: [[{ itemid: 'foodingredient', amount: 1 }]],
   price: 6,
   weight: 1,
@@ -1932,7 +1932,7 @@ itemList['chocobar'] = {
 itemList['icecream'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Icecream',
+  displayname: 'Sorvete',
   craft: [[{ itemid: 'foodingredient', amount: 1 }]],
   price: 50,
   weight: 1,
@@ -1994,14 +1994,14 @@ itemList['spaghetti'] = {
 itemList['water'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Water',
+  displayname: 'Água',
   price: 4,
   weight: 1,
   craft: [[{ itemid: 'foodingredient', amount: 1 }]],
   nonStack: false,
   model: '',
   image: 'np_water.png',
-  information: 'Sates Thirst',
+  information: 'Mata a sede.',
 };
 
 itemList['cola'] = {
@@ -2013,7 +2013,7 @@ itemList['cola'] = {
   nonStack: false,
   model: '',
   image: 'np_coke.png',
-  information: 'Sates Thirst',
+  information: 'Mata a sede.',
 };
 
 itemList['greencow'] = {
@@ -2026,33 +2026,33 @@ itemList['greencow'] = {
   nonStack: false,
   model: '',
   image: 'np_green-cow.png',
-  information: 'Slightly Increases Stamina and Speed',
+  information: 'Não te dá asas.',
 };
 
 itemList['slushy'] = {
   fullyDegrades: false,
   illegal: true,
   decayrate: 0.0,
-  displayname: 'The best slushy ever.',
+  displayname: 'A melhor lama',
   price: 0,
   weight: 15,
   nonStack: false,
   model: '',
   image: 'np_slushy.png',
-  information: 'The only thing in Jail that tastes good.',
+  information: 'A única coisa na cadeia que tem um gosto bom.',
 };
 
 itemList['coffee'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Coffee',
+  displayname: 'Café',
   craft: [[{ itemid: 'foodingredient', amount: 2 }]],
   price: 5,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_coffee.png',
-  information: 'Wow, its strong.',
+  information: 'Cuidado, está quente.',
 };
 
 itemList['frappuccino'] = {
@@ -2065,7 +2065,7 @@ itemList['frappuccino'] = {
   nonStack: false,
   model: '',
   image: 'np_frappuccino.png',
-  information: 'Its like I have ESPN or something',
+  information: 'Hmm',
 };
 
 itemList['latte'] = {
@@ -2078,19 +2078,19 @@ itemList['latte'] = {
   nonStack: false,
   model: '',
   image: 'np_latte.png',
-  information: 'Thats so fetch',
+  information: 'Coisa de rico',
 };
 
 itemList['softdrink'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Soft Drink',
+  displayname: 'Bebida suave',
   price: 5,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'softdrink2.png',
-  information: 'Sates thirst and gives a sugar rush',
+  information: 'Mata a sede e a vontade de comer um doce.',
 };
 
 itemList['mshake'] = {
@@ -2103,31 +2103,31 @@ itemList['mshake'] = {
   nonStack: false,
   model: '',
   image: 'np_milkshake.png',
-  information: 'Hand-scooped for you.',
+  information: 'Hmm',
 };
 
 itemList['bscoffee'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Cheap Coffee',
+  displayname: 'Café barato',
   price: 15,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_bscoffee.png',
-  information: 'Tastes like dirt, but has the caffeine you need',
+  information: 'Tem gosto de terra, mas tem a cafeína que você precisa.',
 };
 
 itemList['jaildrink'] = {
   fullyDegrades: true,
   decayrate: 0.001,
-  displayname: 'Jail Drink',
+  displayname: 'Bebida de cadeia',
   price: 0,
   weight: 10,
   nonStack: false,
   model: '',
   image: 'np_jaildrink.png',
-  information: "Looks as bad as the Chief of Police's aim.",
+  information: "Parece tão ruim quanto a mira do chefe de polícia.",
 };
 
 itemList['sprunk'] = {
@@ -2139,19 +2139,19 @@ itemList['sprunk'] = {
   nonStack: false,
   model: '',
   image: 'np_sprunk.png',
-  information: 'The Essence of Life',
+  information: 'A essência da vida',
 };
 
 itemList['fruitslushy'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Fruit Slushy',
+  displayname: 'Suco de Frutas',
   price: 0,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_fruit_slushy.png',
-  information: 'The fruitiest slushy ever.',
+  information: 'O mais frutado de todos.',
 };
 
 /*
@@ -2175,19 +2175,19 @@ itemList['vodka'] = {
   nonStack: false,
   model: '',
   image: 'np_vodka.png',
-  information: 'Sates Thirst',
+  information: 'Substitui qualquer refeição',
 };
 
 itemList['beer'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Beer',
+  displayname: 'Cerveja',
   price: 5,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_beer.png',
-  information: 'Sates Thirst',
+  information: 'Só mais uma...',
 };
 
 itemList['whiskey'] = {
@@ -2199,14 +2199,14 @@ itemList['whiskey'] = {
   nonStack: false,
   model: '',
   image: 'np_whiskey.png',
-  information: 'Sates Thirst',
+  information: 'Para alguns, suave.',
 };
 
 itemList['absinthe'] = {
   fullyDegrades: true,
   illegal: true,
   decayrate: 0.3,
-  displayname: 'Absinthe',
+  displayname: 'Absinto',
   craft: [[
     { itemid: 'glass', amount: 1 },
     { itemid: 'moonshine', amount: 1 },
@@ -2216,13 +2216,13 @@ itemList['absinthe'] = {
   nonStack: false,
   model: '',
   image: 'np_absinthe.png',
-  information: 'The strongest you can get, 95%.',
+  information: 'A bebida mais forte, 95%.',
 };
 
 itemList['drink1'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Orange Lemon',
+  displayname: 'Vodka cítrica',
   price: 150,
   weight: 1,
   craft: [[
@@ -2233,13 +2233,13 @@ itemList['drink1'] = {
   nonStack: false,
   model: '',
   image: 'np_drink1.png',
-  information: 'A perfect happy hour choice for vodka drinkers. Sates Thirst',
+  information: 'Uma escolha perfeita de happy hour.',
 };
 
 itemList['drink2'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Cherry Berry',
+  displayname: 'Bebida de cereja',
   price: 150,
   weight: 1,
   craft: [[
@@ -2250,13 +2250,13 @@ itemList['drink2'] = {
   nonStack: false,
   model: '',
   image: 'np_drink2.png',
-  information: ' Berry bliss. Sates Thirst',
+  information: ' Felicidade líquida.',
 };
 
 itemList['drink3'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Banana Peach',
+  displayname: 'Drink de banana com pêssego',
   price: 150,
   weight: 1,
   craft: [[
@@ -2267,13 +2267,13 @@ itemList['drink3'] = {
   nonStack: false,
   model: '',
   image: 'np_drink3.png',
-  information: 'Tastes just like fruity bubblegum. Sates Thirst',
+  information: 'Tem gosto de chiclete de fruta.',
 };
 
 itemList['drink4'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Orange Banana',
+  displayname: 'Drink de laranja com banana',
   price: 150,
   weight: 1,
   craft: [[
@@ -2284,13 +2284,13 @@ itemList['drink4'] = {
   nonStack: false,
   model: '',
   image: 'np_drink4.png',
-  information: 'Some sweetness to your summer. Sates Thirst',
+  information: 'Alguma doçura para o seu dia.',
 };
 
 itemList['drink5'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Cherry Kiwi',
+  displayname: 'Bebida de Cereja com Kiwi',
   price: 150,
   weight: 1,
   craft: [[
@@ -2301,13 +2301,13 @@ itemList['drink5'] = {
   nonStack: false,
   model: '',
   image: 'np_drink5.png',
-  information: 'Fruity and refreshing. Sates Thirst',
+  information: 'Frutado e refrescante.',
 };
 
 itemList['drink6'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Berry Watermelon',
+  displayname: 'Bebida de amora e melancia',
   price: 150,
   weight: 1,
   craft: [[
@@ -2318,13 +2318,13 @@ itemList['drink6'] = {
   nonStack: false,
   model: '',
   image: 'np_drink6.png',
-  information: 'Cool, Sweet, Colorful. Sates Thirst',
+  information: 'Legal, doce e colorido.',
 };
 
 itemList['drink7'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Apple Lime',
+  displayname: 'Bebida de limão com maçã',
   price: 150,
   weight: 1,
   craft: [[
@@ -2335,13 +2335,13 @@ itemList['drink7'] = {
   nonStack: false,
   model: '',
   image: 'np_polarbear.png',
-  information: 'Curbs sweet cravings. Sates Thirst',
+  information: 'Inibe o desejo por doces.',
 };
 
 itemList['drink8'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Cherry Peach',
+  displayname: 'Bebida de Pêssego com Cereja',
   price: 150,
   weight: 1,
   craft: [[
@@ -2352,13 +2352,13 @@ itemList['drink8'] = {
   nonStack: false,
   model: '',
   image: 'np_rumcoke.png',
-  information: 'Perfect for cooling off on hot days. Sates Thirst',
+  information: 'Perfeito para se refrescar em dias quentes.',
 };
 
 itemList['drink9'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Coconut Lime',
+  displayname: 'Bebida de côco com limão',
   price: 150,
   weight: 1,
   craft: [[
@@ -2369,13 +2369,13 @@ itemList['drink9'] = {
   nonStack: false,
   model: '',
   image: 'np_straightvodka.png',
-  information: 'Blended with an island twist. Sates Thirst',
+  information: 'Mistura com um toque de ilha.',
 };
 
 itemList['drink10'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'White Paw',
+  displayname: 'Pata branca',
   price: 150,
   weight: 1,
   craft: [[
@@ -2386,13 +2386,13 @@ itemList['drink10'] = {
   nonStack: false,
   model: '',
   image: 'np_whitepaw.png',
-  information: 'Enjoy on your porch admiring the stars. Sates Thirst',
+  information: 'Desfrute na sua varanda admirando as estrelas.',
 };
 
 itemList['shot1'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Orange Lemon',
+  displayname: 'Bebida de laranja com limão',
   price: 150,
   weight: 1,
   craft: [[
@@ -2403,13 +2403,13 @@ itemList['shot1'] = {
   nonStack: false,
   model: '',
   image: 'np_shot1.png',
-  information: 'Sates Thirst',
+  information: 'Ácido.',
 };
 
 itemList['shot2'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Cherry Berry',
+  displayname: 'Bebida de cereja com morango',
   price: 150,
   weight: 1,
   craft: [[
@@ -2420,13 +2420,13 @@ itemList['shot2'] = {
   nonStack: false,
   model: '',
   image: 'np_shot2.png',
-  information: 'Sates Thirst',
+  information: 'Doce demais.',
 };
 
 itemList['shot3'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Banana Peach',
+  displayname: 'Mistura de banana com pêssego',
   price: 150,
   weight: 1,
   craft: [[
@@ -2437,13 +2437,13 @@ itemList['shot3'] = {
   nonStack: false,
   model: '',
   image: 'np_shot3.png',
-  information: 'Sates Thirst',
+  information: 'É, mata a sede.',
 };
 
 itemList['shot4'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Orange Banana',
+  displayname: 'Mistura de laranja com Banana',
   price: 150,
   weight: 1,
   craft: [[
@@ -2454,13 +2454,13 @@ itemList['shot4'] = {
   nonStack: false,
   model: '',
   image: 'np_shot4.png',
-  information: 'Sates Thirst',
+  information: 'Docinho e azedo.',
 };
 
 itemList['shot5'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Cherry Kiwi',
+  displayname: 'Mistura de cereja com kiwi',
   price: 150,
   weight: 1,
   craft: [[
@@ -2471,13 +2471,13 @@ itemList['shot5'] = {
   nonStack: false,
   model: '',
   image: 'np_shot5.png',
-  information: 'Sates Thirst',
+  information: 'Coisa boa.',
 };
 
 itemList['shot6'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Berry Watermelon',
+  displayname: 'Mistura de melancia com morango',
   price: 150,
   weight: 1,
   craft: [[
@@ -2488,13 +2488,13 @@ itemList['shot6'] = {
   nonStack: false,
   model: '',
   image: 'np_shot6.png',
-  information: 'Sates Thirst',
+  information: 'Vermelhidão doce.',
 };
 
 itemList['shot7'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Lime Apple',
+  displayname: 'Mistura maçã-limão',
   price: 150,
   weight: 1,
   craft: [[
@@ -2505,13 +2505,13 @@ itemList['shot7'] = {
   nonStack: false,
   model: '',
   image: 'np_shot7.png',
-  information: 'Sates Thirst',
+  information: 'Mata a sede.',
 };
 
 itemList['shot8'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Cherry Peach',
+  displayname: 'Bebidinha de cereja com pêssego',
   price: 150,
   weight: 1,
   craft: [[
@@ -2522,13 +2522,13 @@ itemList['shot8'] = {
   nonStack: false,
   model: '',
   image: 'np_shot8.png',
-  information: 'Sates Thirst',
+  information: 'Mata a vontade de um drink doce.',
 };
 
 itemList['shot9'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Coconut Lime',
+  displayname: 'Mistura de côco com limão',
   price: 150,
   weight: 1,
   craft: [[
@@ -2539,13 +2539,13 @@ itemList['shot9'] = {
   nonStack: false,
   model: '',
   image: 'np_shot9.png',
-  information: 'Sates Thirst',
+  information: 'Mistura quase perfeita.',
 };
 
 itemList['shot10'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Grapes Watermelon',
+  displayname: 'Bebida de uva com melancia',
   price: 150,
   weight: 1,
   craft: [[
@@ -2556,13 +2556,13 @@ itemList['shot10'] = {
   nonStack: false,
   model: '',
   image: 'np_shot10.png',
-  information: 'Sates Thirst',
+  information: 'Ah, meu favorito!',
 };
 
 itemList['wineglass'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Glass of Wine',
+  displayname: 'Taça de Vinho',
   price: 1,
   weight: 0,
   nonStack: false,
@@ -2587,7 +2587,7 @@ itemList['apple'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Apple',
+  displayname: 'Maçã',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2613,7 +2613,7 @@ itemList['cherry'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Cherry',
+  displayname: 'Cereja',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2626,7 +2626,7 @@ itemList['coconut'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Coconut',
+  displayname: 'Côco',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2639,7 +2639,7 @@ itemList['grapes'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Grapes',
+  displayname: 'Uva',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2665,7 +2665,7 @@ itemList['lemon'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Lemon',
+  displayname: 'Limão',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2678,7 +2678,7 @@ itemList['lime'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Lime',
+  displayname: 'Lima',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2691,7 +2691,7 @@ itemList['orange'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Orange',
+  displayname: 'Laranja',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2704,7 +2704,7 @@ itemList['peach'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Peach',
+  displayname: 'Pêssego',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2717,7 +2717,7 @@ itemList['potato'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Potato',
+  displayname: 'Batata',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2730,7 +2730,7 @@ itemList['strawberry'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Strawberry',
+  displayname: 'Morango',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2743,7 +2743,7 @@ itemList['watermelon'] = {
   fullyDegrades: false,
   illegal: false,
   decayrate: 0.75,
-  displayname: 'Watermelon',
+  displayname: 'Melancia',
   price: 5,
   weight: 1,
   nonStack: false,
@@ -2767,98 +2767,98 @@ itemList['watermelon'] = {
 itemList['foodingredient'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Food Ingredient',
+  displayname: 'Ingredientes',
   price: 10,
   weight: 5,
   nonStack: false,
   model: '',
   image: 'np_ingredients.png',
-  information: 'Used to craft food - be aware, food doesnt last forever!',
+  information: 'Usado em várias receitas - Cuidado com a validade!',
 };
 
 itemList['cheese'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Cheese',
+  displayname: 'Queijo',
   price: 1,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_ingredients_cheese.png',
-  information: 'Used to craft food - be aware, food doesnt last forever!',
+  information: 'Usado em várias receitas - Cuidado com a validade!',
 };
 
 itemList['lettuce'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Lettuce',
+  displayname: 'Alface',
   price: 1,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_ingredients_lettuce.png',
-  information: 'Used to craft food - be aware, food doesnt last forever!',
+  information: 'Usado em várias receitas - Cuidado com a validade!',
 };
 
 itemList['freshmeat'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Fresh Meat',
+  displayname: 'Carne fresca',
   craft: [[{ itemid: 'foodingredient', amount: 1 }]],
   price: 10,
   weight: 2,
   nonStack: false,
   model: '',
   image: 'np_rawmeat.png',
-  information: 'Meat, Wow..',
+  information: 'Direto do açougue.',
 };
 
 itemList['hfcs'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'High-Fructose Syrup',
+  displayname: 'Charope de frutose',
   price: 1,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_ingredients_hfcs.png',
-  information: 'Used to craft food - be aware, food doesnt last forever!',
+  information: 'Usado em várias misturinhas - Cuidado com a validade!',
 };
 
 itemList['milk'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Milk',
+  displayname: 'Leite',
   price: 1,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_ingredients_milk.png',
-  information: 'Used to craft food - be aware, food doesnt last forever!',
+  information: 'Usado em várias receitas - Cuidado com a validade!',
 };
 
 itemList['icecreamingred'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Ice Cream',
+  displayname: 'Ingredientes de Sorvete',
   price: 1,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_ingredients_icecream.png',
-  information: 'Used to craft food - be aware, food doesnt last forever!',
+  information: 'Usado em várias receitas - Cuidado para não deixar derreter!',
 };
 
 itemList['tomato'] = {
   fullyDegrades: true,
   decayrate: 0.05,
-  displayname: 'Tomato',
+  displayname: 'Tomate',
   price: 1,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_ingredients_tomato.png',
-  information: 'Used to craft food - be aware, food doesnt last forever!',
+  information: 'Usado em várias receitas - Cuidado com a validade!',
 };
 
 /*
@@ -2884,27 +2884,27 @@ itemList['weedq'] = {
   nonStack: false,
   model: '',
   image: 'np_weed-oz.png',
-  information: 'Lowers Stress',
+  information: 'Relaxante...',
   contraband: true,
 };
 
 itemList['rollingpaper'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Rolling Paper',
+  displayname: 'Seda',
   price: 1,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_rolling-paper.png',
-  information: 'Required to roll joints!',
+  information: 'Para bolar umzinho.',
 };
 
 itemList['joint'] = {
   fullyDegrades: true,
   illegal: true,
   decayrate: 0.2,
-  displayname: '3g Joint',
+  displayname: 'Baseado de 1g',
   craft: [[
     { itemid: 'weedq', amount: 0.5 },
     { itemid: 'rollingpaper', amount: 1 },
@@ -2914,7 +2914,7 @@ itemList['joint'] = {
   nonStack: false,
   model: '',
   image: 'np_joint.png',
-  information: 'Its a Joint, man. ',
+  information: 'É um fino, cara. ',
   contraband: true,
 };
 
@@ -2922,13 +2922,13 @@ itemList['codein'] = {
   fullyDegrades: true,
   illegal: true,
   decayrate: 0.3,
-  displayname: 'Codeine',
+  displayname: 'Codeína',
   price: 200,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_codein.png',
-  information: 'Be careful not to overdo it.',
+  information: 'Cuidado para não exagerar.',
   contraband: true,
 };
 
@@ -2936,13 +2936,13 @@ itemList['anfetamina'] = {
   fullyDegrades: true,
   illegal: true,
   decayrate: 0.3,
-  displayname: 'Amphetamine',
+  displayname: 'Anfetamina',
   price: 200,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'ogs-anfetamina.png',
-  information: 'This looks like a chemical.',
+  information: 'Isso me parece químico.',
   contraband: true,
 };
 
@@ -2956,7 +2956,7 @@ itemList['lean'] = {
   nonStack: false,
   model: '',
   image: 'np_lean.png',
-  information: 'It shouldnt be addictive, right??',
+  information: 'Não deve viciar, né?',
   contraband: true,
   craft: [[
     { itemid: 'codein', amount: 1 },
@@ -2968,13 +2968,13 @@ itemList['1gcocaine'] = {
   fullyDegrades: true,
   illegal: true,
   decayrate: 0.5,
-  displayname: '10g cocaine',
+  displayname: 'Cocaína 1g',
   price: 100,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_cocaine-baggy.png',
-  information: 'Looks really high quality. ',
+  information: 'Parece da boa. ',
   contraband: true,
 };
 
@@ -2982,13 +2982,13 @@ itemList['1gmeta'] = {
   fullyDegrades: true,
   illegal: true,
   decayrate: 0.5,
-  displayname: 'Methamphetamine 1g',
+  displayname: 'Metafetamina 1g',
   price: 100,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_crack.png',
-  information: 'Its bad to try?',
+  information: 'Faz mal experimentar?',
   contraband: true,
   craft: [[
     { itemid: 'anfetamina', amount: 1 },
@@ -2999,30 +2999,29 @@ itemList['1gmeta'] = {
 itemList['maleseed'] = {
   fullyDegrades: true,
   decayrate: 0.75,
-  displayname: 'Marijuana Seed',
+  displayname: 'Semente Macho de Marijuana',
   price: 100,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_weed-seed.png',
-  information: 'Surely I can just plant this, right?',
+  information: 'Qual a diferença dessa semente pra outra?',
   contraband: true,
-  seed: true,
 };
 
 itemList['femaleseed'] = {
   fullyDegrades: true,
   decayrate: 0.75,
-  displayname: 'Female Marijuana Seed',
+  displayname: 'Semente Fêmea de Marijuana',
   price: 100,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_weed-seed.png',
-  information: 'Surely I can just plant this, right?',
+  information: 'É só plantar',
   contraband: true,
-  seed: true,
 };
+
 /*
 
   DRUGS END
@@ -3044,13 +3043,13 @@ itemList['spikes'] = {
   nonStack: false,
   model: '',
   image: 'np_spikes.png',
-  information: 'Considered Police Equipment',
+  information: 'Equipamento policial (dura pouco tempo).',
 };
 
 itemList['pdarmor'] = {
   fullyDegrades: true,
   decayrate: 0.25,
-  displayname: '(PD) Chest Armor',
+  displayname: 'Colete de torso',
   craft: [[
     { itemid: 'aluminium', amount: 1 },
     { itemid: 'plastic', amount: 1 },
@@ -3061,7 +3060,7 @@ itemList['pdarmor'] = {
   nonStack: false,
   model: '',
   image: 'np_chest-armor.png',
-  information: 'Government (PD/EMS/DOC) Issued Equipment',
+  information: 'Equipamento emitido pelo governo (PD/EMS/DOC).',
 };
 
 itemList['IFAK'] = {
@@ -3073,13 +3072,13 @@ itemList['IFAK'] = {
   nonStack: false,
   model: '',
   image: 'ifak.png',
-  information: 'Government (PD/EMS/DOC) Issued Equipment',
+  information: 'Equipamento emitido pelo governo (PD/EMS/DOC).',
 };
 
 itemList['pdbadge'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'PD Badge',
+  displayname: 'Distintivo PD',
   price: 0,
   weight: 0,
   nonStack: true,
@@ -3090,7 +3089,7 @@ itemList['pdbadge'] = {
 itemList['gatheringkit'] = {
   fullyDegrades: false,
   decayrate: 0.25,
-  displayname: 'Detective Kit',
+  displayname: 'Kit Detetive',
   price: 1500,
   weight: 15,
   craft: [[
@@ -3100,13 +3099,13 @@ itemList['gatheringkit'] = {
   nonStack: false,
   model: '',
   image: 'np_cleaning-goods.png',
-  information: 'Used to gather evidence - should be seized by police if suspected of use in crime.',
+  information: 'Usado para coletar evidências.',
 };
 
 itemList['np_evidence_marker_yellow'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Evidence',
+  displayname: 'Evidência Amarela',
   price: 0,
   weight: 1,
   nonStack: true,
@@ -3117,7 +3116,7 @@ itemList['np_evidence_marker_yellow'] = {
 itemList['np_evidence_marker_red'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Evidence',
+  displayname: 'Evidência Vermelha',
   price: 0,
   weight: 1,
   nonStack: true,
@@ -3128,7 +3127,7 @@ itemList['np_evidence_marker_red'] = {
 itemList['np_evidence_marker_white'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Evidence',
+  displayname: 'Evidência Branca',
   price: 0,
   weight: 1,
   nonStack: true,
@@ -3139,7 +3138,7 @@ itemList['np_evidence_marker_white'] = {
 itemList['np_evidence_marker_orange'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Evidence',
+  displayname: 'Evidência Laranja',
   price: 0,
   weight: 1,
   nonStack: true,
@@ -3150,7 +3149,7 @@ itemList['np_evidence_marker_orange'] = {
 itemList['np_evidence_marker_light_blue'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Evidence',
+  displayname: 'Evidência Azul',
   price: 0,
   weight: 1,
   nonStack: true,
@@ -3161,7 +3160,7 @@ itemList['np_evidence_marker_light_blue'] = {
 itemList['np_evidence_marker_purple'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Evidence',
+  displayname: 'Evidência Roxa',
   price: 0,
   weight: 1,
   nonStack: true,
@@ -3207,7 +3206,7 @@ itemList['stolenrolexwatch'] = {
   fullyDegrades: false,
   decayrate: 0.0,
   isStolen: true,
-  displayname: 'Rolex watch',
+  displayname: 'Relógio Rolex',
   price: 50,
   weight: 0,
   nonStack: false,
@@ -3219,7 +3218,7 @@ itemList['stolen10ctchain'] = {
   fullyDegrades: false,
   isStolen: true,
   decayrate: 0.0,
-  displayname: '10ct Gold Chain (p)',
+  displayname: 'Corrente de ouro',
   price: 2230,
   weight: 1,
   nonStack: false,
@@ -3231,7 +3230,7 @@ itemList['stolenring'] = {
   fullyDegrades: false,
   isStolen: true,
   decayrate: 0.0,
-  displayname: 'Engagement Ring',
+  displayname: 'Anel de noivado',
   price: 15,
   weight: 1,
   nonStack: false,
@@ -3266,7 +3265,7 @@ itemList['stolenlaptop'] = {
 itemList['ciggy'] = {
   fullyDegrades: true,
   decayrate: 0.2,
-  displayname: 'Ciggy',
+  displayname: 'Cigarro',
   price: 1,
   weight: 1,
   nonStack: false,
@@ -3277,7 +3276,7 @@ itemList['ciggy'] = {
 itemList['cigar'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Cigar',
+  displayname: 'Charuto',
   price: 30,
   weight: 0,
   nonStack: false,
@@ -3289,19 +3288,19 @@ itemList['summonablepet'] = {
   _name: 'summonablepet',
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Pet Animal',
+  displayname: 'Animal de estimação',
   price: 100,
   weight: 11,
   nonStack: true,
   model: '',
   image: 'np_p_rott.png',
-  information: "Summon your pet.",
-}; 
+  information: "Chame seu bichinho.",
+};
 
 itemList['repairkit'] = {
   fullyDegrades: true,
   decayrate: 0.25,
-  displayname: 'Repair Kit',
+  displayname: 'Kit de reparo',
   craft: [[{ itemid: 'electronics', amount: 25 }]],
   price: 100,
   weight: 10,
@@ -3313,7 +3312,7 @@ itemList['repairkit'] = {
 itemList['repairkitbennys'] = {
   fullyDegrades: true,
   decayrate: 0.25,
-  displayname: 'Repair Kit (Bennys)',
+  displayname: 'Kit de reparo (Bennys)',
   craft: [[{ itemid: 'electronics', amount: 25 }]],
   price: 150,
   weight: 5,
@@ -3325,85 +3324,84 @@ itemList['repairkitbennys'] = {
 itemList['wheelchair'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: 'Wheelchair',
+  displayname: 'Cadeira de rodas',
   price: 250,
   weight: 50,
   nonStack: false,
   model: '',
   image: 'np_wheelchair.png',
-  information: 'For broken legs n stuff',
+  information: 'Cuidado ao pilotar.',
 };
 
 itemList['armor'] = {
   fullyDegrades: true,
-  decayrate: 0.75,
-  displayname: 'Chest Armor',
+  decayrate: 0.25,
+  displayname: 'Colete de torso',
   craft: [[
     { itemid: 'aluminium', amount: 5 },
     { itemid: 'plastic', amount: 5 },
     { itemid: 'rubber', amount: 5 },
   ]],
-  price: 500,
+  price: 1,
   weight: 37,
   nonStack: false,
   model: '',
   image: 'np_chest-armor.png',
-  information: 'Protects you from bleeding and stumbling on injuries.',
+  information: 'Protege você de sangramento e outras lesões.',
 };
 
 itemList['cashroll'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Roll of Cash',
+  displayname: 'Rolo de dinheiro',
   price: 1,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_cash-roll.png',
-  information: 'Whats the count..',
+  information: 'Quanto tem aqui..',
 };
 
 itemList['cashstack'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Stack of Cash',
+  displayname: 'Pilha de dinheiro',
   price: 1,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_cash-stack.png',
-  information: 'All nice and sequential.',
+  information: 'Notas novinhas.',
 };
 
 itemList['band'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Band of Notes',
+  displayname: 'Trocados',
   price: 1,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_cash-stack.png',
-  information: 'Lots of low denominators - Indicates drug sales.',
+  information: 'Só notas trocadas...Quem anda com dinheiro assim?',
 };
-
 
 itemList['rollcash'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Roll of Small Notes',
+  displayname: 'Rolo de notas pequenas',
   price: 1,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_cash-roll.png',
-  information: 'Lots of low denominators - Indicates drug sales.',
+  information: 'Só notas trocadas...Quem anda com dinheiro assim?',
 };
 
 itemList['binoculars'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Binoculars',
+  displayname: 'Binóculos',
   craft: [[
     { itemid: 'aluminium', amount: 5 },
     { itemid: 'plastic', amount: 1 },
@@ -3419,7 +3417,7 @@ itemList['binoculars'] = {
 itemList['blindfold'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Headbag',
+  displayname: 'Venda',
   price: 250,
   weight: 1,
   nonStack: false,
@@ -3436,25 +3434,25 @@ itemList['camera'] = {
   nonStack: false,
   model: '',
   image: 'np_camera.png',
-  information: 'Works 100% of the time 60% of the time.',
+  information: 'Parece ser de boa qualidade.',
 };
 
 itemList['hairtie'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Hair Tie',
+  displayname: 'Presilha de cabelo',
   price: 5,
   weight: 1,
   nonStack: false,
   model: '',
   image: 'np_hairtie.png',
-  information: 'We all know what this is really for...',
+  information: 'Útil.',
 };
 
 itemList['idcard'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Citizen Card',
+  displayname: 'Identidade',
   price: 500,
   weight: 0,
   nonStack: true,
@@ -3465,51 +3463,47 @@ itemList['idcard'] = {
 itemList['phonebox'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Cell Phone Box',
+  displayname: 'Caixa de Celular',
   price: 200,
   weight: 2,
   nonStack: true,
   model: '',
   image: 'phone_box.png',
-  information: 'Open to get cell phone',
+  information: 'Abra para pegar o celular',
 };
 
 itemList['phoneboxempty'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Empty Cell Phone Case',
+  displayname: 'Caixa de Celular Vazia',
   price: 1,
   weight: 2,
   nonStack: true,
   model: '',
   image: 'phone_box_empty.png',
-  information: 'This is not worth anything',
+  information: 'Isso aqui não vale nada',
 };
 
 itemList['lighter'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Lighter',
-  price: 100,
+  displayname: 'Isqueiro',
+  price: 5,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_lighter.png',
-  information: 'Dont start a fire with this. ',
+  information: 'Cuidado ao utilizar. ',
 };
-
 
 itemList['mobilephone'] = {
   fullyDegrades: false,
-  decayrate: 1.0,
-  displayname: 'Mobile Phone',
-  price: 2000,
+  decayrate: 0.0,
+  displayname: 'Celular',
+  price: 200,
   craft: [
     [
       { itemid: 'electronics', amount: 10 },
-      { itemid: 'glass', amount: 3 },
-      { itemid: 'copper', amount: 5 },
-      { itemid: 'scrapmetal', amount: 5 },
     ]
   ],
   weight: 5,
@@ -3517,10 +3511,11 @@ itemList['mobilephone'] = {
   model: '',
   image: 'np_mobile-phone.png',
 };
+
 itemList['lockpick'] = {
   fullyDegrades: false,
   decayrate: 2.0,
-  displayname: 'Lockpick Set',
+  displayname: 'Lockpick',
   craft: [
     [
       { itemid: 'aluminium', amount: 5 },
@@ -3531,31 +3526,31 @@ itemList['lockpick'] = {
       { itemid: 'refinedaluminium', amount: 2 },
     ]
   ],
-  price: 250,
+  price: 80,
   weight: 1,
   nonStack: false,
   model: '',
-  information: 'Unlocks things, if you have the skill!',
+  information: 'Destranca coisas.',
   image: 'np_lockpick-set.png',
 };
 
 itemList['okaylockpick'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Not-Shit Ass Lockpick',
+  displayname: 'Lockpick de merda',
   price: 0,
   craft: [[{ itemid: 'shitlockpick', amount: 100 }]],
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_shitlockpick.png',
-  information: 'TBH its still shit, so shit its almost identical... almost.',
+  information: 'Porcaria, talvez é melhorar descartar.',
 };
 
 itemList['shitlockpick'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Ass Lockpick',
+  displayname: 'Lockpick pesado',
   price: 0,
   craft: [[{ itemid: 'jailfood', amount: 1 }]],
   weight: 1,
@@ -3563,32 +3558,31 @@ itemList['shitlockpick'] = {
   model: '',
   image: 'np_shitlockpick.png',
   information:
-    'Why the fuck is this so heavy? Copium das why.',
-}; 
+    'Mal cabe no bolso.',
+};
 
-itemList["radio"] = {
-  fullyDegrades: true,
-  deg: true,
-  decayrate: 0.5,
-  displayname: "Radio",
+itemList['radio'] = {
+  fullyDegrades: false,
+  decayrate: 0.0,
+  displayname: 'PD Radio',
   craft: [[
-    { itemid: "electronics", amount: 35 },
-    { itemid: 'glass', amount: 6 },
-    { itemid: 'copper', amount: 10 },
-    { itemid: 'scrapmetal', amount: 5 },
-    { itemid: 'rubber', amount: 10 },
+    { itemid: 'electronics', amount: 30 },
+    { itemid: 'plastic', amount: 5 },
+    { itemid: 'rubber', amount: 1 },
   ]],
-  price: 5000,
+  price: 1,
   weight: 5,
   nonStack: true,
-  model: "",
-  image: "np_radio.png",
-  information: "Non-encrypted - Used to chat with other people on private radio channels.",
+  blockScrap: true,
+  model: '',
+  image: 'np_radio.png',
+  information: 'Criptografado - Usado para conversar com outras pessoas em canais de rádio PD.',
 };
+
 itemList['delivery_taco'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Delivery',
+  displayname: 'Entrega',
   price: 10,
   weight: 5,
   nonStack: false,
@@ -3599,7 +3593,7 @@ itemList['delivery_taco'] = {
 itemList['delivery_supply'] = {
   fullyDegrades: true,
   decayrate: 0.01,
-  displayname: 'Store Supplies',
+  displayname: 'Suprimentos de Loja',
   price: 20,
   weight: 5,
   nonStack: false,
@@ -3623,13 +3617,13 @@ itemList['megaphone'] = {
 itemList['fertilizer'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Fertilizer',
-  price: 500,
+  displayname: 'Fertilizante',
+  price: 20,
   weight: 3,
   nonStack: false,
   model: '',
   image: 'np_fertilizer.png',
-  information: 'Cool.',
+  information: 'Não tem instrução na embalagem.',
 };
 
 itemList['spray'] = {
@@ -3646,7 +3640,7 @@ itemList['spray'] = {
 itemList['sprayremover'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Spray Remover',
+  displayname: 'Removedor de Spray',
   price: 50,
   weight: 1,
   nonStack: false,
@@ -3686,13 +3680,12 @@ itemList['musicwalkman'] = {
 itemList['musictape'] = {
   fullyDegrades: true,
   decayrate: 1.0,
-  displayname: 'Music Tape',
+  displayname: 'Fita de Música',
   price: 1,
   weight: 0,
   nonStack: false,
   model: '',
   image: 'np_cassette.png',
-  information: 'Play me!',
 };
 
 /*
@@ -3710,7 +3703,7 @@ itemList['musictape'] = {
 itemList['mask'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Mask',
+  displayname: 'Máscara',
   craft: [],
   price: 10,
   weight: 1,
@@ -3723,7 +3716,7 @@ itemList['mask'] = {
 itemList['googles'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Glasses',
+  displayname: 'Óculos',
   craft: [],
   price: 10,
   weight: 1,
@@ -3736,7 +3729,7 @@ itemList['googles'] = {
 itemList['hat'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Hat',
+  displayname: 'Chapéu',
   craft: [],
   price: 10,
   weight: 1,
@@ -3749,7 +3742,7 @@ itemList['hat'] = {
 itemList['chain'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Chain',
+  displayname: 'Corrente',
   craft: [],
   price: 10,
   weight: 1,
@@ -3762,7 +3755,7 @@ itemList['chain'] = {
 itemList['vest'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Vest',
+  displayname: 'Colete',
   craft: [],
   price: 10,
   weight: 1,
@@ -3775,7 +3768,7 @@ itemList['vest'] = {
 itemList['jacket'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Jacket',
+  displayname: 'Jaqueta',
   craft: [],
   price: 10,
   weight: 1,
@@ -3788,7 +3781,7 @@ itemList['jacket'] = {
 itemList['shirt'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Shirt',
+  displayname: 'Camisa',
   craft: [],
   price: 10,
   weight: 1,
@@ -3801,7 +3794,7 @@ itemList['shirt'] = {
 itemList['backpack'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Backpack',
+  displayname: 'Mochila',
   craft: [],
   price: 10,
   weight: 1,
@@ -3814,7 +3807,7 @@ itemList['backpack'] = {
 itemList['pants'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Pants',
+  displayname: 'Calça',
   craft: [],
   price: 10,
   weight: 1,
@@ -3827,7 +3820,7 @@ itemList['pants'] = {
 itemList['shoes'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Shoes',
+  displayname: 'Tênis',
   craft: [],
   price: 10,
   weight: 1,
@@ -3840,7 +3833,7 @@ itemList['shoes'] = {
 itemList['watch'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Watch',
+  displayname: 'Relógio',
   craft: [],
   price: 10,
   weight: 1,
@@ -3853,7 +3846,7 @@ itemList['watch'] = {
 itemList['braclets'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Bracelets',
+  displayname: 'Pulseira',
   craft: [],
   price: 10,
   weight: 1,
@@ -3866,7 +3859,7 @@ itemList['braclets'] = {
 itemList['earrings'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Earrings',
+  displayname: 'Brincos',
   craft: [],
   price: 10,
   weight: 1,
@@ -3888,147 +3881,45 @@ itemList['earrings'] = {
 
 */
 
-
-itemList['tcggovernmentbooster'] = {
-  fullyDegrades: false,
-  decayrate: 0.0,
-  displayname: 'Booster Pack',
-  price: 1,
-  weight: 1.0,
-  nonStack: false,
-  model: '',
-  image: 'np_tcggovernmentbooster.png',
-  information: 'Government set booster pack containing 6 cards.',
-  deg: false,
-  insertTo: ['tcgbinder'],
-};
-
-itemList['tcgcrewsbooster'] = {
-  fullyDegrades: false,
-  decayrate: 0.0,
-  displayname: 'Booster Pack',
-  price: 1,
-  weight: 1.0,
-  nonStack: false,
-  model: '',
-  image: 'np_tcgcrewsbooster.png',
-  information: 'Crews set booster pack containing 6 cards.',
-  deg: false,
-  insertTo: ['tcgbinder'],
-};
-
-itemList['tcgcivsbooster'] = {
-  fullyDegrades: false,
-  decayrate: 0.0,
-  displayname: 'Booster Pack',
-  price: 1,
-  weight: 1.0,
-  nonStack: false,
-  model: '',
-  image: 'np_tcgcivsbooster.png',
-  information: 'Civs set booster pack containing 6 cards.',
-  deg: false,
-  insertTo: ['tcgbinder'],
-};
-
-itemList['tcgpromobooster'] = {
-  fullyDegrades: false,
-  decayrate: 0.0,
-  displayname: 'Booster Pack',
-  price: 1,
-  weight: 0.0,
-  nonStack: false,
-  model: '',
-  image: 'np_tcgpromobooster.png',
-  information: 'Promo set booster pack containing 1 card.',
-  deg: false,
-  insertTo: ['tcgbinder'],
-};
-
-itemList['tcganniversarybooster'] = {
-  fullyDegrades: false,
-  decayrate: 0.0,
-  displayname: 'Booster Pack',
-  price: 1,
-  weight: 1.0,
-  nonStack: false,
-  model: '',
-  image: 'np_tcganniversarybooster.png',
-  information: 'Anniversary set booster pack containing 1 cards.',
-  deg: false,
-  insertTo: ['tcgbinder'],
-};
-
-itemList['tcgpromopacks'] = {
-  fullyDegrades: false,
-  decayrate: 0.0,
-  displayname: 'Promotional Pack',
-  price: 1,
-  weight: 3.0,
-  nonStack: false,
-  model: '',
-  image: 'np_tcgpromopacks.png',
-  information: '1 Civs Booster. 1 Crews Booster. 1 Government Booster.',
-  deg: false,
-};
-
-itemList['tcgboosterbox'] = {
-  fullyDegrades: false,
-  decayrate: 0.0,
-  displayname: 'Booster Box',
-  price: 1,
-  weight: 18.0,
-  nonStack: false,
-  model: '',
-  image: 'np_tcgboosterbox.png',
-  information: '6 Civs Boosters. 6 Crews Boosters. 6 Government Boosters.',
-  deg: false,
-};
-
 itemList['tcgcard'] = {
   _name: 'tcgcard',
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Trading Card',
+  displayname: 'Carta',
   price: 1,
   weight: 0.0,
   nonStack: true,
   model: '',
-  image: 'np_tcgcard.png',
-  information: 'A single trading card.',
+  image: 'ogs_tcgcard.png',
+  information: 'Um cartão colecionável.',
   deg: false,
-  insertTo: ['tcgbinder'],
-  insertFrom: ['lighter'],
 };
 
-itemList['tcghardcase'] = {
+itemList['tcgpack_ogs'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Hard Case',
+  displayname: 'Pacote de Cartas',
   price: 1,
-  weight: 1.0,
+  weight: 0.0,
   nonStack: false,
   model: '',
-  image: 'np_tcghardcase.png',
-  information: 'A protective case for a trading card.',
+  image: 'ogs_tcgbooster.png',
+  information: 'Pacote containing 5 cartas colecionáveis.',
   deg: false,
-  insertTo: ['tcgcard'],
 };
 
 itemList['tcgbinder'] = {
   fullyDegrades: false,
   decayrate: 0.0,
-  displayname: 'Trading Card Binder',
+  displayname: 'Fichário',
   price: 1,
   weight: 10.0,
   nonStack: true,
   model: '',
-  image: 'np_tcgbinder.png',
-  information: 'A binder for all your trading cards.',
+  image: 'ogs_tcgbinder.png',
+  information: 'Um fichário para guardar todas as suas cartas colecionáveis.',
   deg: false,
 };
-
-// END TCG
 
 /*
 
@@ -4043,1067 +3934,1064 @@ itemList['tcgbinder'] = {
 */
 
 //X CLASS REPAIR PARTS
-
 itemList['xfixbrake'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Brake Parts (X)',
+  displayname: 'Peças de freio (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_brake_parts_x.png',
-  information: 'New brake discs, pads, calipers, hubs & accessories',
+  information: 'Novos discos de freio, pastilhas, pinças, cubos e acessórios.',
 };
+
 itemList['xfixaxle'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Axle Parts (X)',
+  displayname: 'Peças do Eixo (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_axle_parts_x.png',
-  information: 'New axle components',
+  information: 'Novos componentes do eixo.',
 };
 
 itemList['xfixradiator'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Radiator Parts (X)',
+  displayname: 'Peças do radiador (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_cooling_parts_x.png',
-  information: 'New radiator and cooling parts',
+  information: 'Novo radiador e peças de refrigeração.',
 };
 
 itemList['xfixclutch'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Clutch Parts (X)',
+  displayname: 'Peças da embreagem (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_clutch_parts_x.png',
-  information: 'New clutch disc and pressure plate',
+  information: 'Novo disco de embreagem e placa de pressão.',
 };
 
 itemList['xfixtransmission'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Transmission Parts (X)',
+  displayname: 'Peças de Transmissão (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_transmission_parts_x.png',
-  information: 'New gear sets, shafts, converters and clutch packs',
+  information: 'Novos conjuntos de engrenagens, eixos, conversores e conjuntos de embreagem.',
 };
 
 itemList['xfixelectronics'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Vehicle Electronics (X)',
+  displayname: 'Eletrônica do Veículo (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_electronic_parts_x.png',
-  information: 'Various vehicle electrical components',
+  information: 'Vários componentes elétricos do veículo.',
 };
 
 itemList['xfixinjector'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Fuel Injectors (X)',
+  displayname: 'Injetores de combustível (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_fuel_injectors_x.png',
-  information: 'New fuel injectors',
+  information: 'Novos injetores de combustível.',
 };
 
 itemList['xfixtire'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Tire Repair Kit (X)',
+  displayname: 'Kit de reparo de pneus (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_tire_kit_x.png',
-  information: 'For swapping and repairing worn or damaged tires',
+  information: 'Para trocar e reparar pneus gastos ou danificados.',
 };
 
 itemList['xfixbody'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Body Panels (X)',
+  displayname: 'Painéis da carroceria (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_body_panels_x.png',
-  information: 'New vehicle body panels',
+  information: 'Novos painéis de carroceria',
 };
 
 itemList['xfixengine'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Engine Parts (X)',
+  displayname: 'Peças do Motor (X)',
   craft: [[
     { itemid: 'xgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_engine_parts_x.png',
-  information: 'New engine parts',
+  information: 'Novas peças do motor.',
 };
 
 //S CLASS REPAIR PARTS
-
 itemList['sfixbrake'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Brake Parts (S)',
+  displayname: 'Peças de freio (S)',
   craft: [
     [
       { itemid: 'sgenericmechanicpart', amount: 3 },
     ]
   ],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_brake_parts_s.png',
-  information: 'New brake discs, pads, calipers, hubs & accessories',
+  information: 'Novos discos de freio, pastilhas, pinças, cubos e acessórios.',
 };
+
 itemList['sfixaxle'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'sAxle Parts (S)',
+  displayname: 'Peças do Eixo (S)',
   craft: [
     [
       { itemid: 'sgenericmechanicpart', amount: 3 },
     ]
   ],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_axle_parts_s.png',
-  information: 'New axle components',
+  information: 'Novos componentes do eixo.',
 };
 
 itemList['sfixradiator'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Radiator Parts (S)',
+  displayname: 'Peças do Radiador (S)',
   craft: [[
     { itemid: 'sgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_cooling_parts_s.png',
-  information: 'New radiator and cooling parts',
+  information: 'Novo radiador e peças de refrigeração.',
 };
 
 itemList['sfixclutch'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Clutch Parts (S)',
+  displayname: 'Peças da embreagem (S)',
   craft: [[
     { itemid: 'sgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_clutch_parts_s.png',
-  information: 'New clutch disc and pressure plate',
+  information: 'Novo disco de embreagem e placa de pressão.',
 };
 
 itemList['sfixtransmission'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Transmission Parts (S)',
+  displayname: 'Peças de Transmissão (S)',
   craft: [[
     { itemid: 'sgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_transmission_parts_s.png',
-  information: 'New gear sets, shafts, converters and clutch packs',
+  information: 'Novos conjuntos de engrenagens, eixos, conversores e conjuntos de embreagem.',
 };
 
 itemList['sfixelectronics'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Vehicle Electronics (S)',
+  displayname: 'Eletrônica do veículo (S)',
   craft: [[
     { itemid: 'sgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_electronic_parts_s.png',
-  information: 'Various vehicle electrical components',
+  information: 'Vários componentes elétricos do veículo.',
 };
 
 itemList['sfixinjector'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Fuel Injectors (S)',
+  displayname: 'Injetores de combustível (S)',
   craft: [[
     { itemid: 'sgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_fuel_injectors_s.png',
-  information: 'New fuel injectors',
+  information: 'Novos injetores de combustível.',
 };
 
 itemList['sfixtire'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Tire Repair Kit (S)',
+  displayname: 'Kit de reparo de pneus (S)',
   craft: [[
     { itemid: 'sgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_tire_kit_s.png',
-  information: 'For swapping and repairing worn or damaged tires',
+  information: 'Para trocar e reparar pneus gastos ou danificados.',
 };
 
 itemList['sfixbody'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Body Panels (S)',
+  displayname: 'Painéis da carroceria (S)',
   craft: [[
     { itemid: 'sgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_body_panels_s.png',
-  information: 'New vehicle body panels',
+  information: 'Novos painéis de carroceria.',
 };
 
 itemList['sfixengine'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Engine Parts (S)',
+  displayname: 'Peças do motor (S)',
   craft: [[
     { itemid: 'sgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_engine_parts_s.png',
-  information: 'New engine parts',
+  information: 'Novas peças do motor.',
 };
 
 //A CLASS REPAIR PARTS
-
 itemList['afixbrake'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Brake Parts (A)',
+  displayname: 'Peças de freio (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_brake_parts_a.png',
-  information: 'New brake discs, pads, calipers, hubs & accessories',
+  information: 'Novos discos de freio, pastilhas, pinças, cubos e acessórios.',
 };
 
 itemList['afixaxle'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Axle Parts (A)',
+  displayname: 'Peças do Eixo (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_axle_parts_a.png',
-  information: 'New axle components',
+  information: 'Novos componentes do eixo.',
 };
 
 itemList['afixradiator'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Radiator Parts (A)',
+  displayname: 'Peças do Radiador (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_cooling_parts_a.png',
-  information: 'New radiator and cooling parts',
+  information: 'Novo radiador e peças de refrigeração.',
 };
 
 itemList['afixclutch'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Clutch Parts (A)',
+  displayname: 'Peças da embreagem (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_clutch_parts_a.png',
-  information: 'New clutch disc and pressure plate',
+  information: 'Novo disco de embreagem e placa de pressão.',
 };
 
 itemList['afixtransmission'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Transmission Parts (A)',
+  displayname: 'Peças de Transmissão (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_transmission_parts_a.png',
-  information: 'New gear sets, shafts, converters and clutch packs',
+  information: 'Novos conjuntos de engrenagens, eixos, conversores e conjuntos de embreagem.',
 };
 
 itemList['afixelectronics'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Vehicle Electronics (A)',
+  displayname: 'Eletrônica do Veículo (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_electronic_parts_a.png',
-  information: 'Various vehicle electrical components',
+  information: 'Vários componentes elétricos do veículo.',
 };
 
 itemList['afixinjector'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Fuel Injectors (A)',
+  displayname: 'Injetores de combustível (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_fuel_injectors_a.png',
-  information: 'New fuel injectors',
+  information: 'Novos injetores de combustível.',
 };
 
 itemList['afixtire'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Tire Repair Kit (A)',
+  displayname: 'Kit de reparo de pneus (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_tire_kit_a.png',
-  information: 'For swapping and repairing worn or damaged tires',
+  information: 'Para trocar e reparar pneus gastos ou danificados.',
 };
 
 itemList['afixbody'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Body Panels (A)',
+  displayname: 'Painéis da carroceria (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_body_panels_a.png',
-  information: 'New vehicle body panels',
+  information: 'Novos painéis de carroceria.',
 };
 
 itemList['afixengine'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Engine Parts (A)',
+  displayname: 'Peças do Motor (A)',
   craft: [[
     { itemid: 'agenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_engine_parts_a.png',
-  information: 'New engine parts',
+  information: 'Novas peças do motor.',
 };
 
 //B CLASS REPAIR PARTS
-
 itemList['bfixbrake'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Brake Parts (B)',
+  displayname: 'Peças de freio (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_brake_parts_b.png',
-  information: 'New brake discs, pads, calipers, hubs & accessories',
+  information: 'Novos discos de freio, pastilhas, pinças, cubos e acessórios.',
 };
 
 itemList['bfixaxle'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Axle Parts (B)',
+  displayname: 'Peças do Eixo (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_axle_parts_b.png',
-  information: 'New axle components',
+  information: 'Novos componentes do eixo.',
 };
 
 itemList['bfixradiator'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Radiator Parts (B)',
+  displayname: 'Peças do Radiador (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_cooling_parts_b.png',
-  information: 'New radiator and cooling parts',
+  information: 'Novo radiador e peças de refrigeração.',
 };
 
 itemList['bfixclutch'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Clutch Parts (B)',
+  displayname: 'Peças da embreagem (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_clutch_parts_b.png',
-  information: 'New clutch disc and pressure plate',
+  information: 'Novo disco de embreagem e placa de pressão.',
 };
 
 itemList['bfixtransmission'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Transmission Parts (B)',
+  displayname: 'Peças de Transmissão (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_transmission_parts_b.png',
-  information: 'New gear sets, shafts, converters and clutch packs',
+  information: 'Novos conjuntos de engrenagens, eixos, conversores e conjuntos de embreagem.',
 };
 
 itemList['bfixelectronics'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Vehicle Electronics (B)',
+  displayname: 'Eletrônica do veículo (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_electronic_parts_b.png',
-  information: 'Various vehicle electrical components',
+  information: 'Vários componentes elétricos do veículo.',
 };
 
 itemList['bfixinjector'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Fuel Injectors (B)',
+  displayname: 'Injetores de combustível (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_fuel_injectors_b.png',
-  information: 'New fuel injectors',
+  information: 'Novos injetores de combustível.',
 };
 
 itemList['bfixtire'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Tire Repair Kit (B)',
+  displayname: 'Kit de reparo de pneus (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_tire_kit_b.png',
-  information: 'For swapping and repairing worn or damaged tires',
+  information: 'Para trocar e reparar pneus gastos ou danificados.',
 };
 
 itemList['bfixbody'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Body Panels (B)',
+  displayname: 'Painéis da carroceria (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_body_panels_b.png',
-  information: 'New vehicle body panels',
+  information: 'Novos painéis de carroceria',
 };
 
 itemList['bfixengine'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Engine Parts (B)',
+  displayname: 'Peças do Motor (B)',
   craft: [[
     { itemid: 'bgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_engine_parts_b.png',
-  information: 'New engine parts',
+  information: 'Novas peças do motor',
 };
 
 //C CLASS REPAIR PARTS
-
 itemList['cfixbrake'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Brake Parts (C)',
+  displayname: 'Peças do Freio (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_brake_parts_c.png',
-  information: 'New brake discs, pads, calipers, hubs & accessories',
+  information: 'Novos discos de freio, pastilhas, pinças, cubos e acessórios.',
 };
 
 itemList['cfixaxle'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Axle Parts (C)',
+  displayname: 'Peças do eixo (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_axle_parts_c.png',
-  information: 'New axle components',
+  information: 'Novos componentes do eixo.',
 };
 
 itemList['cfixradiator'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Radiator Parts (C)',
+  displayname: 'Peças do Radiador (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_cooling_parts_c.png',
-  information: 'New radiator and cooling parts',
+  information: 'Novo radiador e peças de refrigeração.',
 };
 
 itemList['cfixclutch'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Clutch Parts (C)',
+  displayname: 'Peças da Embreagem (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_clutch_parts_c.png',
-  information: 'New clutch disc and pressure plate',
+  information: 'Novo disco de embreagem e placa de pressão.',
 };
 
 itemList['cfixtransmission'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Transmission Parts (C)',
+  displayname: 'Peças da Transmissão (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_transmission_parts_c.png',
-  information: 'New gear sets, shafts, converters and clutch packs',
+  information: 'Novos conjuntos de engrenagens, eixos, conversores e conjuntos de embreagem.',
 };
 
 itemList['cfixelectronics'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Vehicle Electronics (C)',
+  displayname: 'Eletrônicos do Veículo (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_electronic_parts_c.png',
-  information: 'Various vehicle electrical components',
+  information: 'Vários componentes elétricos do veículo.',
 };
 
 itemList['cfixinjector'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Fuel Injectors (C)',
+  displayname: 'Injetores de combustível (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_fuel_injectors_c.png',
-  information: 'New fuel injectors',
+  information: 'Novos injetores de combustível.',
 };
 
 itemList['cfixtire'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Tire Repair Kit (C)',
+  displayname: 'Kit de reparo de pneus (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_tire_kit_c.png',
-  information: 'For swapping and repairing worn or damaged tires',
+  information: 'Para trocar e reparar pneus gastos ou danificados.',
 };
 
 itemList['cfixbody'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Body Panels (C)',
+  displayname: 'Painéis da carroceria (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_body_panels_c.png',
-  information: 'New vehicle body panels',
+  information: 'Novos painéis de carroceria',
 };
 
 itemList['cfixengine'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Engine Parts (C)',
+  displayname: 'Peças do Motor (C)',
   craft: [[
     { itemid: 'cgenericmechanicpart', amount: 3 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_engine_parts_c.png',
-  information: 'New engine parts',
+  information: 'Novas peças do motor',
 };
 
 //D CLASS REPAIR PARTS
 itemList['dfixbrake'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Brake Parts (D)',
+  displayname: 'Peças do Freio (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_brake_parts_d.png',
-  information: 'New brake discs, pads, calipers, hubs & accessories',
+  information: 'Novos discos de freio, pastilhas, pinças, cubos e acessórios.',
 };
 
 itemList['dfixaxle'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Axle Parts (D)',
+  displayname: 'Peças do eixo (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_axle_parts_d.png',
-  information: 'New axle components',
+  information: 'Novos componentes do eixo.',
 };
 
 itemList['dfixradiator'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Radiator Parts (D)',
+  displayname: 'Peças do Radiador (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_cooling_parts_d.png',
-  information: 'New radiator and cooling parts',
+  information: 'Novo radiador e peças de refrigeração.',
 };
 
 itemList['dfixclutch'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Clutch Parts (D)',
+  displayname: 'Peças da Embreagem (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_clutch_parts_d.png',
-  information: 'New clutch disc and pressure plate',
+  information: 'Novo disco de embreagem e placa de pressão.',
 };
 
 itemList['dfixtransmission'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Transmission Parts (D)',
+  displayname: 'Peças da Transmissão (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_transmission_parts_d.png',
-  information: 'New gear sets, shafts, converters and clutch packs',
+  information: 'Novos conjuntos de engrenagens, eixos, conversores e conjuntos de embreagem.',
 };
 
 itemList['dfixelectronics'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Vehicle Electronics (D)',
+  displayname: 'Eletrônicos do Veículo (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_electronic_parts_d.png',
-  information: 'Various vehicle electrical components',
+  information: 'Vários componentes elétricos do veículo.',
 };
 
 itemList['dfixinjector'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Fuel Injectors (D)',
+  displayname: 'Injetores de combustível (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_fuel_injectors_d.png',
-  information: 'New fuel injectors',
+  information: 'Novos injetores de combustível.',
 };
 
 itemList['dfixtire'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Tire Repair Kit (D)',
+  displayname: 'Kit de reparo de pneus (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_tire_kit_d.png',
-  information: 'For swapping and repairing worn or damaged tires',
+  information: 'Para trocar e reparar pneus gastos ou danificados.',
 };
 
 itemList['dfixbody'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Body Panels (D)',
+  displayname: 'Painéis da carroceria (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_body_panels_d.png',
-  information: 'New vehicle body panels',
+  information: 'Novos painéis de carroceria',
 };
 
 itemList['dfixengine'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Engine Parts (D)',
+  displayname: 'Peças do Motor (D)',
   craft: [[
     { itemid: 'dgenericmechanicpart', amount: 2 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_engine_parts_d.png',
-  information: 'New engine parts',
+  information: 'Novas peças do motor',
 };
 
 //M CLASS REPAIR PARTS
 itemList['mfixbrake'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Brake Parts (M)',
+  displayname: 'Peças do Freio (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_brake_parts_m.png',
-  information: 'New brake discs, pads, calipers, hubs & accessories',
+  information: 'Novos discos de freio, pastilhas, pinças, cubos e acessórios.',
 };
 
 itemList['mfixaxle'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Axle Parts (M)',
+  displayname: 'Peças do eixo (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_axle_parts_m.png',
-  information: 'New axle components',
+  information: 'Novos componentes do eixo.',
 };
 
 itemList['mfixradiator'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Radiator Parts (M)',
+  displayname: 'Peças do Radiador (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 5 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_cooling_parts_m.png',
-  information: 'New radiator and cooling parts',
+  information: 'Novo radiador e peças de refrigeração.',
 };
 
 itemList['mfixclutch'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Clutch Parts (M)',
+  displayname: 'Peças da Embreagem (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_clutch_parts_m.png',
-  information: 'New clutch disc and pressure plate',
+  information: 'Novo disco de embreagem e placa de pressão.',
 };
 
 itemList['mfixtransmission'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Transmission Parts (M)',
+  displayname: 'Peças da Transmissão (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_transmission_parts_m.png',
-  information: 'New gear sets, shafts, converters and clutch packs',
+  information: 'Novos conjuntos de engrenagens, eixos, conversores e conjuntos de embreagem.',
 };
 
 itemList['mfixelectronics'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Vehicle Electronics (M)',
+  displayname: 'Eletrônicos do Veículo (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_electronic_parts_m.png',
-  information: 'Various vehicle electrical components',
+  information: 'Vários componentes elétricos do veículo.',
 };
 
 itemList['mfixinjector'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Fuel Injectors (M)',
+  displayname: 'Injetores de combustível (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_fuel_injectors_m.png',
-  information: 'New fuel injectors',
+  information: 'Novos injetores de combustível.',
 };
 
 itemList['mfixtire'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Tire Repair Kit (M)',
+  displayname: 'Kit de reparo de pneus (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_tire_kit_m.png',
-  information: 'For swapping and repairing worn or damaged tires',
+  information: 'Para trocar e reparar pneus gastos ou danificados.',
 };
 
 itemList['mfixbody'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Body Panels (M)',
+  displayname: 'Painéis da carroceria (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_body_panels_m.png',
-  information: 'New vehicle body panels',
+  information: 'Novos painéis de carroceria',
 };
 
 itemList['mfixengine'] = {
   fullyDegrades: true,
   decayrate: 2,
-  displayname: 'Engine Parts (M)',
+  displayname: 'Peças do Motor (M)',
   craft: [[
     { itemid: 'mgenericmechanicpart', amount: 4 },
   ]],
   price: 10,
-  weight: 1,
+  weight: 50,
   nonStack: false,
   model: '',
   image: 'np_engine_parts_m.png',
-  information: 'New engine parts',
+  information: 'Novas peças do motor',
 };
 
 /*

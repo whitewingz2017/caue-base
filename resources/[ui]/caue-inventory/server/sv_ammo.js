@@ -29,7 +29,7 @@ onNet("caue-inventory:ammo", async (originInventory, targetInventory, originSlot
     let information = JSON.parse(targetItemInfo)
 
     if (MaxAmmo[targetItemId] && information["ammo"] >= MaxAmmo[targetItemId]) {
-        emitNet("caue-inventory:log", src, "Essa arma já está carregada.");
+        emitNet("caue-inventory:log", src, "This gun is already loaded.");
         return
     }
 
