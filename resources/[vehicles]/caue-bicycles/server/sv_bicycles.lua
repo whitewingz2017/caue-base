@@ -9,7 +9,7 @@ AddEventHandler("caue-bicycles:buyBicycle", function(params)
     local bank = exports["caue-financials"]:getBalance(accountId)
 
     if params["price"] > bank then
-        TriggerClientEvent("caue-phone:notification", src, "fas fa-exclamation-circle", "Error", "You dont $" .. params["price"] .. " in your bank account", 5000)
+        TriggerClientEvent("caue-phone:notification", src, "fas fa-exclamation-circle", "Error", "You dont have $" .. params["price"] .. " in your bank account", 5000)
         return
     end
 
